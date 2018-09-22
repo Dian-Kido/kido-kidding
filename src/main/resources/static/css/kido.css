@@ -1,0 +1,139 @@
+.movie-lines-font {
+    font-weight: 170;
+}
+
+.movie-type-div {
+    width: 100%;
+    margin-left: 15px;
+    margin-bottom: 27px;
+}
+
+.movie-type-button {
+    display: inline;
+    margin-right: 15px;
+}
+
+.movie-type-a {
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+    color: #b7c2c2;
+}
+
+.movie-type-a-sel {
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+    color: #252525;
+}
+
+a:link {
+    text-decoration: none; /* 指正常的未被访问过的链接*/
+
+}
+
+a:visited {
+    text-decoration: none; /*指已经访问过的链接*/
+
+}
+
+a:hover {
+    text-decoration: none; /*指鼠标在链接*/
+}
+
+a:active {
+    text-decoration: none; /* 指正在点的链接*/
+
+}
+
+.movie-list-div {
+    display: inline-block;
+    width: 100%;
+    margin-right: 15px;
+    margin-bottom: 27px;
+    margin-top: 27px;
+}
+
+.movie-page-button {
+    display: inline;
+    float: right;
+    margin-right: 15px;
+}
+
+.movie-page-a {
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    color: #b7c2c2;
+}
+
+.book-box {
+    width: 50%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    animation-name: fadeInUp;
+    animation-fill-mode: both;
+    box-sizing: border-box;
+    display: block;
+}
+
+.book-inner-box {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.book-list-img {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: 0.3s;
+    width: 50%;
+    display: inline-block;
+}
+
+.book-list-info-div {
+    padding: 1.7em;
+    background: #fafafa;
+    width: 50%;
+    display: inline-block;
+    word-wrap: break-word;
+}
+
+.book-list-line-font {
+    font-weight: 170;
+}
+
+.book-list-img {
+    width: 100%;
+}
+
+.book-list-word {
+    left: 50%;
+    top: 50%
+}
+
+.book-list-auth {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.book-list-lines {
+    font-size: 10px;
+    font-weight: 100;
+}
+
+.book-list-height {
+    min-height: 350px;
+    position: relative;
+}
+
+.movie-list-height {
+    min-height: 165px;
+}
+
+.book-list-douban {
+    position: absolute;
+    bottom: 7%;
+    float: left;
+}

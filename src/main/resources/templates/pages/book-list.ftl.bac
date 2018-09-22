@@ -1,0 +1,117 @@
+<#include "head.ftl">
+<body id="page-top">
+<#include "nav.ftl">
+
+
+<section id="team">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="section-title">
+                    <h2>book recommendation</h2>
+                    <p>携书如历三千世,无书唯度一平生</p>
+                </div>
+            </div>
+        </div>
+        <!-- team member item -->
+        <div class="col-md-6">
+            <div class="book-inner-box">
+                <img src="https://kido-1257686190.cos.ap-beijing.myqcloud.com/%E7%99%BD%E5%A4%9C%E8%A1%8C.jpg"
+                     class="book-list-img" alt="cover">
+                <div class="book-list-info-div">
+                    <h3>白夜行</h3>
+                    <p>
+                        <span class="book-list-line-font">iasfhdaudshfdsajlfdkagkjfdshkgjhfdslkghkfdsjglkdfsgk</span>
+                    </p>
+                    <span class="">ewrterwtertretreyrty</span>
+                </div>
+            </div>
+        </div>
+        <!-- end team member item -->
+        <!-- team member item -->
+        <div class="col-md-6">
+            <div class="book-inner-box">
+                <img src="https://kido-1257686190.cos.ap-beijing.myqcloud.com/%E7%99%BD%E5%A4%9C%E8%A1%8C.jpg"
+                     class="book-list-img" alt="cover">
+                <div class="book-list-info-div">
+                    <h3>白夜行</h3>
+                    <p>
+                        <span class="book-list-line-font">iasfhdaudshfdsajlfdkagkjfdshkgjhfdslkghkfdsjglkdfsgk</span>
+                    </p>
+                    <span class="">ewrterwtertretreyrty</span>
+                </div>
+            </div>
+        </div>
+        <!-- end team member item -->
+        <!-- team member item -->
+        <div class="col-md-6">
+            <div class="book-inner-box">
+                <img src="https://kido-1257686190.cos.ap-beijing.myqcloud.com/%E7%99%BD%E5%A4%9C%E8%A1%8C.jpg"
+                     class="book-list-img" alt="cover">
+                <div class="book-list-info-div">
+                    <h3>白夜行</h3>
+                    <p>
+                        <span class="book-list-line-font">iasfhdaudshfdsajlfdkagkjfdshkgjhfdslkghkfdsjglkdfsgk</span>
+                    </p>
+                    <span class="">ewrterwtertretreyrty</span>
+                </div>
+            </div>
+        </div>
+        <!-- end team member item -->
+        <!-- team member item -->
+        <div class="col-md-6">
+            <div class="book-inner-box">
+                <img src="https://kido-1257686190.cos.ap-beijing.myqcloud.com/%E7%99%BD%E5%A4%9C%E8%A1%8C.jpg"
+                     class="book-list-img" alt="cover">
+                <div class="book-list-info-div">
+                    <h3>白夜行</h3>
+                    <p>
+                        <span class="book-list-line-font">iasfhdaudshfdsajlfdkagkjfdshkgjhfdslkghkfdsjglkdfsgk</span>
+                    </p>
+                    <span class="">ewrterwtertretreyrty</span>
+                </div>
+            </div>
+        </div>
+        <!-- end team member item -->
+        <!-- team member item -->
+        <div class="book-box">
+            <div class="book-inner-box">
+                <img src="https://kido-1257686190.cos.ap-beijing.myqcloud.com/%E7%99%BD%E5%A4%9C%E8%A1%8C.jpg"
+                     class="book-list-img" alt="cover">
+                <div class="book-list-info-div">
+                    <h3>白夜行</h3>
+                    <p>
+                        <span class="book-list-line-font">iasfhdaudshfdsajlfdkagkjfdshkgjhfdslkghkfdsjglkdfsgk</span>
+                    </p>
+                    <span class="">ewrterwtertretreyrty</span>
+                </div>
+            </div>
+        </div>
+        <!-- end team member item -->
+        <!-- team member item -->
+        <div class="book-box">
+            <div class="book-inner-box">
+                <img src="https://kido-1257686190.cos.ap-beijing.myqcloud.com/%E7%99%BD%E5%A4%9C%E8%A1%8C.jpg"
+                     class="book-list-img" alt="cover">
+                <div class="book-list-info-div">
+                    <h3>白夜行</h3>
+                    <p>
+                        <span class="book-list-line-font">iasfhdaudshfdsajlfdkagkjfdshkgjhfdslkghkfdsjglkdfsgk</span>
+                    </p>
+                    <span class="">ewrterwtertretreyrty</span>
+                </div>
+            </div>
+        </div>
+        <!-- end team member item -->
+
+
+    <#include "movie-list-page.ftl">
+    </div>
+</section>
+
+<#include "movie-list-contact.ftl">
+
+<#include "movie-list-footer.ftl">
+</body>
+</html>
