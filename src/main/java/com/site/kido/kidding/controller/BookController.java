@@ -35,8 +35,6 @@ public class BookController {
     @RequestMapping(value = "/list/{pageNum}/{pageSize}")
     public String list(Model model, @PathVariable Integer pageNum, @PathVariable Integer pageSize) {
         List<BookVO> bookVOList = bookService.listPage(pageNum, pageSize);
-
-        logger.info("bookVOList:" + bookVOList);
         model.addAttribute("bookVOList", bookVOList);
         if (bookVOList != null) {
             PageInfo pageInfo = new PageInfo();

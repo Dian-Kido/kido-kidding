@@ -2,7 +2,7 @@ package com.site.kido.kidding.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.site.kido.kidding.service.MovieService;
-import com.site.kido.kidding.utils.PermissionUtil;
+import com.site.kido.kidding.service.PermissionService;
 import com.site.kido.kidding.vo.ErpInfo;
 import com.site.kido.kidding.vo.MovieVO;
 import com.site.kido.kidding.vo.QueryMovieParam;
@@ -29,6 +29,9 @@ public class MovieErpController {
     @Autowired
     private MovieService movieService;
 
+    @Autowired
+    private PermissionService permissionService;
+
     /**
      * 本地访问内容地址 ：http://localhost:8080/movieErp/index/niZENmeKEnengCAIdao7
      *
@@ -52,7 +55,7 @@ public class MovieErpController {
     @ResponseBody
     public String insert(@RequestBody ErpInfo<MovieVO> erpInfo) {
         logger.info(JSON.toJSONString(erpInfo));
-        if (!PermissionUtil.checkAuth(erpInfo.getSecretCode())) {
+        if (!permissionService.checkAuth(erpInfo.getSecretCode())) {
             return ("无权限........");
         }
         MovieVO movieVO = erpInfo.getData();
@@ -69,7 +72,7 @@ public class MovieErpController {
     @RequestMapping(value = "/removeById", method = RequestMethod.POST)
     @ResponseBody
     public String removeById(@RequestBody ErpInfo<String> erpInfo) {
-        if (!PermissionUtil.checkAuth(erpInfo.getSecretCode())) {
+        if (!permissionService.checkAuth(erpInfo.getSecretCode())) {
             return ("无权限........");
         }
         String id = erpInfo.getData();
@@ -86,7 +89,7 @@ public class MovieErpController {
     @RequestMapping(value = "/getById", method = RequestMethod.POST)
     @ResponseBody
     public String getById(@RequestBody ErpInfo<QueryMovieParam> erpInfo) {
-        if (!PermissionUtil.checkAuth(erpInfo.getSecretCode())) {
+        if (!permissionService.checkAuth(erpInfo.getSecretCode())) {
             return ("无权限........");
         }
         QueryMovieParam queryMovieParam = erpInfo.getData();
@@ -103,7 +106,7 @@ public class MovieErpController {
     @RequestMapping(value = "/update", method = RequestMethod.POST)
     @ResponseBody
     public String update(@RequestBody ErpInfo<MovieVO> erpInfo) {
-        if (!PermissionUtil.checkAuth(erpInfo.getSecretCode())) {
+        if (!permissionService.checkAuth(erpInfo.getSecretCode())) {
             return ("无权限........");
         }
         MovieVO movieVO = erpInfo.getData();
@@ -120,7 +123,7 @@ public class MovieErpController {
     @RequestMapping(value = "/listPage", method = RequestMethod.POST)
     @ResponseBody
     public String listPage(@RequestBody ErpInfo<QueryMovieParam> erpInfo) {
-        if (!PermissionUtil.checkAuth(erpInfo.getSecretCode())) {
+        if (!permissionService.checkAuth(erpInfo.getSecretCode())) {
             return ("无权限........");
         }
         QueryMovieParam queryMovieParam = erpInfo.getData();
@@ -139,7 +142,7 @@ public class MovieErpController {
     @RequestMapping(value = "/listPageByType", method = RequestMethod.POST)
     @ResponseBody
     public String listPageByType(@RequestBody ErpInfo<QueryMovieParam> erpInfo) {
-        if (!PermissionUtil.checkAuth(erpInfo.getSecretCode())) {
+        if (!permissionService.checkAuth(erpInfo.getSecretCode())) {
             return ("无权限........");
         }
         QueryMovieParam queryMovieParam = erpInfo.getData();
@@ -159,7 +162,7 @@ public class MovieErpController {
     @RequestMapping(value = "/getByName", method = RequestMethod.POST)
     @ResponseBody
     public String getByName(@RequestBody ErpInfo<QueryMovieParam> erpInfo) {
-        if (!PermissionUtil.checkAuth(erpInfo.getSecretCode())) {
+        if (!permissionService.checkAuth(erpInfo.getSecretCode())) {
             return ("无权限........");
         }
         QueryMovieParam queryMovieParam = erpInfo.getData();

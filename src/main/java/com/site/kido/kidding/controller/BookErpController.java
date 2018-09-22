@@ -2,7 +2,7 @@ package com.site.kido.kidding.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.site.kido.kidding.service.BookService;
-import com.site.kido.kidding.utils.PermissionUtil;
+import com.site.kido.kidding.service.PermissionService;
 import com.site.kido.kidding.vo.BookVO;
 import com.site.kido.kidding.vo.ErpInfo;
 import com.site.kido.kidding.vo.QueryBookParam;
@@ -28,6 +28,9 @@ public class BookErpController {
     @Autowired
     private BookService bookService;
 
+    @Autowired
+    private PermissionService permissionService;
+
     /**
      * 本地访问内容地址 ：http://localhost:8080/bookErp/insert
      * {"data":{"cnName":"书属实书","publicationDate":43252333445,"type":1},"secretCode":"niZENmeKEnengCAIdao7"}
@@ -39,7 +42,7 @@ public class BookErpController {
     @ResponseBody
     public String insert(@RequestBody ErpInfo<BookVO> erpInfo) {
         logger.info(JSON.toJSONString(erpInfo));
-        if (!PermissionUtil.checkAuth(erpInfo.getSecretCode())) {
+        if (!permissionService.checkAuth(erpInfo.getSecretCode())) {
             return ("无权限........");
         }
         BookVO bookVO = erpInfo.getData();
@@ -55,7 +58,7 @@ public class BookErpController {
     @RequestMapping(value = "/removeById", method = RequestMethod.POST)
     @ResponseBody
     public String removeById(@RequestBody ErpInfo<String> erpInfo) {
-        if (!PermissionUtil.checkAuth(erpInfo.getSecretCode())) {
+        if (!permissionService.checkAuth(erpInfo.getSecretCode())) {
             return ("无权限........");
         }
         String id = erpInfo.getData();
@@ -72,7 +75,7 @@ public class BookErpController {
     @RequestMapping(value = "/getById", method = RequestMethod.POST)
     @ResponseBody
     public String getById(@RequestBody ErpInfo<QueryBookParam> erpInfo) {
-        if (!PermissionUtil.checkAuth(erpInfo.getSecretCode())) {
+        if (!permissionService.checkAuth(erpInfo.getSecretCode())) {
             return ("无权限........");
         }
         QueryBookParam queryBookParam = erpInfo.getData();
@@ -89,7 +92,7 @@ public class BookErpController {
     @RequestMapping(value = "/update", method = RequestMethod.POST)
     @ResponseBody
     public String update(@RequestBody ErpInfo<BookVO> erpInfo) {
-        if (!PermissionUtil.checkAuth(erpInfo.getSecretCode())) {
+        if (!permissionService.checkAuth(erpInfo.getSecretCode())) {
             return ("无权限........");
         }
         BookVO bookVO = erpInfo.getData();
@@ -106,7 +109,7 @@ public class BookErpController {
     @RequestMapping(value = "/listPage", method = RequestMethod.POST)
     @ResponseBody
     public String listPage(@RequestBody ErpInfo<QueryBookParam> erpInfo) {
-        if (!PermissionUtil.checkAuth(erpInfo.getSecretCode())) {
+        if (!permissionService.checkAuth(erpInfo.getSecretCode())) {
             return ("无权限........");
         }
         QueryBookParam queryBookParam = erpInfo.getData();
@@ -125,7 +128,7 @@ public class BookErpController {
     @RequestMapping(value = "/listPageByType", method = RequestMethod.POST)
     @ResponseBody
     public String listPageByType(@RequestBody ErpInfo<QueryBookParam> erpInfo) {
-        if (!PermissionUtil.checkAuth(erpInfo.getSecretCode())) {
+        if (!permissionService.checkAuth(erpInfo.getSecretCode())) {
             logger.error("无权限........");
         }
         QueryBookParam queryBookParam = erpInfo.getData();
@@ -145,7 +148,7 @@ public class BookErpController {
     @RequestMapping(value = "/getByName", method = RequestMethod.POST)
     @ResponseBody
     public String getByName(@RequestBody ErpInfo<QueryBookParam> erpInfo) {
-        if (!PermissionUtil.checkAuth(erpInfo.getSecretCode())) {
+        if (!permissionService.checkAuth(erpInfo.getSecretCode())) {
             logger.error("无权限........");
         }
         QueryBookParam queryBookParam = erpInfo.getData();
