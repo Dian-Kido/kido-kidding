@@ -8,10 +8,9 @@ package com.site.kido.kidding.meta.consts;
 public class Constants {
 
     public static final Integer DEFAULT_MOVIE_PAGE_NUM = 1;
-    public static final Integer DEFAULT_MOVIE_PAGE_SIZE = 500;
+    public static final Integer DEFAULT_MOVIE_PAGE_SIZE = 15;
 
     public static final Integer DEFAULT_BOOK_PAGE_NUM = 1;
-    public static final Integer DEFAULT_BOOK_PAGE_SIZE = 500;
-
+    public static final Integer DEFAULT_BOOK_PAGE_SIZE = 10;
 
 }
