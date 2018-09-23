@@ -26,7 +26,7 @@
                     <a class="page-scroll" href="/book/list/1/6">Book</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#team">Blog</a>
+                    <a class="page-scroll" href="http://localhost:4000/">Blog</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#contact">More</a>
