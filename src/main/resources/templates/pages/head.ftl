@@ -11,7 +11,6 @@
     <title>Kido PW</title>
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
 
     <!-- all + movie style  -->
     <link href="/css/font-Raleway.css" rel="stylesheet">
