@@ -1,3 +1,4 @@
+<#include "movie-list-sel.ftl">
 <#list movieVOList as movieVO>
 <!-- team member item -->
 <div class="col-md-4">

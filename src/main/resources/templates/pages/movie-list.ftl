@@ -13,10 +13,11 @@
                 </div>
             </div>
         </div>
-    <#include "movie-list-sel.ftl">
+
         <div id="movie-list-items">
         <#include "movie-list-items.ftl">
         </div>
+
     </div>
 </section>
 
