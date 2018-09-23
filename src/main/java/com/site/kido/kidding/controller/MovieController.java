@@ -84,4 +84,20 @@ public class MovieController {
         return "movie-list";
     }
 
+    /**
+     * 电影名称搜索
+     *
+     * @param
+     * @return
+     */
+    @RequestMapping(value = "/search/{searchText}")
+    public String search(Model model, @PathVariable String searchText) {
+        List<MovieVO> movieVOList = movieService.getByName(searchText);
+        model.addAttribute("movieVOList", movieVOList);
+        if (movieVOList == null || movieVOList.size() < 1) {
+            model.addAttribute("movieNotFound", true);
+        }
+        return "movie-list-items";
+    }
+
 }

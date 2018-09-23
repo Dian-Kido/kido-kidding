@@ -9,7 +9,7 @@
                 <div class="section-title">
                 <#--<h2>A reader lives a thousand lives before he dies. The man who never reads lives only one.</h2>-->
                     <h2>携书如历三千世,无书唯度一平生</h2>
-                    <p>Sometimes, reading is a way to escape from reality</p>
+                    <p>Sometimes, Reading is the way to escape from reality</p>
                 </div>
             </div>
         </div>

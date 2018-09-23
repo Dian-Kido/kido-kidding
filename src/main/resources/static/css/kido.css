@@ -159,3 +159,10 @@ a:active {
     float: right;
     font-size: 17px;
 }
+
+.movie-not-found {
+    text-align: center;
+    font-weight: 200;
+    margin-top: 100px;
+    margin-bottom: 170px;
+}

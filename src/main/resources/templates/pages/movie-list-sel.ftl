@@ -23,8 +23,9 @@
 
 
             <div class="movie-col-lg">
-                <a class=" movie-search-a"><i class='glyphicon glyphicon-search'></i></a>
-                <input type=" text" class="movie-form-control" placeholder="Search ...">
+                <a onclick="searchMovie()" class="movie-search-a"><i class='glyphicon glyphicon-search'></i></a>
+                <input id="movie-search-input" value="${searchText}" type=" text" class="movie-form-control"
+                       placeholder="Search ...">
             </div>
 
     </span>
