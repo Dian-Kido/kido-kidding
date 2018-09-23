@@ -137,3 +137,25 @@ a:active {
     bottom: 7%;
     float: left;
 }
+
+.movie-col-lg {
+    width: 30%;
+    float: right;
+    margin-right: 30px;
+}
+
+.movie-form-control {
+    margin-top: -4px;
+    height: 30px;
+    float: right;
+    margin-right: 0px;
+    border: 0px;
+    width: 60%;
+    outline: none;
+}
+
+.movie-search-a {
+    color: #b7c2c2;
+    float: right;
+    font-size: 17px;
+}
