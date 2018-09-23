@@ -24,7 +24,7 @@
 
             <div class="movie-col-lg">
                 <a class=" movie-search-a"><i class='glyphicon glyphicon-search'></i></a>
-                <input type=" text" class="movie-form-control" placeholder="Search for...">
+                <input type=" text" class="movie-form-control" placeholder="Search ...">
             </div>
 
     </span>
