@@ -1,5 +1,6 @@
 package com.site.kido.kidding.controller;
 
+import com.site.kido.kidding.meta.consts.Constants;
 import com.site.kido.kidding.meta.consts.MovieTypeEnum;
 import com.site.kido.kidding.service.MovieService;
 import com.site.kido.kidding.vo.MovieVO;
@@ -56,26 +57,61 @@ public class MovieController {
     }
 
     /**
-     * 电影分类列表
+     * 电影分类
      *
      * @param
      * @return
      */
-    @RequestMapping(value = "/listtype/{type}/{pageNum}/{pageSize}")
+    @RequestMapping(value = "/listtype/{type}")
+    public String listByType(Model model, @PathVariable Integer type) {
+
+        List<MovieVO> movieVOList = null;
+        if (type == null || type == 0) {
+            movieVOList = movieService.listPage(Constants.DEFAULT_MOVIE_PAGE_NUM, Constants.DEFAULT_MOVIE_PAGE_SIZE);
+        } else {
+            movieVOList = movieService
+                    .listPageByType(type, Constants.DEFAULT_MOVIE_PAGE_NUM, Constants.DEFAULT_MOVIE_PAGE_SIZE);
+        }
+
+        model.addAttribute("movieType", type);
+        model.addAttribute("movieVOList", movieVOList);
+        if (movieVOList != null) {
+            PageInfo pageInfo = new PageInfo();
+            if (movieVOList.size() >= Constants.DEFAULT_MOVIE_PAGE_SIZE) {
+                pageInfo.setNextPage("/movie/listtypepage/" + type + "/2/" + Constants.DEFAULT_MOVIE_PAGE_SIZE);
+                logger.info("next:" + pageInfo.getNextPage());
+            }
+            model.addAttribute("pageInfo", pageInfo);
+        }
+        return "movie-list-items";
+    }
+
+    /**
+     * 电影分页分类列表
+     *
+     * @param
+     * @return
+     */
+    @RequestMapping(value = "/listtypepage/{type}/{pageNum}/{pageSize}")
     public String listPageByType(Model model, @PathVariable Integer type, @PathVariable Integer pageNum,
             @PathVariable Integer pageSize) {
-        List<MovieVO> movieVOList = movieService.listPageByType(type, pageNum, pageSize);
+        List<MovieVO> movieVOList = null;
+        if (type == null || type == 0) {
+            movieVOList = movieService.listPage(pageNum, pageSize);
+        } else {
+            movieVOList = movieService.listPageByType(type, pageNum, pageSize);
+        }
         model.addAttribute("movieType", type);
         model.addAttribute("movieVOList", movieVOList);
 
         if (movieVOList != null) {
             PageInfo pageInfo = new PageInfo();
             if (pageNum > 1) {
-                pageInfo.setPrePage("/movie/listtype/" + type + "/" + (pageNum - 1) + "/" + pageSize);
+                pageInfo.setPrePage("/movie/listtypepage/" + type + "/" + (pageNum - 1) + "/" + pageSize);
                 logger.info("pre:" + pageInfo.getPrePage());
             }
             if (movieVOList.size() >= pageSize) {
-                pageInfo.setNextPage("/movie/listtype/" + type + "/" + (pageNum + 1) + "/" + pageSize);
+                pageInfo.setNextPage("/movie/listtypepage/" + type + "/" + (pageNum + 1) + "/" + pageSize);
                 logger.info("next:" + pageInfo.getNextPage());
             }
             model.addAttribute("pageInfo", pageInfo);
