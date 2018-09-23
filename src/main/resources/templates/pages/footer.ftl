@@ -1,5 +1,5 @@
 <p id="back-top">
-    <a href="#top"><i class="fa fa-angle-up"></i></a>
+    <a href="#top"><i class="glyphicon glyphicon-menu-up"></i></a>
 </p>
 <footer>
     <div class="container text-center">
