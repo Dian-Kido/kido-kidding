@@ -1,18 +1,26 @@
 <#include "head.ftl">
-<body id="page-top" class="book-body">
-<#include "nav.ftl">
+<body id="page-top">
 
-<section id="team">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <div class="section-title">
-                <#--<h2>A reader lives a thousand lives before he dies. The man who never reads lives only one.</h2>-->
-                    <h2>携书如历三千世,无书唯度一平生</h2>
-                    <p>Sometimes, Reading is the way to escape from reality</p>
+<!-- Page Header -->
+<header class="intro-header" style="background-image: url('/images/reading.jpg')">
+<#include "book-nav.ftl">
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-left">
+                    <div class="book-reading-font">
+                        <h1>携书如历三千世,无书唯度一平生</h1>
+                        <p>Sometimes, Reading is the way to escape from reality</p>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
+</header>
+
+
+<section id="team">
+    <div class="container">
 
         <div class="row">
 

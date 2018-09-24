@@ -1,6 +1,6 @@
 <#include "head.ftl">
 <body id="page-top">
-<#include "nav.ftl">
+<#include "movie-nav.ftl">
 
 <section id="team">
     <div class="container">

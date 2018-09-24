@@ -167,10 +167,26 @@ a:active {
     margin-bottom: 170px;
 }
 
-.book-body {
-    width: 100%;
-    background-image: url('/images/book-list.png');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+.book-reading-font {
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.book-reading-font > h1 {
+    color: white;
+}
+
+.book-reading-font > p {
+    color: white;
+}
+
+.intro-header {
+    background: no-repeat center center;
+    background-color: #808080;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin-bottom: 0px;
 }
