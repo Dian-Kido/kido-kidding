@@ -16,3 +16,4 @@
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/SmoothScroll.js"></script>
 <script src="/js/theme-scripts.js"></script>
+<script src="/js/hux-blog.js"></script>

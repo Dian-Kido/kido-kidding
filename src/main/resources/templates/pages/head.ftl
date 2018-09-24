@@ -16,6 +16,9 @@
     <link href="/css/font-Raleway.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
 
+    <!-- github hux-blog css-->
+    <link href="/css/hux-blog.css" rel="stylesheet">
+
     <!-- book style  -->
     <link rel="stylesheet" href="/css/book/style.css">
 

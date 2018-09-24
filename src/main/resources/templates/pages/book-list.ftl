@@ -1,23 +1,24 @@
 <#include "head.ftl">
 <body id="page-top">
 
+<#include "nav.ftl">
+
+<!-- Main Content -->
 <!-- Page Header -->
 <header class="intro-header" style="background-image: url('/images/reading.png')">
-<#include "book-nav.ftl">
-    <section id="team">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-left">
+    <div class="container">
+        <div class="row">
+            <div class="">
+                <div class="site-heading">
                     <div class="book-reading-font">
-                        <h1>携书如历三千世,无书唯度一平生</h1>
+                        <h2>携书如历三千世,无书唯度一平生</h2>
                         <p>Sometimes, Reading is the way to escape from reality</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 </header>
-
 
 <section id="team">
     <div class="container">
