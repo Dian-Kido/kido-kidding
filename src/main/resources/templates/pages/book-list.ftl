@@ -2,7 +2,7 @@
 <body id="page-top">
 
 <!-- Page Header -->
-<header class="intro-header" style="background-image: url('/images/reading.jpg')">
+<header class="intro-header" style="background-image: url('/images/reading.png')">
 <#include "book-nav.ftl">
     <section id="team">
         <div class="container">
