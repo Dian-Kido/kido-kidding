@@ -1,5 +1,5 @@
 <#include "head.ftl">
-<body id="page-top">
+<body id="page-top" class="book-body">
 <#include "nav.ftl">
 
 <section id="team">
