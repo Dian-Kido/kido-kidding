@@ -16,7 +16,7 @@
             <div class="navbar-collapse movie-bar-font">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="http://localhost:4000/">Home</a>
+                        <a href="http://localhost:4000/">BLOG</a>
                     </li>
 
                     <!-- movie 和 book  属于跳转外部网站 -->
@@ -29,16 +29,11 @@
                     </li>
 
                     <li>
-                        <a href="http://localhost:4000/about/">About</a>
+                        <a href="http://localhost:8080/tab/show">NAVIGATION</a>
                     </li>
 
                     <li>
-                        <a href="http://localhost:4000/archives/">Archives</a>
-                    </li>
-
-
-                    <li>
-                        <a href="http://localhost:4000/tags/">Tags</a>
+                        <a href="#">More</a>
                     </li>
 
 
