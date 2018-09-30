@@ -33,7 +33,7 @@
                     </li>
 
                     <li>
-                        <a href="#">More</a>
+                        <a href="http://localhost:8080/author/about">ABOUT</a>
                     </li>
 
 

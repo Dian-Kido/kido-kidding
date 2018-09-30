@@ -200,3 +200,7 @@ a:active {
 .movie-title > h2 {
     font-weight: 200;
 }
+
+.author-section-title {
+    margin-top: 100px;
+}
