@@ -136,15 +136,4 @@ public class MovieController {
         return "movie-list-items";
     }
 
-    /**
-     * emotion
-     *
-     * @param
-     * @return
-     */
-    @RequestMapping(value = "/emotion")
-    public String emotion() {
-        return "emotion";
-    }
-
 }
