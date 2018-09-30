@@ -22,6 +22,9 @@
     <!-- book style  -->
     <link rel="stylesheet" href="/css/book/style.css">
 
+    <!-- tab style  -->
+    <link rel="stylesheet" href="/css/tab/main.css">
+
     <link href="/css/kido.css" rel="stylesheet" type="text/css">
 
 </head>
