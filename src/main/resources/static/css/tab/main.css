@@ -173,7 +173,7 @@ span.hoverBox .zoom {
     color: #fff;
     position: relative;
     left: -180%;
-    background: url(../images/plus-icon.png) 50% 50% no-repeat;
+    background: url(/images/plus-icon.png) 50% 50% no-repeat;
     margin-left: 47px;
     /*top:40%;*/
     text-align: center;

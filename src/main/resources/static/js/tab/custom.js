@@ -30,6 +30,19 @@
 
     });
 
+    $(window).resize(function () {          //当浏览器大小变化时
+        var $container = $('.portfolioContainer');
+        var selector = $(".current").attr('data-filter');
+        $container.isotope({
+            filter: selector,
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            }
+        });
+    });
+
 // Somth page scroll
     $(function () {
         $('a[href*=#]:not([href=#])').click(function () {
