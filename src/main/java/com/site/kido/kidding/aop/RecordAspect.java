@@ -3,6 +3,7 @@ package com.site.kido.kidding.aop;
 import com.site.kido.kidding.dao.entity.WebRecordPO;
 import com.site.kido.kidding.meta.consts.RecordTypeEnum;
 import com.site.kido.kidding.service.WebService;
+import com.site.kido.kidding.utils.ConvertUtil;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
@@ -11,11 +12,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.web.context.request.RequestContextHolder;
-import org.springframework.web.context.request.ServletRequestAttributes;
-
-import javax.servlet.http.HttpServletRequest;
-import java.util.Date;
 
 /**
  * @author chendianshu
@@ -37,112 +33,15 @@ public class RecordAspect {
 
     @After("addRecord()")
     public Object Interceptor(JoinPoint point) {
-
         try {
-            HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes())
-                    .getRequest();
-            /**
-             * 创建时间
-             */
-            Date createTime = new Date();
-
-            /**
-             * 记录类型
-             */
-            Integer recordType = RecordTypeEnum.BROWSE.getTypeCode();
-
-            /**
-             * url
-             */
-            String url = request.getRequestURL().toString();
-
-            /**
-             * 浏览者ip地址
-             */
-            String remoteIp = request.getRemoteAddr();
-
-            /**
-             * 浏览器信息
-             */
-            String browserMes = getOsAndBrowserInfo(request);
-
-            WebRecordPO webRecordPO = new WebRecordPO();
-            webRecordPO.setCreateTime(createTime);
-            webRecordPO.setRecordType(recordType);
-            webRecordPO.setUrl(url);
-            webRecordPO.setRemoteIp(remoteIp);
-            webRecordPO.setBrowserMes(browserMes);
-            webService.insertBrowseRecord(webRecordPO);
+            WebRecordPO webRecordPO = ConvertUtil.createWebRecordPO(RecordTypeEnum.BROWSE.getTypeCode(), null);
+            if (webRecordPO != null) {
+                webService.insertBrowseRecord(webRecordPO);
+            }
         } catch (Throwable e) {
             logger.error("切面写浏览记录发生异常", e);
         }
         return null;
-    }
-
-    /**
-     * 获取操作系统,浏览器及浏览器版本信息
-     *
-     * @param request
-     * @return
-     */
-    public String getOsAndBrowserInfo(HttpServletRequest request) {
-        String browserDetails = request.getHeader("User-Agent");
-        String userAgent = browserDetails;
-        String user = userAgent.toLowerCase();
-
-        String os = "";
-        String browser = "";
-
-        //=================OS Info=======================
-        if (userAgent.toLowerCase().indexOf("windows") >= 0) {
-            os = "Windows";
-        } else if (userAgent.toLowerCase().indexOf("mac") >= 0) {
-            os = "Mac";
-        } else if (userAgent.toLowerCase().indexOf("x11") >= 0) {
-            os = "Unix";
-        } else if (userAgent.toLowerCase().indexOf("android") >= 0) {
-            os = "Android";
-        } else if (userAgent.toLowerCase().indexOf("iphone") >= 0) {
-            os = "IPhone";
-        } else {
-            os = "UnKnown, More-Info: " + userAgent;
-        }
-        //===============Browser===========================
-        if (user.contains("edge")) {
-            browser = (userAgent.substring(userAgent.indexOf("Edge")).split(" ")[0]).replace("/", "-");
-        } else if (user.contains("msie")) {
-            String substring = userAgent.substring(userAgent.indexOf("MSIE")).split(";")[0];
-            browser = substring.split(" ")[0].replace("MSIE", "IE") + "-" + substring.split(" ")[1];
-        } else if (user.contains("safari") && user.contains("version")) {
-            browser = (userAgent.substring(userAgent.indexOf("Safari")).split(" ")[0]).split("/")[0] + "-" + (userAgent
-                    .substring(userAgent.indexOf("Version")).split(" ")[0]).split("/")[1];
-        } else if (user.contains("opr") || user.contains("opera")) {
-            if (user.contains("opera")) {
-                browser =
-                        (userAgent.substring(userAgent.indexOf("Opera")).split(" ")[0]).split("/")[0] + "-" + (userAgent
-                                .substring(userAgent.indexOf("Version")).split(" ")[0]).split("/")[1];
-            } else if (user.contains("opr")) {
-                browser = ((userAgent.substring(userAgent.indexOf("OPR")).split(" ")[0]).replace("/", "-"))
-                        .replace("OPR", "Opera");
-            }
-
-        } else if (user.contains("chrome")) {
-            browser = (userAgent.substring(userAgent.indexOf("Chrome")).split(" ")[0]).replace("/", "-");
-        } else if ((user.indexOf("mozilla/7.0") > -1) || (user.indexOf("netscape6") != -1) || (
-                user.indexOf("mozilla/4.7") != -1) || (user.indexOf("mozilla/4.78") != -1) || (
-                user.indexOf("mozilla/4.08") != -1) || (user.indexOf("mozilla/3") != -1)) {
-            browser = "Netscape-?";
-
-        } else if (user.contains("firefox")) {
-            browser = (userAgent.substring(userAgent.indexOf("Firefox")).split(" ")[0]).replace("/", "-");
-        } else if (user.contains("rv")) {
-            String IEVersion = (userAgent.substring(userAgent.indexOf("rv")).split(" ")[0]).replace("rv:", "-");
-            browser = "IE" + IEVersion.substring(0, IEVersion.length() - 1);
-        } else {
-            browser = "UnKnown, More-Info: " + userAgent;
-        }
-
-        return os + " --- " + browser;
     }
 
 }

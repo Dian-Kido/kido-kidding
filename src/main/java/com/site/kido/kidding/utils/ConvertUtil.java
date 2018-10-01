@@ -2,11 +2,19 @@ package com.site.kido.kidding.utils;
 
 import com.site.kido.kidding.dao.entity.BookPO;
 import com.site.kido.kidding.dao.entity.MoviePO;
+import com.site.kido.kidding.dao.entity.WebRecordPO;
 import com.site.kido.kidding.vo.BookVO;
+import com.site.kido.kidding.vo.MeassgeVO;
 import com.site.kido.kidding.vo.MovieVO;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -15,6 +23,8 @@ import java.util.List;
  * @created 2018/9/21.
  */
 public class ConvertUtil {
+
+    private static final Logger logger = LoggerFactory.getLogger(ConvertUtil.class);
 
     public static MovieVO convertMoviePOToVO(MoviePO moviePO) {
         MovieVO movieVO = null;
@@ -111,4 +121,49 @@ public class ConvertUtil {
         }
         return bookPOList;
     }
+
+    public static WebRecordPO createWebRecordPO(Integer recordType, MeassgeVO meassgeVO) {
+
+        try {
+            HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes())
+                    .getRequest();
+            /**
+             * 创建时间
+             */
+            Date createTime = new Date();
+
+            /**
+             * url
+             */
+            String url = request.getRequestURL().toString();
+
+            /**
+             * 浏览者ip地址
+             */
+            String remoteIp = request.getRemoteAddr();
+
+            /**
+             * 浏览器信息
+             */
+            String browserMes = HttpUtils.getOsAndBrowserInfo(request);
+
+            WebRecordPO webRecordPO = new WebRecordPO();
+            webRecordPO.setRecordType(recordType);//记录类型
+            webRecordPO.setCreateTime(createTime);
+            webRecordPO.setUrl(url);
+            webRecordPO.setRemoteIp(remoteIp);
+            webRecordPO.setBrowserMes(browserMes);
+            if (meassgeVO != null) {
+                webRecordPO.setMesName(meassgeVO.getMesName());
+                webRecordPO.setMesEmail(meassgeVO.getMesEmail());
+                webRecordPO.setMesContent(meassgeVO.getMesContent());
+            }
+            return webRecordPO;
+        } catch (Exception e) {
+            logger.error("记录对象创建失败，recordType={}，meassgeVO={}", recordType, meassgeVO, e);
+            return null;
+        }
+
+    }
+
 }
