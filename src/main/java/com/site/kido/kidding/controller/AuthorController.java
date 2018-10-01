@@ -1,5 +1,6 @@
 package com.site.kido.kidding.controller;
 
+import com.site.kido.kidding.aop.Record;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -18,6 +19,7 @@ public class AuthorController {
      * @param
      * @return
      */
+    @Record
     @RequestMapping(value = "/about")
     public String aboout() {
         return "about-list";
@@ -29,6 +31,7 @@ public class AuthorController {
      * @param
      * @return
      */
+    @Record
     @RequestMapping(value = "/emotion")
     public String emotion() {
         return "emotion";

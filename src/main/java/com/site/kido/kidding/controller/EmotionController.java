@@ -1,5 +1,6 @@
 package com.site.kido.kidding.controller;
 
+import com.site.kido.kidding.aop.Record;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -18,6 +19,7 @@ public class EmotionController {
      * @param
      * @return
      */
+    @Record
     @RequestMapping(value = "/show")
     public String show() {
         return "emotion";

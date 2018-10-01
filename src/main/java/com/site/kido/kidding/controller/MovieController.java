@@ -1,5 +1,6 @@
 package com.site.kido.kidding.controller;
 
+import com.site.kido.kidding.aop.Record;
 import com.site.kido.kidding.meta.consts.Constants;
 import com.site.kido.kidding.meta.consts.MovieTypeEnum;
 import com.site.kido.kidding.service.MovieService;
@@ -35,6 +36,7 @@ public class MovieController {
      * @param
      * @return
      */
+    @Record
     @RequestMapping(value = "/list/{pageNum}/{pageSize}")
     public String list(Model model, @PathVariable Integer pageNum, @PathVariable Integer pageSize) {
         List<MovieVO> movieVOList = movieService.listPage(pageNum, pageSize);
@@ -62,6 +64,7 @@ public class MovieController {
      * @param
      * @return
      */
+    @Record
     @RequestMapping(value = "/listtype/{type}")
     public String listByType(Model model, @PathVariable Integer type) {
 
@@ -92,6 +95,7 @@ public class MovieController {
      * @param
      * @return
      */
+    @Record
     @RequestMapping(value = "/listtypepage/{type}/{pageNum}/{pageSize}")
     public String listPageByType(Model model, @PathVariable Integer type, @PathVariable Integer pageNum,
             @PathVariable Integer pageSize) {
@@ -126,6 +130,7 @@ public class MovieController {
      * @param
      * @return
      */
+    @Record
     @RequestMapping(value = "/search/{searchText}")
     public String search(Model model, @PathVariable String searchText) {
         List<MovieVO> movieVOList = movieService.getByName(searchText);

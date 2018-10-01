@@ -1,5 +1,6 @@
 package com.site.kido.kidding.controller;
 
+import com.site.kido.kidding.aop.Record;
 import com.site.kido.kidding.service.BookService;
 import com.site.kido.kidding.vo.BookVO;
 import com.site.kido.kidding.vo.PageInfo;
@@ -32,6 +33,7 @@ public class BookController {
      * @param
      * @return
      */
+    @Record
     @RequestMapping(value = "/list/{pageNum}/{pageSize}")
     public String list(Model model, @PathVariable Integer pageNum, @PathVariable Integer pageSize) {
         List<BookVO> bookVOList = bookService.listPage(pageNum, pageSize);
