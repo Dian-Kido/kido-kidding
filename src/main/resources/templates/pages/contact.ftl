@@ -14,15 +14,17 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your Name *" id="name" required=""
-                                       data-validation-required-message="Please enter your name.">
+                                <input type="text" class="form-control" placeholder="Your Name *" id="mesName"
+                                       required=""
+                                       data-validation-required-message="Please enter your name." name="mesName">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Your Email *" id="email"
-                                       required="" data-validation-required-message="Please enter your email address.">
+                                <input type="email" class="form-control" placeholder="Your Email *" id="mesEmail"
+                                       required="" data-validation-required-message="Please enter your email address."
+                                       name="mesEmail">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -30,8 +32,9 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
-                                <textarea class="form-control" placeholder="Your Message *" id="message" required=""
-                                          data-validation-required-message="Please enter a message."></textarea>
+                                <textarea class="form-control" placeholder="Your Message *" id="mesContent" required=""
+                                          data-validation-required-message="Please enter a message."
+                                          name="mesContent"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -40,7 +43,7 @@
                     <div class="row">
                         <div class="col-lg-12 text-center">
                             <div id="success"></div>
-                            <button type="submit" class="btn">Send Message</button>
+                            <button onclick="sendMsg()" class="btn">Send Message</button>
                         </div>
                     </div>
                 </form>

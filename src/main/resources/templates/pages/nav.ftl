@@ -16,6 +16,10 @@
             <div class="navbar-collapse movie-bar-font">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
+                        <a href="http://localhost:8080/tab/show">NAVIGATION</a>
+                    </li>
+
+                    <li>
                         <a href="http://localhost:4000/">BLOG</a>
                     </li>
 
@@ -27,13 +31,9 @@
                     <li>
                         <a href="http://localhost:8080/book/list/1/6">BOOK</a>
                     </li>
-
+                    
                     <li>
-                        <a href="http://localhost:8080/tab/show">NAVIGATION</a>
-                    </li>
-
-                    <li>
-                        <a href="http://localhost:8080/author/about">ABOUT</a>
+                        <a href="http://localhost:8080/author/about">ABOUT ME</a>
                     </li>
 
 
