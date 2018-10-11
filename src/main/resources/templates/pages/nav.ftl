@@ -16,7 +16,7 @@
             <div class="navbar-collapse movie-bar-font">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="http://localhost:8080/tab/show">NAVIGATION</a>
+                        <a href="/tab/show">NAVIGATION</a>
                     </li>
 
                     <li>
@@ -25,15 +25,15 @@
 
                     <!-- movie 和 book  属于跳转外部网站 -->
                     <li>
-                        <a href="http://localhost:8080/movie/list/1/6">MOVIE</a>
+                        <a href="/movie/list/1/6">MOVIE</a>
                     </li>
 
                     <li>
-                        <a href="http://localhost:8080/book/list/1/6">BOOK</a>
+                        <a href="/book/list/1/6">BOOK</a>
                     </li>
-                    
+
                     <li>
-                        <a href="http://localhost:8080/author/about">ABOUT ME</a>
+                        <a href="/author/about">ABOUT ME</a>
                     </li>
 
 
