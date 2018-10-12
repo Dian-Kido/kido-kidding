@@ -47,6 +47,7 @@ function sendMsg() {
                     timer: 2000,
                     confirmButtonColor: "#000000",
                     customClass: 'swal-kido',
+                    confirmButtonClass: 'swal-kido'
                 }).then(
                     function () {
                     },
