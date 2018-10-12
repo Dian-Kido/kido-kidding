@@ -31,20 +31,32 @@ function sendMsg() {
     var mesContent = $("#mesContent").val();
 
     jQuery.ajax({
-        type: "POST",
-        contentType: "application/x-www-form-urlencoded;charset=utf-8",
-        data: {
-            "mesName": mesName,
-            "mesEmail": mesEmail,
-            "mesContent": mesContent
-        },
-        url: "/msg/send",
-        dataType: "html",
-        success: function (_data) {
-            // 成功提交
-            // $("#commodityDiscoveryBody").html(_data);
-            // prepareForCheckbox();// 设置单选全选按钮功能
-            // prepareForRiskInfo();// 设置风险等级按钮功能
+            type: "POST",
+            contentType: "application/x-www-form-urlencoded;charset=utf-8",
+            data: {
+                "mesName": mesName,
+                "mesEmail": mesEmail,
+                "mesContent": mesContent
+            },
+            url: "/msg/send",
+            dataType: "html",
+            success: function (_data) {
+                swal({
+                    title: _data,
+                    text: '2秒后自动关闭',
+                    timer: 2000,
+                    confirmButtonColor: "#000000"
+                }).then(
+                    function () {
+                    },
+                    // handling the promise rejection
+                    function (dismiss) {
+                        if (dismiss === 'timer') {
+                            console.log('I was closed by the timer')
+                        }
+                    }
+                );
+            }
         }
-    });
+    );
 }

@@ -27,4 +27,6 @@
 
     <link href="/css/kido.css" rel="stylesheet" type="text/css">
 
+    <link href="/css/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet" type="text/css">
+
 </head>

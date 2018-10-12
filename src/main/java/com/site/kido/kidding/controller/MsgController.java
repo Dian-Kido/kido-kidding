@@ -5,6 +5,7 @@ import com.site.kido.kidding.meta.consts.RecordTypeEnum;
 import com.site.kido.kidding.service.WebService;
 import com.site.kido.kidding.utils.ConvertUtil;
 import com.site.kido.kidding.vo.MeassgeVO;
+import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,9 +38,7 @@ public class MsgController {
     @ResponseBody
     public String send(@RequestParam(value = "mesName") String mesName,
             @RequestParam(value = "mesEmail") String mesEmail, @RequestParam(value = "mesContent") String mesContent) {
-
-        if (mesName == null || mesEmail == null || mesContent == null) {
-
+        if (StringUtils.isBlank(mesName) && StringUtils.isBlank(mesEmail) && StringUtils.isBlank(mesContent)) {
             logger.error("Funny ?");
             return "Funny ?";
         }
@@ -53,11 +52,9 @@ public class MsgController {
             webService.insertMessageRecord(webRecordPO);
         }
 
-        if (mesEmail != null) {
-            logger.error("Send Success, I Will Contact You Soon...");
+        if (StringUtils.isNotBlank(mesEmail)) {
             return "Send Success, I Will Contact You Soon...";
         }
-        logger.error("Send Success");
         return "Send Success";
     }
 

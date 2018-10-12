@@ -10,7 +10,7 @@
         </div>
         <div class="row">
             <div class="col-lg-12 text-center">
-                <form name="sentMessage" id="contactForm" novalidate="">
+                <form name="sentMessage" id="" novalidate="">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
@@ -43,7 +43,7 @@
                     <div class="row">
                         <div class="col-lg-12 text-center">
                             <div id="success"></div>
-                            <button onclick="sendMsg()" class="btn">Send Message</button>
+                            <div href="javascript:void(0);" onclick="sendMsg()" class="btn">Send Message</div>
                         </div>
                     </div>
                 </form>
