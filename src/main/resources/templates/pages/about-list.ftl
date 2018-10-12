@@ -8,7 +8,7 @@
             <div class="col-lg-12 text-center">
                 <div class="section-title author-section-title">
                     <h2>About Author</h2>
-                    <p>看惯了人前的一面，以为眼见为实，其实，每个人都有着属于自己的沉重包袱，和那不为人知的复杂内心</p>
+                    <p>看惯了人前的一面，以为眼见为实，然而，每个人都有着属于自己的沉重包袱，和不为人知的复杂内心</p>
                 </div>
             </div>
         </div>

@@ -8,8 +8,8 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <div class="section-title movie-title">
-                    <h2>movie recommendation</h2>
-                    <p>电影发明之后，人类的生命，比起以前延长了三倍</p>
+                    <h2>电影推荐</h2>
+                    <p>We never killed anyone, but we all know ... what it's like to kill</p>
                 </div>
             </div>
         </div>

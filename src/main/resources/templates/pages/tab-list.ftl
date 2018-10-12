@@ -10,7 +10,7 @@
             <div class="container">
                 <div class="heading">
                     <h2>网站导航</h2>
-                    <h3>I thought Google eliminated the need to ask questions out loud, but fine.</h3>
+                    <p>I thought Google eliminated the need to ask questions out loud, but fine.</p>
                 </div>
             </div>
             <div class="row">
