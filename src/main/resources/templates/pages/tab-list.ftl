@@ -53,7 +53,7 @@
                             src="/images/tabs/wallpaperswide.png" alt=""></a>
                     </li>
 
-                    <li class="current resource col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <li class="current learn col-xs-6 col-sm-4 col-md-3 col-lg-3">
                         <a target="_blank" href="https://www.topys.cn/"><span class="hoverBox"> <span
                                 class="smallIcon"> <i
                                 class="fa fa-search fa-2x"></i></a>  </span> </span> <img

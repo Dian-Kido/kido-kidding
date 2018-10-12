@@ -45,7 +45,8 @@ function sendMsg() {
                     title: _data,
                     text: '2秒后自动关闭',
                     timer: 2000,
-                    confirmButtonColor: "#000000"
+                    confirmButtonColor: "#000000",
+                    customClass: 'swal-kido',
                 }).then(
                     function () {
                     },
@@ -59,4 +60,32 @@ function sendMsg() {
             }
         }
     );
+}
+
+function showEmotion() {
+    swal({
+        title: 'Are you sure you want to see it?',
+        text: "a little suggestion: DON'T",
+        // type: 'warning',
+
+        customClass: 'swal-kido',
+        confirmButtonClass: 'swal-kido',
+        cancelButtonClass: 'swal-kido',
+
+        showCancelButton: true,
+        confirmButtonColor: '#000000',
+        cancelButtonColor: '#606060',
+        confirmButtonText: 'Sure',
+        cancelButtonText: 'No',
+
+        closeOnConfirm: false,
+        closeOnCancel: false
+    }).then(function (result) {
+        if (result.value === true) {
+            window.open("/author/emotion");
+        } else {
+            //do nothing
+        }
+    })
+    ;
 }

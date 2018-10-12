@@ -20,9 +20,8 @@
                         <img src="/images/demo/portfolio-1.jpg" alt="img02" class="img-responsive"/>
                         <figcaption>
                             <h2>Emotion</h2>
-                            <p>Branding, Design</p>
-                            <a target="_blank" href="http://localhost:8080/author/emotion">View
-                                more</a>
+                            <p>内心</p>
+                            <a onclick="showEmotion()">View more</a>
                         </figcaption>
                     </figure>
                 </div>

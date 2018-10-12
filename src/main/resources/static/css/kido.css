@@ -204,3 +204,7 @@ a:active {
 .author-section-title {
     margin-top: 100px;
 }
+
+.swal-kido {
+    border-radius: 0px !important;
+}
