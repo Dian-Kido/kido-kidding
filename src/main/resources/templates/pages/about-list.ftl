@@ -19,9 +19,9 @@
                     <figure class="effect-bubba">
                         <img src="/images/demo/portfolio-1.jpg" alt="img02" class="img-responsive"/>
                         <figcaption>
-                            <h2>Emotion</h2>
-                            <p>内心</p>
-                            <a onclick="showEmotion()">View more</a>
+                            <h2>Wish List</h2>
+                            <p>愿望清单</p>
+                            <a href="/author/wish" target="_blank">View more</a>
                         </figcaption>
                     </figure>
                 </div>
@@ -31,11 +31,11 @@
             <div class="col-md-6 col-0-gutter">
                 <div class="ot-portfolio-item">
                     <figure class="effect-bubba">
-                        <img src="/images/demo/portfolio-2.jpg" alt="img02" class="img-responsive"/>
+                        <img src="/images/demo/portfolio-1.jpg" alt="img02" class="img-responsive"/>
                         <figcaption>
-                            <h2>Startup Framework</h2>
-                            <p>Branding, Web Design</p>
-                            <a href="#" data-toggle="modal" data-target="#Modal-2">View more</a>
+                            <h2>Emotion</h2>
+                            <p>内心</p>
+                            <a onclick="showEmotion()">View more</a>
                         </figcaption>
                     </figure>
                 </div>
@@ -61,11 +61,11 @@
             <div class="col-md-6 col-0-gutter">
                 <div class="ot-portfolio-item">
                     <figure class="effect-bubba">
-                        <img src="/images/demo/portfolio-4.jpg" alt="img02" class="img-responsive"/>
+                        <img src="/images/demo/portfolio-1.jpg" alt="img02" class="img-responsive"/>
                         <figcaption>
-                            <h2>Smart Name</h2>
-                            <p>Branding, Design</p>
-                            <a href="#" data-toggle="modal" data-target="#Modal-4">View more</a>
+                            <h2>affection</h2>
+                            <p>情感</p>
+                            <a href="/author/affection" target="_blank">View more</a>
                         </figcaption>
                     </figure>
                 </div>

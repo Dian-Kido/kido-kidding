@@ -26,6 +26,18 @@ public class AuthorController {
     }
 
     /**
+     * affection
+     *
+     * @param
+     * @return
+     */
+    @Record
+    @RequestMapping(value = "/affection")
+    public String affection() {
+        return "affection";
+    }
+
+    /**
      * emotion
      *
      * @param
@@ -47,6 +59,18 @@ public class AuthorController {
     @RequestMapping(value = "/pipi")
     public String pipi() {
         return "pipi";
+    }
+
+    /**
+     * wish
+     *
+     * @param
+     * @return
+     */
+    @Record
+    @RequestMapping(value = "/wish")
+    public String wish() {
+        return "wish-list";
     }
 
 }

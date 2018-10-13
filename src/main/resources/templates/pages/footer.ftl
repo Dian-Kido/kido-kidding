@@ -17,7 +17,7 @@
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/SmoothScroll.js"></script>
 <script src="/js/theme-scripts.js"></script>
-<script src="/js/hux-blog.js"></script>
+<#--<script src="/js/hux-blog.js"></script>-->
 <script src="/js/sweetalert2/dist/sweetalert2.all.min.js"></script>
 
 
