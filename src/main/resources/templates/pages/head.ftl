@@ -14,19 +14,13 @@
 
 
     <link href="/css/font-Raleway.css" rel="stylesheet">
+    <!-- 整体css  -->
     <link href="/css/style.css" rel="stylesheet">
 
     <!-- github hux-blog css-->
     <link href="/css/hux-blog.css" rel="stylesheet">
 
-    <!-- book style  -->
-    <link rel="stylesheet" href="/css/book/style.css">
-
-    <!-- tab style  -->
-    <link rel="stylesheet" href="/css/tab/main.css">
-
-
-    <!-- 整体css + book + movie style  -->
+    <!-- kido css  -->
     <link href="/css/kido.css" rel="stylesheet" type="text/css">
 
     <!-- 弹窗 -->

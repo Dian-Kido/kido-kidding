@@ -1,4 +1,8 @@
 <#include "head.ftl">
+<!-- tab style  -->
+<link rel="stylesheet" href="/css/tab/main.css">
+
+
 <body id="page-top">
 <#include "nav.ftl">
 
@@ -212,5 +216,7 @@
 <#include "contact.ftl">
 
 <#include "footer.ftl">
+<script src="/js/tab/custom.js"></script>
+
 </body>
 </html>

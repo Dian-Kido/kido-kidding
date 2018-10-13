@@ -1,4 +1,7 @@
 <#include "head.ftl">
+<!-- book style  -->
+<link rel="stylesheet" href="/css/book/style.css">
+
 <body id="page-top">
 
 <#include "nav.ftl">
