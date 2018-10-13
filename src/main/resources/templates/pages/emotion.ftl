@@ -1,11 +1,18 @@
 <!DOCTYPE HTML>
 <html>
-<#include "emotion-head.ftl">
-<body>
+<#include "head.ftl">
+<!-- Animate.css -->
+<link rel="stylesheet" href="/css/emotion/animate.css">
+<!-- Flexslider -->
+<link rel="stylesheet" href="/css/emotion/flexslider.css">
+<!-- Theme style  -->
+<link rel="stylesheet" href="/css/emotion/style.css">
 
+<body>
+<#include "nav.ftl">
 <div class="gtco-loader"></div>
 
-<div id="page">
+<div id="page-top">
 
     <div id="gtco-hero" class="js-fullheight" data-section="home">
         <div class="flexslider js-fullheight">
@@ -54,7 +61,15 @@
     <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 </div>
 
+<#include "footer.ftl">
 
-<#include "emotion-footer.ftl">
+<!-- Flexslider -->
+<script src="/js/emotion/jquery.flexslider-min.js"></script>
+<!-- Magnific Popup -->
+<script src="/js/emotion/jquery.magnific-popup.min.js"></script>
+<script src="/js/emotion/magnific-popup-options.js"></script>
+<!-- Main -->
+<script src="/js/emotion/main.js"></script>
+
 </body>
 </html>
