@@ -61,6 +61,7 @@
     <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 </div>
 
+<#include "contact.ftl">
 <#include "footer.ftl">
 
 <!-- Flexslider -->
