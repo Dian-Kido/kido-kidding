@@ -20,7 +20,7 @@
     </div>
 </header>
 
-<section id="team">
+<section id="">
     <div class="container">
 
         <div class="row">

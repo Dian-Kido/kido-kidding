@@ -12,7 +12,7 @@
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- all + movie style  -->
+
     <link href="/css/font-Raleway.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
 
@@ -25,8 +25,11 @@
     <!-- tab style  -->
     <link rel="stylesheet" href="/css/tab/main.css">
 
+
+    <!-- 整体css + book + movie style  -->
     <link href="/css/kido.css" rel="stylesheet" type="text/css">
 
+    <!-- 弹窗 -->
     <link href="/css/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet" type="text/css">
 
 </head>

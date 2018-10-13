@@ -208,3 +208,15 @@ a:active {
 .swal-kido {
     border-radius: 0px !important;
 }
+
+.pipi-main {
+    padding-top: 100px;
+}
+
+.pipi-list-ul {
+    padding-inline-start: 0px;
+}
+
+.pipi-list-section {
+    padding: 0px 0px 0px 0px;
+}

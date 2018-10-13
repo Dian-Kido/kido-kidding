@@ -47,11 +47,11 @@
             <div class="col-md-6 col-0-gutter">
                 <div class="ot-portfolio-item">
                     <figure class="effect-bubba">
-                        <img src="/images/demo/portfolio-3.jpg" alt="img02" class="img-responsive"/>
+                        <img src="/images/demo/portfolio-1.jpg" alt="img02" class="img-responsive"/>
                         <figcaption>
-                            <h2>Lamp & Velvet</h2>
-                            <p>Branding, Web Design</p>
-                            <a href="#" data-toggle="modal" data-target="#Modal-3">View more</a>
+                            <h2>pipi</h2>
+                            <p>皮皮的日常</p>
+                            <a href="/author/pipi" target="_blank">View more</a>
                         </figcaption>
                     </figure>
                 </div>

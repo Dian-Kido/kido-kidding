@@ -1,0 +1,271 @@
+/*===== main ===*/
+
+main[role="main-home-wrapper"], main[role="main-inner-wrapper"] {
+    padding-bottom: 90px
+}
+
+main[role="main-home-wrapper"] article[role="pge-title-content"], main[role="main-inner-wrapper"] article[role="pge-title-content"] {
+    padding-left: 41px
+}
+
+main[role="main-home-wrapper"] article[role="pge-title-content"] header, main[role="main-inner-wrapper"] article[role="pge-title-content"] header {
+    padding-bottom: 19px;
+    padding-top: 83px
+}
+
+main[role="main-home-wrapper"] article[role="pge-title-content"] header h2, main[role="main-inner-wrapper"] article[role="pge-title-content"] header h2 {
+    font-size: 46px;
+    line-height: 53px;
+    color: #404040;
+    font-weight: 800
+}
+
+main[role="main-home-wrapper"] article[role="pge-title-content"] header h2 span, main[role="main-inner-wrapper"] article[role="pge-title-content"] header h2 span {
+    display: block;
+    font-size: 80px;
+    color: #fb5353;
+    padding-bottom: 15px
+}
+
+main[role="main-home-wrapper"] article[role="pge-title-content"] p, main[role="main-inner-wrapper"] article[role="pge-title-content"] p {
+    font-size: 20px;
+    line-height: 30px;
+    color: #454545
+}
+
+/*===== About ===*/
+
+main[role="main-inner-wrapper"] .about-content {
+    background-color: #fb5353;
+    padding-top: 57px;
+    padding-left: 70px;
+    padding-right: 67px;
+    padding-bottom: 58px
+}
+
+main[role="main-inner-wrapper"] .about-content p {
+    font-size: 17px;
+    line-height: 30px;
+    color: #FFF;
+    padding-bottom: 20px
+}
+
+main[role="main-inner-wrapper"] .thumbnails-pan {
+    padding-top: 30px
+}
+
+main[role="main-inner-wrapper"] .thumbnails-pan section figure {
+    background-color: #FFF;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer
+}
+
+main[role="main-inner-wrapper"] .thumbnails-pan section figure, main[role="main-inner-wrapper"] .thumbnails-pan section figure, img, main[role="main-inner-wrapper"] .thumbnails-pan section figure figcaption, section.blog-content figure, section.blog-content figure img, section.blog-content article {
+    transition-delay: 0s;
+    transition-duration: 0.6s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+main[role="main-inner-wrapper"] .thumbnails-pan section figure figcaption {
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    right: 0;
+    background-color: #fb5353;
+    margin: 0 69px;
+    text-align: center;
+    color: #FFF;
+    padding-top: 16px;
+    padding-bottom: 27px
+}
+
+main[role="main-inner-wrapper"] .thumbnails-pan section figure figcaption h3 {
+    font-size: 21px;
+    line-height: 22px;
+    font-weight: 300
+}
+
+main[role="main-inner-wrapper"] .thumbnails-pan section figure figcaption h5 {
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 14px;
+    font-weight: bold
+}
+
+main[role="main-inner-wrapper"] .thumbnails-pan section figure:hover, section.blog-content:hover article {
+    background-color: #fb5353;
+    color: #FFF
+}
+
+main[role="main-inner-wrapper"] .thumbnails-pan section figure:hover img, section.blog-content:hover figure img {
+    -webkit-transform: scale3d(1.08, 1.08, 2);
+    transform: scale3d(1.08, 1.08, 2);
+    opacity: 0.5
+}
+
+main[role="main-inner-wrapper"] .thumbnails-pan section figure:hover figcaption {
+    bottom: 0;
+}
+
+/*===== Blog ===*/
+
+article[role="pge-title-content"].blog-header {
+    padding-bottom: 218px
+}
+
+section.blog-content {
+    margin-bottom: 29px
+}
+
+section.blog-content figure {
+    overflow: hidden;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer
+}
+
+section.blog-content figure .post-date {
+    text-align: center;
+    color: #FFF;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    display: block;
+    background-color: #fb5353;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 41px;
+    z-index: 50
+}
+
+section.blog-content figure .post-date span {
+    font-size: 50px;
+    line-height: 35px;
+    display: block
+}
+
+section.blog-content article {
+    font-size: 21px;
+    line-height: 30px;
+    color: #FFF;
+    font-weight: 800;
+    color: #343434;
+    padding-left: 42px;
+    padding-top: 33px;
+    padding-bottom: 31px;
+}
+
+section.blog-content:hover figure img {
+    opacity: 0.5
+}
+
+/*===== Contact ===*/
+
+article[role="pge-title-content"].contact-header {
+    padding-bottom: 218px
+}
+
+article[role="pge-title-content"].contact-header p a {
+    color: #343434;
+    padding-right: 34px
+}
+
+article[role="pge-title-content"].contact-header p a:hover {
+    color: #fb5353;
+    text-decoration: none
+}
+
+.demo-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    height: 499px;
+}
+
+#surabaya {
+    width: 100%;
+    height: 100%;
+}
+
+.error_message {
+    color: #e84d49
+}
+
+#success_page h3, #success_page p {
+    color: #60ca6f
+}
+
+.contat-from-wrapper {
+    padding: 0 69px;
+    margin-top: 108px
+}
+
+.contat-from-wrapper input[type="text"], .contat-from-wrapper input[type="email"], .contat-from-wrapper textarea {
+    width: 100%;
+    display: block;
+    outline: none;
+    border-bottom: 1px solid #bbbbbb;
+    background-color: inherit;
+    color: #404040;
+    font-size: 21px;
+    line-height: 23px;
+    padding-bottom: 24px
+}
+
+.contat-from-wrapper input[type="text"]:focus, .contat-from-wrapper input[type="email"]:focus, .contat-from-wrapper textarea:focus {
+    border-bottom-color: #9f9e9e
+}
+
+.contat-from-wrapper form ::-webkit-input-placeholder {
+    color: #404040;
+}
+
+.contat-from-wrapper form ::-moz-placeholder {
+    color: #404040;
+}
+
+/* firefox 19+ */
+
+.contat-from-wrapper form :-ms-input-placeholder {
+    color: #404040;
+}
+
+/* ie */
+
+.contat-from-wrapper form input:-moz-placeholder {
+    color: #404040;
+}
+
+.contat-from-wrapper textarea {
+    border-bottom: 1px solid #bbbbbb;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    height: 77px;
+    margin-top: 56px
+}
+
+.contat-from-wrapper input[type="submit"] {
+    display: block;
+    border: none;
+    outline: none;
+    width: 200px;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-size: 21px;
+    color: #FFF;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background-color: #e84d49;
+    margin: 41px auto;
+    margin-bottom: 0
+}
+
+.contat-from-wrapper input[type="submit"]:hover {
+    background-color: #f8524e
+}

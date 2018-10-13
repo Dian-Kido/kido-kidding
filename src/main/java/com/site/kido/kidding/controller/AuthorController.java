@@ -37,4 +37,16 @@ public class AuthorController {
         return "emotion";
     }
 
+    /**
+     * pipi
+     *
+     * @param
+     * @return
+     */
+    @Record
+    @RequestMapping(value = "/pipi")
+    public String pipi() {
+        return "pipi";
+    }
+
 }
