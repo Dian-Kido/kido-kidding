@@ -26,18 +26,6 @@ public class AuthorController {
     }
 
     /**
-     * affection
-     *
-     * @param
-     * @return
-     */
-    @Record
-    @RequestMapping(value = "/affection")
-    public String affection() {
-        return "affection";
-    }
-
-    /**
      * emotion
      *
      * @param
