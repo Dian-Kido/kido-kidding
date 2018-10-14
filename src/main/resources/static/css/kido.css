@@ -220,3 +220,21 @@ a:active {
 .pipi-list-section {
     padding: 0px 0px 0px 0px;
 }
+
+.wish-service-head {
+    margin-top: 57px;
+    margin-bottom: 30px;
+}
+
+.wish-service-head h2 {
+    font-weight: 300;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.wish-service-head p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 33px;
+    margin: 25px 100px 30px 100px;
+}
