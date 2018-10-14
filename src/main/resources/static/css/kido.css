@@ -265,3 +265,34 @@ a:active {
 .swiper-container-text-right {
     padding: 1em 4em 1em 2em !important;
 }
+
+.container-book-img {
+    padding: 2em 4em 2em 4em !important;
+
+}
+
+.container-book-list-img {
+    max-height: 300px;
+    max-width: 227px;
+}
+
+.container-book-text {
+    padding: 2em 2em 2em 2em !important;
+}
+
+.book-grid {
+    margin: 2em 0;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -o-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.wish-grid {
+    margin: 2em 0;
+}

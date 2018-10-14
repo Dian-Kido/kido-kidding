@@ -14,7 +14,7 @@
             <p>If you want something you have never had, you must be willing to do something you have never done.</p>
         <#--<span class="border one"></span>-->
         </div>
-        <div class="news-grid w3l-agile">
+        <div class="wish-grid w3l-agile">
             <div class="col-md-5 news-img swiper-container-img">
             <#--<a href="#" data-toggle="modal" data-target="#myModal1"> <img src="images/b1.jpg" alt=" "-->
             <#--class="img-responsive"></a>-->
@@ -58,7 +58,7 @@
 
 
         <!-- 左右对换 -->
-        <div class="news-grid">
+        <div class="wish-grid">
 
             <div class="col-md-7 news-text two  swiper-container-text-left">
                 <h3><a href="#" data-toggle="modal" data-target="#myModal1">HERE GOES AN AWESOME BLOG TITLE</a></h3>
