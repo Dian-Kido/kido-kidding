@@ -104,6 +104,11 @@ public class BookPO implements Serializable {
     private String doubanLink;
 
     /**
+     * 推荐指数 <= 5的整数
+     */
+    private Integer recommendIndex;
+
+    /**
      * 是否隐藏
      */
     private Boolean hide;
@@ -252,6 +257,14 @@ public class BookPO implements Serializable {
         this.doubanLink = doubanLink;
     }
 
+    public Integer getRecommendIndex() {
+        return recommendIndex;
+    }
+
+    public void setRecommendIndex(Integer recommendIndex) {
+        this.recommendIndex = recommendIndex;
+    }
+
     public Boolean getHide() {
         return hide;
     }
@@ -281,6 +294,7 @@ public class BookPO implements Serializable {
         sb.append(", readDate=").append(readDate);
         sb.append(", downloadLink='").append(downloadLink).append('\'');
         sb.append(", doubanLink='").append(doubanLink).append('\'');
+        sb.append(", recommendIndex=").append(recommendIndex);
         sb.append(", hide=").append(hide);
         sb.append('}');
         return sb.toString();
