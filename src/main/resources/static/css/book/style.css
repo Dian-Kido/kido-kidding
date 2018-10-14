@@ -343,3 +343,7 @@ span.border.one:after {
 .wthree_about_right_grid:nth-child(2) {
     margin-bottom: 2em;
 }
+
+.book-author {
+    margin-bottom: 10px;
+}

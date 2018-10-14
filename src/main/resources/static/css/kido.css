@@ -274,6 +274,7 @@ a:active {
 .container-book-list-img {
     max-height: 300px;
     max-width: 227px;
+    margin-left: 24px;
 }
 
 .container-book-text {
