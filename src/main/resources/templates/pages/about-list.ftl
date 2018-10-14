@@ -64,7 +64,7 @@
                         <img src="/images/author/sry800*533.jpg" alt="img02" class="img-responsive"/>
                         <figcaption>
                             <h2>Nothing...</h2>
-                            <p>找产品提需啊....Oh,没有~</p>
+                            <p>找产品提需求啊....Oh,没有~</p>
                             <a href="#" target="_blank">View more</a>
                         </figcaption>
                     </figure>
