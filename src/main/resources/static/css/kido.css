@@ -255,7 +255,7 @@ a:active {
 }
 
 .swiper-container-img {
-    padding: 1em 2em 1em 2em !important;
+    padding: 1em 0em 1em 2em !important;
 }
 
 .swiper-container-text-left {
@@ -263,7 +263,7 @@ a:active {
 }
 
 .swiper-container-text-right {
-    padding: 1em 4em 1em 2em !important;
+    padding: 1em 2em 1em 1em !important;
 }
 
 .container-book-img {
@@ -296,4 +296,18 @@ a:active {
 
 .wish-grid {
     margin: 2em 0;
+}
+
+a.read-check {
+    padding: 0.5em 1.5em;
+    font-size: 1em;
+    border: 2px solid black;
+    text-decoration: none;
+    border-radius: 1.5em;
+    -webkit-border-radius: 1.5em;
+    -moz-border-radius: 1.5em;
+    -o-border-radius: 1.5em;
+    -ms-border-radius: 1.5em;
+    background: black;
+    color: #fff;
 }
