@@ -17,7 +17,7 @@
             <div class="col-md-6 col-0-gutter">
                 <div class="ot-portfolio-item">
                     <figure class="effect-bubba">
-                        <img src="/images/demo/portfolio-1.jpg" alt="img02" class="img-responsive"/>
+                        <img src="/images/author/wish-cover800*533.jpg" alt="img02" class="img-responsive"/>
                         <figcaption>
                             <h2>Wish List</h2>
                             <p>愿望清单</p>
@@ -31,7 +31,7 @@
             <div class="col-md-6 col-0-gutter">
                 <div class="ot-portfolio-item">
                     <figure class="effect-bubba">
-                        <img src="/images/demo/portfolio-1.jpg" alt="img02" class="img-responsive"/>
+                        <img src="/images/author/emotion-cover800*533.jpg" alt="img02" class="img-responsive"/>
                         <figcaption>
                             <h2>Emotion</h2>
                             <p>内心</p>
@@ -47,7 +47,7 @@
             <div class="col-md-6 col-0-gutter">
                 <div class="ot-portfolio-item">
                     <figure class="effect-bubba">
-                        <img src="/images/demo/portfolio-1.jpg" alt="img02" class="img-responsive"/>
+                        <img src="/images/author/pipi-cover800*533.jpg" alt="img02" class="img-responsive"/>
                         <figcaption>
                             <h2>pipi</h2>
                             <p>皮皮的日常</p>
@@ -61,47 +61,18 @@
             <div class="col-md-6 col-0-gutter">
                 <div class="ot-portfolio-item">
                     <figure class="effect-bubba">
-                        <img src="/images/demo/portfolio-1.jpg" alt="img02" class="img-responsive"/>
+                        <img src="/images/author/sry800*533.jpg" alt="img02" class="img-responsive"/>
                         <figcaption>
-                            <h2>affection</h2>
-                            <p>情感</p>
-                            <a href="/author/affection" target="_blank">View more</a>
+                            <h2>Nothing...</h2>
+                            <p>找产品提需啊....Oh,没有~</p>
+                            <a href="#" target="_blank">View more</a>
                         </figcaption>
                     </figure>
                 </div>
             </div>
             <!-- end portfolio item -->
         </div>
-        <div class="row row-0-gutter">
-            <!-- start portfolio item -->
-            <div class="col-md-6 col-0-gutter">
-                <div class="ot-portfolio-item">
-                    <figure class="effect-bubba">
-                        <img src="/images/demo/portfolio-5.jpg" alt="img02" class="img-responsive"/>
-                        <figcaption>
-                            <h2>Fast People</h2>
-                            <p>Branding, Web Design</p>
-                            <a href="#" data-toggle="modal" data-target="#Modal-5">View more</a>
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-            <!-- end portfolio item -->
-            <!-- start portfolio item -->
-            <div class="col-md-6 col-0-gutter">
-                <div class="ot-portfolio-item">
-                    <figure class="effect-bubba">
-                        <img src="/images/demo/portfolio-6.jpg" alt="img02" class="img-responsive"/>
-                        <figcaption>
-                            <h2>Kites & Stars</h2>
-                            <p>Branding, Web Design</p>
-                            <a href="#" data-toggle="modal" data-target="#Modal-2">View more</a>
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-            <!-- end portfolio item -->
-        </div>
+
     </div><!-- container -->
 </section>
 

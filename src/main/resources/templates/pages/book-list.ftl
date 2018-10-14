@@ -43,8 +43,14 @@
                     <ul class="news">
                         <li><i class="glyphicon glyphicon-user book-author"></i>${bookVO.author}</li>
                         </br>
-                        <i class="glyphicon glyphicon-heart"></i><i class="glyphicon glyphicon-heart"></i><i
-                            class="glyphicon glyphicon-heart"></i><i class="glyphicon glyphicon-heart"></i>
+
+                        <#if bookVO.recommendIndex?exists>
+                            <#list 1..bookVO.recommendIndex as i>
+                                <i class="glyphicon glyphicon-heart"></i>
+                            </#list>
+                        </#if>
+
+
                     <#--<li><i class="glyphicon glyphicon-comment"></i> <a href="#">2 Comments</a></li>-->
                     <#--<li><i class="glyphicon glyphicon-heart"></i> <a href="#">50 Likes</a></li>-->
                     <#--<li><i class="glyphicon glyphicon-tags"></i> <a href="#">3 Tags</a></li>-->
