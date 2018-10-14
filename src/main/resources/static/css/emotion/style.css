@@ -186,6 +186,10 @@
     color: #fff;
 }
 
+#gtco-hero .flexslider .slider-text > .slider-text-inner p {
+    color: #fff;
+}
+
 @media screen and (max-width: 768px) {
     #gtco-hero .flexslider .slider-text > .slider-text-inner h2 {
         font-size: 40px;

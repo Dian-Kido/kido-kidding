@@ -21,7 +21,7 @@
                         <figcaption>
                             <h2>Wish List</h2>
                             <p>愿望清单</p>
-                            <a href="/author/wish" target="_blank">View more</a>
+                            <a href="/author/wish">View more</a>
                         </figcaption>
                     </figure>
                 </div>
@@ -51,7 +51,7 @@
                         <figcaption>
                             <h2>pipi</h2>
                             <p>皮皮的日常</p>
-                            <a href="/author/pipi" target="_blank">View more</a>
+                            <a href="/author/pipi">View more</a>
                         </figcaption>
                     </figure>
                 </div>
@@ -65,7 +65,7 @@
                         <figcaption>
                             <h2>Nothing...</h2>
                             <p>找产品提需求啊....Oh,没有~</p>
-                            <a href="#" target="_blank">View more</a>
+                            <a href="javascript:void(0);">View more</a>
                         </figcaption>
                     </figure>
                 </div>

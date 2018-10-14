@@ -83,7 +83,7 @@ function showEmotion() {
         closeOnCancel: false
     }).then(function (result) {
         if (result.value === true) {
-            window.open("/author/emotion");
+            window.location.href = "/author/emotion";
         } else {
             //do nothing
         }
