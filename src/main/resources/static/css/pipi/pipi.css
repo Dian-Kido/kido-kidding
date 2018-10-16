@@ -102,7 +102,7 @@ main[role="main-inner-wrapper"] .thumbnails-pan section figure:hover, section.bl
 main[role="main-inner-wrapper"] .thumbnails-pan section figure:hover img, section.blog-content:hover figure img {
     -webkit-transform: scale3d(1.08, 1.08, 2);
     transform: scale3d(1.08, 1.08, 2);
-    opacity: 0.5
+    opacity: 1
 }
 
 main[role="main-inner-wrapper"] .thumbnails-pan section figure:hover figcaption {
@@ -162,7 +162,7 @@ section.blog-content article {
 }
 
 section.blog-content:hover figure img {
-    opacity: 0.5
+    opacity: 1
 }
 
 /*===== Contact ===*/

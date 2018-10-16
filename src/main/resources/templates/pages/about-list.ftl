@@ -50,7 +50,7 @@
                         <img src="/images/author/pipi-cover800*533.jpg" alt="img02" class="img-responsive"/>
                         <figcaption>
                             <h2>pipi</h2>
-                            <p>皮皮的日常</p>
+                            <p>我家皮皮的日常</p>
                             <a href="/author/pipi">View more</a>
                         </figcaption>
                     </figure>

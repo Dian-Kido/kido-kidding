@@ -36,7 +36,7 @@
 
                 <li>
 
-                    <section class="blog-content pipi-list-section">
+                    <section class="pipi-content pipi-list-section">
 
                         <div>
 
