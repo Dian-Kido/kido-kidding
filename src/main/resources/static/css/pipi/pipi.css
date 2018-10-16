@@ -129,19 +129,19 @@ section.blog-content figure {
 section.blog-content figure .post-date {
     text-align: center;
     color: #FFF;
-    font-weight: 800;
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 7px;
     line-height: 18px;
     text-transform: uppercase;
     display: block;
     background-color: #fb5353;
-    width: 130px;
-    height: 130px;
+    width: 77px;
+    height: 77px;
     position: absolute;
     left: 0;
     top: 0;
-    padding-top: 41px;
-    z-index: 50
+    padding-top: 7px;
+    z-index: 50;
 }
 
 section.blog-content figure .post-date span {
@@ -154,7 +154,7 @@ section.blog-content article {
     font-size: 21px;
     line-height: 30px;
     color: #FFF;
-    font-weight: 800;
+    font-weight: 600;
     color: #343434;
     padding-left: 42px;
     padding-top: 33px;
