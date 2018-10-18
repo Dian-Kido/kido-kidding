@@ -1,6 +1,7 @@
 package com.site.kido.kidding.controller;
 
 import com.alibaba.fastjson.JSON;
+import com.site.kido.kidding.htmlparser.UploadMovies;
 import com.site.kido.kidding.service.MovieService;
 import com.site.kido.kidding.service.PermissionService;
 import com.site.kido.kidding.vo.ErpInfo;
@@ -31,6 +32,9 @@ public class MovieErpController {
 
     @Autowired
     private PermissionService permissionService;
+
+    @Autowired
+    private UploadMovies uploadMovies;
 
     /**
      * 本地访问内容地址 ：http://localhost:8080/movieErp/index/niZENmeKEnengCAIdao7
@@ -169,6 +173,19 @@ public class MovieErpController {
         String name = queryMovieParam.getName();
         return "movie getByName result:" + movieService.getByName(name);
     }
+
+    //    /**
+    //     * 本地访问内容地址 ：http://localhost:8080/movieErp/uploadMoviesFile
+    //     *
+    //     * @param
+    //     * @return
+    //     */
+    //    @RequestMapping(value = "/uploadMoviesFile", method = RequestMethod.GET)
+    //    @ResponseBody
+    //    public String uploadMoviesFile() {
+    //        uploadMovies.uploadMoviesFile();
+    //        return "movie uploadMoviesFile result";
+    //    }
 
     public static void main(String[] args) {
 
