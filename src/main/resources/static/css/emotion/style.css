@@ -129,7 +129,7 @@
 
 #gtco-hero .flexslider .flex-direction-nav a.flex-prev {
     opacity: 1 !important;
-    left: 40px !important;
+    left: 1px !important;
 }
 
 #gtco-hero .flexslider .flex-direction-nav a.flex-prev:before {
@@ -148,7 +148,7 @@
 }
 
 #gtco-hero .flexslider .flex-direction-nav a.flex-next {
-    right: 40px !important;
+    right: 1px !important;
     opacity: 1 !important;
 }
 

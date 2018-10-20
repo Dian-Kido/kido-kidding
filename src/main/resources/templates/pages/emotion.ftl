@@ -50,7 +50,7 @@
                         </div>
                     </div>
                 </li>
-                
+
                 <li style="background-image: url(/images/emotion/emotion4.jpg);">
                     <div class="overlay"></div>
                     <div class="container">
@@ -78,7 +78,7 @@
                     <div class="container">
                         <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
                             <div class="slider-text-inner">
-                                <h2>Explore the new template.</h2>
+                                <h3>Explore the new template.</h3>
                                 <p>Follow @gettemplatesco</p>
                             </div>
                         </div>
@@ -89,8 +89,7 @@
                     <div class="container">
                         <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
                             <div class="slider-text-inner">
-                                <h2>Explore the new template.</h2>
-                                <p>Follow @gettemplatesco</p>
+                                <h2>若彼浮生,或琴瑟在御之静好,或金风玉露之相逢</br>皆聊复尔尔,唯难得灵犀一点、与君长相知</h2>
                             </div>
                         </div>
                     </div>
