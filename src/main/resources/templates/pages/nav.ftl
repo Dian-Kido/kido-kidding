@@ -25,11 +25,11 @@
 
                     <!-- movie 和 book  属于跳转外部网站 -->
                     <li>
-                        <a href="/movie/list/1/6">MOVIE</a>
+                        <a href="/movie/list/1/9">MOVIE</a>
                     </li>
 
                     <li>
-                        <a href="/book/list/1/6">BOOK</a>
+                        <a href="/book/list/1/10">BOOK</a>
                     </li>
 
                     <li>
