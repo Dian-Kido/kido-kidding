@@ -25,7 +25,7 @@
 
                     <!-- movie 和 book  属于跳转外部网站 -->
                     <li>
-                        <a href="/movie/list/1/9">MOVIE</a>
+                        <a href="/movie/list/1/15">MOVIE</a>
                     </li>
 
                     <li>

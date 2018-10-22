@@ -370,8 +370,9 @@ figure.effect-bubba:hover p {
     font-size: 13px;
     font-weight: 500;
     color: #848484;
-    padding: 18px 30px 35px 30px;
+    padding: 20px 30px 5px 30px;
     line-height: 24px;
+    min-height: 100px;
 }
 
 /*--------------------
