@@ -1,6 +1,7 @@
 package com.site.kido.kidding.controller;
 
 import com.alibaba.fastjson.JSON;
+import com.site.kido.kidding.htmlparser.UploadBooks;
 import com.site.kido.kidding.service.BookService;
 import com.site.kido.kidding.service.PermissionService;
 import com.site.kido.kidding.vo.BookVO;
@@ -30,6 +31,9 @@ public class BookErpController {
 
     @Autowired
     private PermissionService permissionService;
+
+    @Autowired
+    private UploadBooks uploadBooks;
 
     /**
      * 本地访问内容地址 ：http://localhost:8080/bookErp/insert
@@ -154,6 +158,19 @@ public class BookErpController {
         QueryBookParam queryBookParam = erpInfo.getData();
         String name = queryBookParam.getName();
         return "book getByName result:" + bookService.getByName(name);
+    }
+
+    /**
+     * 本地访问内容地址 ：http://localhost:8080/bookErp/uploadBooksFile
+     *
+     * @param
+     * @return
+     */
+    @RequestMapping(value = "/uploadBooksFile", method = RequestMethod.GET)
+    @ResponseBody
+    public String uploadBooksFile() {
+        uploadBooks.uploadBooksFile();
+        return "book uploadBooksFile result";
     }
 
     public static void main(String[] args) {

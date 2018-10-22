@@ -174,18 +174,18 @@ public class MovieErpController {
         return "movie getByName result:" + movieService.getByName(name);
     }
 
-    //    /**
-    //     * 本地访问内容地址 ：http://localhost:8080/movieErp/uploadMoviesFile
-    //     *
-    //     * @param
-    //     * @return
-    //     */
-    //    @RequestMapping(value = "/uploadMoviesFile", method = RequestMethod.GET)
-    //    @ResponseBody
-    //    public String uploadMoviesFile() {
-    //        uploadMovies.uploadMoviesFile();
-    //        return "movie uploadMoviesFile result";
-    //    }
+    /**
+     * 本地访问内容地址 ：http://localhost:8080/movieErp/uploadMoviesFile
+     *
+     * @param
+     * @return
+     */
+    @RequestMapping(value = "/uploadMoviesFile", method = RequestMethod.GET)
+    @ResponseBody
+    public String uploadMoviesFile() {
+        uploadMovies.uploadMoviesFile();
+        return "movie uploadMoviesFile result";
+    }
 
     public static void main(String[] args) {
 
