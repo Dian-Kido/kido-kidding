@@ -67,7 +67,7 @@
                     <div class="container">
                         <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
                             <div class="slider-text-inner">
-                                <h2>唯难得灵犀一点、与君长相知</h2>
+                                <h2>唯难得灵犀一点、与君相知</h2>
                             <#--<p>Follow @gettemplatesco</p>-->
                             </div>
                         </div>
