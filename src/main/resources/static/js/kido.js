@@ -22,7 +22,6 @@ function typeMovie(movieType) {
     });
 }
 
-
 // 给作者发送消息
 function sendMsg() {
 
@@ -89,4 +88,25 @@ function showEmotion() {
         }
     })
     ;
+}
+
+
+function openBlog() {
+    swal({
+        title: "Coming Soon...",
+        text: '2秒后自动关闭',
+        timer: 2000,
+        confirmButtonColor: "#000000",
+        customClass: 'swal-kido',
+        confirmButtonClass: 'swal-kido'
+    }).then(
+        function () {
+        },
+        // handling the promise rejection
+        function (dismiss) {
+            if (dismiss === 'timer') {
+                console.log('I was closed by the timer')
+            }
+        }
+    );
 }

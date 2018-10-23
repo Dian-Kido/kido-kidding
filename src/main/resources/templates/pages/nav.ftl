@@ -9,22 +9,24 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/tab/show">KIDO</a>
+            <a class="navbar-brand" href="/">KIDO</a>
         </div>
 
         <div id="huxblog_navbar">
             <div class="navbar-collapse movie-bar-font">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="/tab/show">NAVIGATION</a>
-                    </li>
+
 
                     <li>
                         <a href="/movie/list/1/15">MOVIE</a>
                     </li>
 
                     <li>
-                        <a href="http://localhost:4000/">BLOG</a>
+                        <a href="javascript:void(0)" onclick="openBlog()">BLOG</a>
+                    </li>
+
+                    <li>
+                        <a href="/tab/show">NAVIGATION</a>
                     </li>
 
                     <li>
