@@ -27,20 +27,22 @@
                 </div>
             </div>
             <!-- end portfolio item -->
+
             <!-- start portfolio item -->
             <div class="col-md-6 col-0-gutter">
                 <div class="ot-portfolio-item">
                     <figure class="effect-bubba">
-                        <img src="/images/author/emotion-cover800*533.jpg" alt="img02" class="img-responsive"/>
+                        <img src="/images/author/read-cover800*533.jpg" alt="img02" class="img-responsive"/>
                         <figcaption>
-                            <h2>Emotion</h2>
-                            <p>内心</p>
-                            <a onclick="showEmotion()">View more</a>
+                            <h2>Reading List</h2>
+                            <p>读书清单</p>
+                            <a href="/book/list/1/10">View more</a>
                         </figcaption>
                     </figure>
                 </div>
             </div>
             <!-- end portfolio item -->
+            
         </div>
         <div class="row row-0-gutter">
             <!-- start portfolio item -->
@@ -57,6 +59,26 @@
                 </div>
             </div>
             <!-- end portfolio item -->
+
+            <!-- start portfolio item -->
+            <div class="col-md-6 col-0-gutter">
+                <div class="ot-portfolio-item">
+                    <figure class="effect-bubba">
+                        <img src="/images/author/emotion-cover800*533.jpg" alt="img02" class="img-responsive"/>
+                        <figcaption>
+                            <h2>Emotion</h2>
+                            <p>内心</p>
+                            <a onclick="showEmotion()">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <!-- end portfolio item -->
+
+        </div>
+
+        <div class="row row-0-gutter">
+
             <!-- start portfolio item -->
             <div class="col-md-6 col-0-gutter">
                 <div class="ot-portfolio-item">

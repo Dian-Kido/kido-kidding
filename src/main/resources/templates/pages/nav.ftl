@@ -20,16 +20,11 @@
                     </li>
 
                     <li>
-                        <a href="http://localhost:4000/">BLOG</a>
-                    </li>
-
-                    <!-- movie 和 book  属于跳转外部网站 -->
-                    <li>
                         <a href="/movie/list/1/15">MOVIE</a>
                     </li>
 
                     <li>
-                        <a href="/book/list/1/10">BOOK</a>
+                        <a href="http://localhost:4000/">BLOG</a>
                     </li>
 
                     <li>
