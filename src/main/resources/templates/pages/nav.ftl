@@ -22,7 +22,7 @@
                     </li>
 
                     <li>
-                        <a href="javascript:void(0)" onclick="openBlog()">BLOG</a>
+                        <a href="javascript:void(0)" onclick="comingSoon()">BLOG</a>
                     </li>
 
                     <li>

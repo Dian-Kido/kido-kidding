@@ -91,7 +91,7 @@ function showEmotion() {
 }
 
 
-function openBlog() {
+function comingSoon() {
     swal({
         title: "Coming Soon...",
         text: '2秒后自动关闭',
@@ -109,4 +109,46 @@ function openBlog() {
             }
         }
     );
+}
+
+function preCopyLink() {
+    var clipboard1 = new ClipboardJS('.down-link');
+    clipboard1.on('success', function (e) {
+        swal({
+            title: "下载链接复制成功",
+            text: '1秒后自动关闭',
+            timer: 1000,
+            confirmButtonColor: "#000000",
+            customClass: 'swal-kido',
+            confirmButtonClass: 'swal-kido'
+        }).then(
+            function () {
+            },
+            // handling the promise rejection
+            function (dismiss) {
+                if (dismiss === 'timer') {
+                    console.log('I was closed by the timer')
+                }
+            }
+        );
+    });
+    clipboard1.on('error', function (e) {
+        swal({
+            title: "下载链接复制失败，自己去搜吧~",
+            text: '1秒后自动关闭',
+            timer: 1000,
+            confirmButtonColor: "#000000",
+            customClass: 'swal-kido',
+            confirmButtonClass: 'swal-kido'
+        }).then(
+            function () {
+            },
+            // handling the promise rejection
+            function (dismiss) {
+                if (dismiss === 'timer') {
+                    console.log('I was closed by the timer')
+                }
+            }
+        );
+    });
 }
