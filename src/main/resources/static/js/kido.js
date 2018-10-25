@@ -116,8 +116,8 @@ function preCopyLink() {
     clipboard1.on('success', function (e) {
         swal({
             title: "下载链接复制成功",
-            text: '1秒后自动关闭',
-            timer: 1000,
+            text: '可用网盘离线或迅雷下载...2S后窗口关闭',
+            timer: 3000,
             confirmButtonColor: "#000000",
             customClass: 'swal-kido',
             confirmButtonClass: 'swal-kido'
