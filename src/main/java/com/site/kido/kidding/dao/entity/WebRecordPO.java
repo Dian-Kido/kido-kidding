@@ -42,21 +42,6 @@ public class WebRecordPO implements Serializable {
      */
     private String browserMes;
 
-    /**
-     * 留言名称
-     */
-    private String mesName;
-
-    /**
-     * 留言信箱
-     */
-    private String mesEmail;
-
-    /**
-     * 留言内容
-     */
-    private String mesContent;
-
     public String get_id() {
         return _id;
     }
@@ -105,30 +90,6 @@ public class WebRecordPO implements Serializable {
         this.browserMes = browserMes;
     }
 
-    public String getMesName() {
-        return mesName;
-    }
-
-    public void setMesName(String mesName) {
-        this.mesName = mesName;
-    }
-
-    public String getMesEmail() {
-        return mesEmail;
-    }
-
-    public void setMesEmail(String mesEmail) {
-        this.mesEmail = mesEmail;
-    }
-
-    public String getMesContent() {
-        return mesContent;
-    }
-
-    public void setMesContent(String mesContent) {
-        this.mesContent = mesContent;
-    }
-
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("WebRecordPO{");
@@ -138,9 +99,6 @@ public class WebRecordPO implements Serializable {
         sb.append(", url='").append(url).append('\'');
         sb.append(", remoteIp='").append(remoteIp).append('\'');
         sb.append(", browserMes='").append(browserMes).append('\'');
-        sb.append(", mesName='").append(mesName).append('\'');
-        sb.append(", mesEmail='").append(mesEmail).append('\'');
-        sb.append(", mesContent='").append(mesContent).append('\'');
         sb.append('}');
         return sb.toString();
     }

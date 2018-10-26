@@ -1,7 +1,6 @@
 package com.site.kido.kidding.controller;
 
-import com.site.kido.kidding.dao.entity.WebRecordPO;
-import com.site.kido.kidding.meta.consts.RecordTypeEnum;
+import com.site.kido.kidding.dao.entity.MsgPO;
 import com.site.kido.kidding.service.WebService;
 import com.site.kido.kidding.utils.ConvertUtil;
 import com.site.kido.kidding.vo.MeassgeVO;
@@ -46,9 +45,9 @@ public class MsgController {
         meassgeVO.setMesEmail(mesEmail);
         meassgeVO.setMesContent(mesContent);
 
-        WebRecordPO webRecordPO = ConvertUtil.createWebRecordPO(RecordTypeEnum.MESSAGE.getTypeCode(), meassgeVO);
-        if (webRecordPO != null) {
-            webService.insertMessageRecord(webRecordPO);
+        MsgPO msgPO = ConvertUtil.createMsgRecordPO(meassgeVO);
+        if (msgPO != null) {
+            webService.insertMsg(msgPO);
         }
 
         if (StringUtils.isNotBlank(mesEmail)) {

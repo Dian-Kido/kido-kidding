@@ -13,4 +13,10 @@ public class Constants {
     public static final Integer DEFAULT_BOOK_PAGE_NUM = 1;
     public static final Integer DEFAULT_BOOK_PAGE_SIZE = 10;
 
+    public static final Integer DEFAULT_RECORD_PAGE_NUM = 1;
+    public static final Integer DEFAULT_RECORD_PAGE_SIZE = 30;
+
+    public static final Integer DEFAULT_MSG_PAGE_NUM = 1;
+    public static final Integer DEFAULT_MSG_PAGE_SIZE = 20;
+
 }

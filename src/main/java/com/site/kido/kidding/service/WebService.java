@@ -1,6 +1,10 @@
 package com.site.kido.kidding.service;
 
+import com.site.kido.kidding.dao.entity.MsgPO;
 import com.site.kido.kidding.dao.entity.WebRecordPO;
+
+import java.util.Date;
+import java.util.List;
 
 /**
  * @author chendianshu
@@ -18,11 +22,47 @@ public interface WebService {
     Boolean insertBrowseRecord(WebRecordPO webRecordPO);
 
     /**
-     * 写入网站留言记录
+     * 网站记录分页获取
      *
-     * @param webRecordPO
+     * @param pageNum
+     * @param pageSize
      * @return
      */
-    Boolean insertMessageRecord(WebRecordPO webRecordPO);
+    List<WebRecordPO> listPageRecord(Integer pageNum, Integer pageSize);
+
+    /**
+     * 按照时间统计访问次数
+     *
+     * @param startDate
+     * @param endDate
+     * @return
+     */
+    Long countRecord(Date startDate, Date endDate);
+
+    /**
+     * 写入网站留言记录
+     *
+     * @param msgPO
+     * @return
+     */
+    Boolean insertMsg(MsgPO msgPO);
+
+    /**
+     * 网站记录分页获取留言
+     *
+     * @param pageNum
+     * @param pageSize
+     * @return
+     */
+    List<MsgPO> listPageMsg(Integer pageNum, Integer pageSize);
+
+    /**
+     * 按照时间统计访问留言次数
+     *
+     * @param startDate
+     * @param endDate
+     * @return
+     */
+    Long countMsg(Date startDate, Date endDate);
 
 }

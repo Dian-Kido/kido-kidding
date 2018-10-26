@@ -2,6 +2,7 @@ package com.site.kido.kidding.utils;
 
 import com.site.kido.kidding.dao.entity.BookPO;
 import com.site.kido.kidding.dao.entity.MoviePO;
+import com.site.kido.kidding.dao.entity.MsgPO;
 import com.site.kido.kidding.dao.entity.WebRecordPO;
 import com.site.kido.kidding.vo.BookVO;
 import com.site.kido.kidding.vo.MeassgeVO;
@@ -153,14 +154,53 @@ public class ConvertUtil {
             webRecordPO.setUrl(url);
             webRecordPO.setRemoteIp(remoteIp);
             webRecordPO.setBrowserMes(browserMes);
-            if (meassgeVO != null) {
-                webRecordPO.setMesName(meassgeVO.getMesName());
-                webRecordPO.setMesEmail(meassgeVO.getMesEmail());
-                webRecordPO.setMesContent(meassgeVO.getMesContent());
-            }
             return webRecordPO;
         } catch (Exception e) {
             logger.error("记录对象创建失败，recordType={}，meassgeVO={}", recordType, meassgeVO, e);
+            return null;
+        }
+
+    }
+
+    public static MsgPO createMsgRecordPO(MeassgeVO meassgeVO) {
+
+        try {
+            HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes())
+                    .getRequest();
+            /**
+             * 创建时间
+             */
+            Date createTime = new Date();
+
+            /**
+             * url
+             */
+            String url = request.getRequestURL().toString();
+
+            /**
+             * 浏览者ip地址
+             */
+            String remoteIp = request.getRemoteAddr();
+
+            /**
+             * 浏览器信息
+             */
+            String browserMes = HttpUtils.getOsAndBrowserInfo(request);
+
+            MsgPO msgPO = new MsgPO();
+            msgPO.setMsgType(1);
+            msgPO.setCreateTime(createTime);
+            msgPO.setUrl(url);
+            msgPO.setRemoteIp(remoteIp);
+            msgPO.setBrowserMes(browserMes);
+            if (meassgeVO != null) {
+                msgPO.setMesName(meassgeVO.getMesName());
+                msgPO.setMesEmail(meassgeVO.getMesEmail());
+                msgPO.setMesContent(meassgeVO.getMesContent());
+            }
+            return msgPO;
+        } catch (Exception e) {
+            logger.error("记录留言对象创建失败，meassgeVO={}", meassgeVO, e);
             return null;
         }
 
