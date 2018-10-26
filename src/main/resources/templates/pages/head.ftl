@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
+    <meta name="description" content="kido,KIDO,Kido,电影,电影推荐,好看的电影,高分电影,动漫,惊悚片,movie">
+    <meta name=”keywords” content=”kido,KIDO,Kido,电影,电影推荐,好看的电影,高分电影,动漫,惊悚片,movie”/>
     <meta name="author" content="">
     <link rel="icon" href="/images/Kid.gif">
     <title>Kido PW</title>
