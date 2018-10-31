@@ -37,6 +37,15 @@ public class BookController {
     @RequestMapping(value = "/list/{pageNum}/{pageSize}")
     public String list(Model model, @PathVariable Integer pageNum, @PathVariable Integer pageSize) {
         List<BookVO> bookVOList = bookService.listPage(pageNum, pageSize);
+
+        //这里做一个特殊处理
+        for (BookVO bookVO : bookVOList) {
+            if (bookVO.getLines().get(0).length() < 40) {
+                bookVO.getLines().add(0, bookVO.getLines().get(0)
+                        + "&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;");
+            }
+        }
+
         model.addAttribute("bookVOList", bookVOList);
         if (bookVOList != null) {
             PageInfo pageInfo = new PageInfo();

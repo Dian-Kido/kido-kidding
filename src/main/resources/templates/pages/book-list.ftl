@@ -38,10 +38,14 @@
                          class="img-responsive container-book-list-img">
                 </div>
 
-                <div class="col-md-8 news-text container-book-text">
-                    <h3><a href="#" data-toggle="modal" data-target="#myModal1">${bookVO.cnName}</a></h3>
+                <div class="col-md-6 news-text container-book-text">
+                    <h3>
+                        <div data-toggle="modal"
+                             data-target="#myModal1">${bookVO.cnName}</div>
+                    </h3>
                     <ul class="news">
-                        <li><i class="glyphicon glyphicon-user book-author"></i>${bookVO.author}</li>
+                        <li title="看即是尊敬，爱心数量仅代表个人喜欢程度，无关书本价值">
+                            <i class="glyphicon glyphicon-user book-author"></i>${bookVO.author}</li>
                         </br>
 
                         <#if bookVO.recommendIndex?exists>
