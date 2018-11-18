@@ -32,7 +32,7 @@ public class AuthorController {
      * @return
      */
     @Record
-    @RequestMapping(value = "/emotion")
+    @RequestMapping(value = "/emotion-close")
     public String emotion() {
         return "emotion";
     }
@@ -44,7 +44,7 @@ public class AuthorController {
      * @return
      */
     @Record
-    @RequestMapping(value = "/pipi")
+    @RequestMapping(value = "/pipi-close")
     public String pipi() {
         return "pipi";
     }
@@ -56,7 +56,7 @@ public class AuthorController {
      * @return
      */
     @Record
-    @RequestMapping(value = "/wish")
+    @RequestMapping(value = "/wish-close")
     public String wish() {
         return "wish-list";
     }
