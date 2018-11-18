@@ -1,6 +1,7 @@
 package com.site.kido.kidding.utils;
 
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
 import java.util.List;
@@ -13,6 +14,7 @@ import java.util.concurrent.TimeUnit;
  * @version 1.0
  * @created 2018/9/30.
  */
+//@Service
 public class RedisUtil {
 
     private RedisTemplate<String, Object> redisTemplate;

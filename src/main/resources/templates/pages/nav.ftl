@@ -22,7 +22,7 @@
                     </li>
 
                     <li>
-                        <a href="javascript:void(0)" onclick="comingSoon()">BLOG</a>
+                        <a href="https://blog.kido.site/">BLOG</a>
                     </li>
 
                     <li>
