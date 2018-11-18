@@ -11,7 +11,7 @@
 <!-- Bootstrap core JavaScript
     ================================================== -->
 <script src="/js/jquery.js"></script>
-<#--<script src="/js/hux-blog.js"></script>-->
+<script src="/js/hux-blog.js"></script>
 <script src="/js/sweetalert2/dist/sweetalert2.all.min.js"></script>
 <script src="/js/clipboard.min.js"></script>
 <script src="/js/kido.js"></script>
