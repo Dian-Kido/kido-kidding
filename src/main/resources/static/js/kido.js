@@ -111,12 +111,34 @@ function comingSoon() {
     );
 }
 
+
+function comingHeart() {
+    swal({
+        title: "Just say it, Is that easy ...",
+        //text: '2秒后自动关闭',
+        timer: 3000,
+        confirmButtonColor: "#000000",
+        customClass: 'swal-kido',
+        confirmButtonClass: 'swal-kido'
+    }).then(
+        function () {
+        },
+        // handling the promise rejection
+        function (dismiss) {
+            if (dismiss === 'timer') {
+                console.log('I was closed by the timer')
+            }
+        }
+    );
+}
+
+
 function preCopyLink() {
     var clipboard1 = new ClipboardJS('.down-link');
     clipboard1.on('success', function (e) {
         swal({
             title: "下载链接复制成功",
-            text: '可用网盘离线或迅雷下载...2S后窗口关闭',
+            text: '可用 网盘 或 迅雷 下载...2S后窗口关闭',
             timer: 3000,
             confirmButtonColor: "#000000",
             customClass: 'swal-kido',

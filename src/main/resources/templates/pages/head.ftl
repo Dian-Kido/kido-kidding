@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-    <meta name="baidu_union_verify" content="baa7dc9c3682b1b03ee0d1c48f339b78">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,5 +26,17 @@
 
     <!-- 弹窗 -->
     <link href="/css/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- 百度统计 -->
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?5e45474bccc76528f046593a20ba0b67";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
 
 </head>
