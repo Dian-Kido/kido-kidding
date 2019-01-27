@@ -38,7 +38,7 @@
                          class="img-responsive container-book-list-img">
                 </div>
 
-                <div class="col-md-6 news-text container-book-text">
+                <div class="col-md-7 news-text container-book-text">
                     <h3>
                         <div data-toggle="modal"
                              data-target="#myModal1">${bookVO.cnName}</div>
