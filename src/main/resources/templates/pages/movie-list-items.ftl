@@ -21,7 +21,7 @@
 <!-- end team member item -->
 </#list>
 <#if movieNotFound>
-<h3 class="movie-not-found">Not Good Enough or Not Seen It, Sry~</h3>
+<h3 class="movie-not-found">您搜索的<b>"${beforeSearchText}"</b>资源尚未收入，如果您觉得值得推荐，欢迎在下方留言~</h3>
 </#if>
 
 <#include "movie-list-page.ftl">
