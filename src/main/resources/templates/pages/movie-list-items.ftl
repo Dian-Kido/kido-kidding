@@ -7,7 +7,7 @@
             <img src="${movieVO.cover}" class="img-responsive" alt="cover">
         </div>
         <div class="team-text movie-list-height">
-            <a target="_blank" href="${movieVO.doubanLink}"><h3>${movieVO.cnName}</h3></a>
+            <h3><a target="_blank" href="${movieVO.doubanLink}">${movieVO.cnName}</a></h3>
             <div class="team-position">
                 <a class="down-link" href="javascript:void(0)"
                    data-clipboard-text="${movieVO.downloadLink}" onclick="preCopyLink()">Download</a>
