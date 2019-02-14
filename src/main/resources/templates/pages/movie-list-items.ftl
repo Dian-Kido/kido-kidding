@@ -1,7 +1,7 @@
 <#include "movie-list-sel.ftl">
 <#list movieVOList as movieVO>
 <!-- team member item -->
-<div id="${movieVO._id}"  class="col-md-4">
+<div id="${movieVO._id}" class="col-md-4">
     <div class="team-item">
         <div class="team-image">
             <img src="${movieVO.cover}" class="img-responsive" alt="cover">
