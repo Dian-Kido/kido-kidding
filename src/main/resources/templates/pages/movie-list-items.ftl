@@ -1,13 +1,13 @@
 <#include "movie-list-sel.ftl">
 <#list movieVOList as movieVO>
 <!-- team member item -->
-<div class="col-md-4">
+<div id="${movieVO._id}"  class="col-md-4">
     <div class="team-item">
         <div class="team-image">
             <img src="${movieVO.cover}" class="img-responsive" alt="cover">
         </div>
         <div class="team-text movie-list-height">
-            <h3>${movieVO.cnName}</h3>
+            <a target="_blank" href="${movieVO.doubanLink}"><h3>${movieVO.cnName}</h3></a>
             <div class="team-position">
                 <a class="down-link" href="javascript:void(0)"
                    data-clipboard-text="${movieVO.downloadLink}" onclick="preCopyLink()">Download</a>
