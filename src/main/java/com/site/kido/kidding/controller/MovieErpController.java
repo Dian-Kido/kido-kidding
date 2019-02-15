@@ -187,6 +187,16 @@ public class MovieErpController {
         return "movie uploadMoviesFile result";
     }
 
+    @RequestMapping(value = "/updateTcResource", method = RequestMethod.POST)
+    @ResponseBody
+    public String updateTcResource(@RequestBody ErpInfo<String> erpInfo) {
+        if (!permissionService.checkAuth(erpInfo.getSecretCode())) {
+            return ("无权限........");
+        }
+        MovieController.tcResource = erpInfo.getData();
+        return "newTcResource更新成功";
+    }
+
     public static void main(String[] args) {
 
       /*

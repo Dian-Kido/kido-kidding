@@ -164,7 +164,24 @@ a:active {
     text-align: center;
     font-weight: 200;
     margin-top: 100px;
-    margin-bottom: 170px;
+    margin-bottom: 70px;
+}
+
+.movie-TC-title {
+    text-align: left;
+    font-weight: 70;
+    color: #f27474;
+    margin-bottom: 10px;
+}
+
+.movie-TC-resource {
+    text-align: left;
+    font-weight: 50;
+    color: #f27474;
+}
+
+.movie-TC-url {
+    color: #2aabd2;
 }
 
 .book-reading-font {

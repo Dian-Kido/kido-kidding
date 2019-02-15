@@ -27,6 +27,8 @@ public class MovieController {
 
     private static final Logger logger = LoggerFactory.getLogger(MovieErpController.class);
 
+    public static String tcResource = "";
+
     @Autowired
     private MovieService movieService;
 
@@ -136,6 +138,7 @@ public class MovieController {
         List<MovieVO> movieVOList = movieService.getByName(searchText);
         model.addAttribute("movieVOList", movieVOList);
         model.addAttribute("beforeSearchText", searchText);
+        model.addAttribute("tcResource", tcResource);
         if (movieVOList == null || movieVOList.size() < 1) {
             model.addAttribute("movieNotFound", true);
         }
