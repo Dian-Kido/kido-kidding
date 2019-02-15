@@ -154,6 +154,10 @@ a:active {
     outline: none;
 }
 
+.movie-downloadLink {
+    color: #2aabd2;
+}
+
 .movie-search-a {
     color: #b7c2c2;
     float: right;

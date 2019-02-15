@@ -9,7 +9,7 @@
         <div class="team-text movie-list-height">
             <h3><a target="_blank" href="${movieVO.doubanLink}">${movieVO.cnName}</a></h3>
             <div class="team-position">
-                <a class="down-link" href="javascript:void(0)"
+                <a class="down-link movie-downloadLink" href="javascript:void(0)"
                    data-clipboard-text="${movieVO.downloadLink}" onclick="preCopyLink()">Download</a>
             </div>
             <p>
