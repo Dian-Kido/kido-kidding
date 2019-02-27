@@ -1,2 +1,2 @@
 # kido-kidding
-kido personal website
+http://kido.site
