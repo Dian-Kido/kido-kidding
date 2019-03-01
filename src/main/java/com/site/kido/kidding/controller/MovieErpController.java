@@ -16,6 +16,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author chendianshu
  * @version 1.0
@@ -187,6 +190,12 @@ public class MovieErpController {
         return "movie uploadMoviesFile result";
     }
 
+    /**
+     * 枪版提示
+     *
+     * @param erpInfo
+     * @return
+     */
     @RequestMapping(value = "/updateTcResource", method = RequestMethod.POST)
     @ResponseBody
     public String updateTcResource(@RequestBody ErpInfo<String> erpInfo) {
@@ -195,6 +204,25 @@ public class MovieErpController {
         }
         MovieController.tcResource = erpInfo.getData();
         return "newTcResource更新成功";
+    }
+
+    /**
+     * 增加或者修改直播地址
+     *
+     * @param erpInfo
+     * @return
+     */
+    @RequestMapping(value = "/addMoviesPlay", method = RequestMethod.POST)
+    @ResponseBody
+    public String addMoviesPlay(@RequestBody ErpInfo<List<String>> erpInfo) {
+        if (!permissionService.checkAuth(erpInfo.getSecretCode())) {
+            return ("无权限........");
+        }
+        List<String> playsList = erpInfo.getData();
+
+        uploadMovies.addMoviesPlay(playsList);
+
+        return "addMoviesPlay";
     }
 
     public static void main(String[] args) {
@@ -229,5 +257,14 @@ public class MovieErpController {
         System.out.println(JSON.toJSONString(erpInfo));
 
 */
+
+        ErpInfo<List<String>> erpInfo = new ErpInfo();
+        erpInfo.setSecretCode("howdareyou777777");
+        List<String> strList = new ArrayList<>();
+        strList.add("5bceab1cbefdd20c076011ed\thttps://v.youku.com/v_show/id_XMjczMTQxMDA2NA==.html");
+        strList.add("5bceab1cbefdd20c076011ed\thttps://v.youku.com/v_show/id_XMjczMTQxMDA2NA==.html");
+        erpInfo.setData(strList);
+
+        System.out.println(JSON.toJSON(erpInfo));
     }
 }

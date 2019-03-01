@@ -114,6 +114,11 @@ public class MoviePO implements Serializable {
     private String imdbLink;
 
     /**
+     * 在线播放链接
+     */
+    private String playLink;
+
+    /**
      * 是否隐藏
      */
     private Boolean hide;
@@ -286,6 +291,14 @@ public class MoviePO implements Serializable {
         this.hide = hide;
     }
 
+    public String getPlayLink() {
+        return playLink;
+    }
+
+    public void setPlayLink(String playLink) {
+        this.playLink = playLink;
+    }
+
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("MoviePO{");
@@ -309,6 +322,7 @@ public class MoviePO implements Serializable {
         sb.append(", downloadLink='").append(downloadLink).append('\'');
         sb.append(", doubanLink='").append(doubanLink).append('\'');
         sb.append(", imdbLink='").append(imdbLink).append('\'');
+        sb.append(", playLink='").append(playLink).append('\'');
         sb.append(", hide=").append(hide);
         sb.append('}');
         return sb.toString();

@@ -136,7 +136,7 @@ public class MovieDaoImpl implements MovieDao {
         }
         Criteria criteria = Criteria.where("_id").is(new ObjectId(id));
         Query query = new Query(criteria);
-        UpdateResult updateResult = mongoTemplate.updateFirst(query, update, MoviePO.class, collectionName);
+        UpdateResult updateResult = mongoTemplate.upsert(query, update, MoviePO.class, collectionName);
         return updateResult.getModifiedCount() > 0 ? true : false;
     }
 

@@ -4,7 +4,10 @@
 <div id="${movieVO._id}" class="col-md-4">
     <div class="team-item">
         <div class="team-image">
-            <img src="${movieVO.cover}" class="img-responsive" alt="cover">
+            <a target="_blank" href="${movieVO.playLink}">
+                <img src="${movieVO.cover}" class="img-responsive movie-img"
+                     alt="cover">
+            </a>
         </div>
         <div class="team-text movie-list-height">
             <h3><a target="_blank" href="${movieVO.doubanLink}">${movieVO.cnName}</a></h3>

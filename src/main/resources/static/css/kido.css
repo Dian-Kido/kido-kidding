@@ -188,6 +188,10 @@ a:active {
     color: #2aabd2;
 }
 
+.movie-img {
+    cursor: inherit !important;
+}
+
 .book-reading-font {
     margin-top: 100px;
     margin-bottom: 10px;
