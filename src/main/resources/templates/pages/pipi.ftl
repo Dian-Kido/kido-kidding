@@ -248,7 +248,7 @@
 
                     <section class="blog-content pipi-list-section">
 
-                        <a href="blog-details.html">
+                        <div>
 
                             <figure>
 
@@ -262,7 +262,7 @@
 
                             </figure>
 
-                        </a>
+                        </div>
 
                         <article>
 
@@ -278,7 +278,7 @@
 
                     <section class="blog-content pipi-list-section">
 
-                        <a href="blog-details.html">
+                        <div>
 
                             <figure>
 
@@ -292,7 +292,7 @@
 
                             </figure>
 
-                        </a>
+                        </div>
 
                         <article>
 
@@ -308,7 +308,7 @@
 
                     <section class="blog-content pipi-list-section">
 
-                        <a href="blog-details.html">
+                        <div>
 
                             <figure>
 
@@ -322,7 +322,7 @@
 
                             </figure>
 
-                        </a>
+                        </div>
 
                         <article>
 
