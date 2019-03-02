@@ -114,7 +114,7 @@ function comingSoon() {
 
 function comingHeart() {
     swal({
-        title: "Just say it, Is that easy ...",
+        title: "Just say it, Is that easy ?",
         //text: '2秒后自动关闭',
         timer: 3000,
         confirmButtonColor: "#000000",
@@ -139,7 +139,7 @@ function preCopyLink() {
         swal({
             title: "下载链接复制成功",
             text: '可用 网盘 或 迅雷 下载...2S后窗口关闭',
-            timer: 3000,
+            timer: 3777,
             confirmButtonColor: "#000000",
             customClass: 'swal-kido',
             confirmButtonClass: 'swal-kido'

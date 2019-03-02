@@ -43,13 +43,13 @@
                     </br>
                     <li><i class="glyphicon glyphicon-map-marker"></i> <a href="javascript:void(0);">北京</a></li>
                     </br>
-                    <li><i class="glyphicon glyphicon-exclamation-sign"> </i>
+                    <li title="困难指数"><i class="glyphicon glyphicon-exclamation-sign"> </i>
                         <i class="glyphicon glyphicon-star"></i>
                         <i class="glyphicon glyphicon-star"></i>
                         <i class="glyphicon glyphicon-star"></i>
                         <i class="glyphicon glyphicon-star-empty"></i>
                 </ul>
-                <p>跳下去的瞬间，身体完全失重，讲道理，内心是有点慌的，不过后来就沉浸在在空中荡来荡去的紧张感了，顺便说一下，不会再有第二次了
+                <p>跳下去的瞬间，身体完全失重，内心是有点慌的，不过后来就沉浸在在空中荡来荡去的紧张感了，顺便说一下，不会再有第二次了
                 </p>
                 <a href="javascript:void(0);" class="read-check hvr-shutter-in-horizontal">check</a>
 
@@ -88,10 +88,10 @@
                     </br>
                     <li><i class="glyphicon glyphicon-map-marker"></i> <a href="javascript:void(0);">北京</a></li>
                     </br>
-                    <li><i class="glyphicon glyphicon-exclamation-sign"> </i>
+                    <li title="困难指数"><i class="glyphicon glyphicon-exclamation-sign"> </i>
                         <i class="glyphicon glyphicon-star"></i>
                 </ul>
-                <p>我不断的问自己:当危险真的来临，我能为家人、为朋友、为身边的人做点什么？
+                <p>经常的问自己:当危险真的来临，我能为家人、为朋友、为身边的人做点什么？
                     </br>
                     所以，就报了班学了一下，老师教了我们如何应对各种突发状况，然后考了一个美国心脏协会(AHA)Heartsaver®认证
                 </p>
@@ -131,7 +131,7 @@
                     </br>
                     <li><i class="glyphicon glyphicon-map-marker"></i> <a href="javascript:void(0);">北京</a></li>
                     </br>
-                    <li><i class="glyphicon glyphicon-exclamation-sign"> </i>
+                    <li title="困难指数"><i class="glyphicon glyphicon-exclamation-sign"> </i>
                         <i class="glyphicon glyphicon-star"></i>
                         <i class="glyphicon glyphicon-star"></i>
                         <i class="glyphicon glyphicon-star-empty"></i>
@@ -173,7 +173,7 @@
                     </br>
                     <li><i class="glyphicon glyphicon-map-marker"></i> <a href="javascript:void(0);">ภูเก็ต</a></li>
                     </br>
-                    <li><i class="glyphicon glyphicon-exclamation-sign"> </i>
+                    <li title="困难指数"><i class="glyphicon glyphicon-exclamation-sign"> </i>
                         <i class="glyphicon glyphicon-star"></i>
                         <i class="glyphicon glyphicon-star"></i>
                         <i class="glyphicon glyphicon-star"></i>

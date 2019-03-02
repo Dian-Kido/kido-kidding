@@ -44,7 +44,7 @@ public class AuthorController {
      * @return
      */
     @Record
-    @RequestMapping(value = "/pipi-close")
+    @RequestMapping(value = "/pipi")
     public String pipi() {
         return "pipi";
     }
@@ -56,7 +56,7 @@ public class AuthorController {
      * @return
      */
     @Record
-    @RequestMapping(value = "/wish-close")
+    @RequestMapping(value = "/wish")
     public String wish() {
         return "wish-list";
     }

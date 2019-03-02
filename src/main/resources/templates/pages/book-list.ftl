@@ -60,7 +60,7 @@
                     <#--<li><i class="glyphicon glyphicon-tags"></i> <a href="#">3 Tags</a></li>-->
                     </ul>
                     <p>${bookVO.lines[0]}</p>
-                    <a href="${bookVO.doubanLink}" target="_blank" title="豆瓣"
+                    <a href="${bookVO.doubanLink}" target="_blank" title=""
                        class="read hvr-shutter-in-horizontal">豆瓣</a>
 
                 </div>
