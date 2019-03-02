@@ -38,13 +38,13 @@
                          class="img-responsive container-book-list-img">
                 </div>
 
-                <div class="col-md-7 news-text container-book-text">
+                <div class="col-md-7 news-text container-book-text" title="爱心数量仅代表个人喜欢程度，无关书本价值">
                     <h3>
                         <div data-toggle="modal"
                              data-target="#myModal1">${bookVO.cnName}</div>
                     </h3>
                     <ul class="news">
-                        <li title="看即是尊敬，爱心数量仅代表个人喜欢程度，无关书本价值">
+                        <li>
                             <i class="glyphicon glyphicon-user book-author"></i>${bookVO.author}</li>
                         </br>
 
@@ -60,8 +60,8 @@
                     <#--<li><i class="glyphicon glyphicon-tags"></i> <a href="#">3 Tags</a></li>-->
                     </ul>
                     <p>${bookVO.lines[0]}</p>
-                    <a href="${bookVO.doubanLink}" target="_blank"
-                       class="read hvr-shutter-in-horizontal">Douban</a>
+                    <a href="${bookVO.doubanLink}" target="_blank" title="豆瓣"
+                       class="read hvr-shutter-in-horizontal">豆瓣</a>
 
                 </div>
 

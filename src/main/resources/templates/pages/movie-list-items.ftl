@@ -1,19 +1,20 @@
 <#include "movie-list-sel.ftl">
 <#list movieVOList as movieVO>
 <!-- team member item -->
-<div id="${movieVO._id}" class="col-md-4">
+<div movieId="${movieVO._id}" class="col-md-4">
     <div class="team-item">
         <div class="team-image">
-            <a target="_blank" href="${movieVO.playLink}">
+            <a target="_blank" href="${movieVO.playLink}" title="优先支持正版渠道播放">
                 <img src="${movieVO.cover}" class="img-responsive movie-img"
                      alt="cover">
             </a>
         </div>
-        <div class="team-text movie-list-height">
-            <h3><a target="_blank" href="${movieVO.doubanLink}">${movieVO.cnName}</a></h3>
+        <div class="team-text movie-list-height" movietype="${movieVO.type}"
+             releaseDate="${movieVO.releaseDate?string('yyyy-MM-dd')}">
+            <h3><a target="_blank" href="${movieVO.doubanLink}" title="豆瓣">${movieVO.cnName}</a></h3>
             <div class="team-position">
                 <a class="down-link movie-downloadLink" href="javascript:void(0)"
-                   data-clipboard-text="${movieVO.downloadLink}" onclick="preCopyLink()">Download</a>
+                   data-clipboard-text="${movieVO.downloadLink}" onclick="preCopyLink()" title="复制下载链接">Download</a>
             </div>
             <p>
                 <span class="movie-lines-font">${movieVO.lines[0]}</span>

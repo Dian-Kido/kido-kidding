@@ -3,8 +3,10 @@ package com.site.kido.kidding.htmlparser;
 import org.apache.commons.lang.StringUtils;
 import org.htmlparser.NodeFilter;
 import org.htmlparser.beans.FilterBean;
+import org.htmlparser.filters.AndFilter;
 import org.htmlparser.filters.HasAttributeFilter;
 import org.htmlparser.filters.TagNameFilter;
+import org.htmlparser.util.NodeList;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -29,11 +31,12 @@ public class MovieParser {
         for (String url : urls) {
             String movieName = getMovieName(url);
             String initialReleaseDate = getMovieInitialReleaseDate(url);
+            String playLink = getMoviePlayLink(url);
 
             if (StringUtils.isNotBlank(movieName)) {
                 File file = creatFile(movieName);
                 if (null != file) {
-                    System.out.println(movieName + ":" + writeFile(file, url, movieName, initialReleaseDate));
+                    System.out.println(movieName + ":" + writeFile(file, url, movieName, initialReleaseDate, playLink));
                 }
             } else {
                 System.out.println(url);
@@ -84,6 +87,77 @@ public class MovieParser {
         return dateStr;
     }
 
+    //获取电影播放链接
+    private static String getMoviePlayLink(String movieUrl) {
+
+        HasAttributeFilter filter0 = new HasAttributeFilter();
+        filter0.setAttributeName("class");
+        filter0.setAttributeValue("playBtn");
+        NodeFilter[] array0 = new NodeFilter[1];
+        array0[0] = filter0;
+        AndFilter filter1 = new AndFilter();
+        filter1.setPredicates(array0);
+        NodeFilter[] array1 = new NodeFilter[1];
+        array1[0] = filter1;
+        FilterBean bean = new FilterBean();
+        bean.setFilters(array1);
+        bean.setURL(movieUrl);
+
+        NodeList list = bean.getNodes();
+
+        if (list == null || list.size() == 0) {
+            return null;
+        }
+
+        int index = 0;//默认取第一个
+        //优先级 腾讯 - 爱奇艺 - 优酷
+
+        for (int i = 0; i < list.size(); i++) {
+            if (list.elementAt(i).toHtml().contains("芒果")) {
+                index = i;
+                break;
+            }
+        }
+
+        for (int i = 0; i < list.size(); i++) {
+            if (list.elementAt(i).toHtml().contains("优酷")) {
+                index = i;
+                break;
+            }
+        }
+
+        for (int i = 0; i < list.size(); i++) {
+            if (list.elementAt(i).toHtml().contains("爱奇艺")) {
+                index = i;
+                break;
+            }
+        }
+
+        for (int i = 0; i < list.size(); i++) {
+            if (list.elementAt(i).toHtml().contains("腾讯")) {
+                index = i;
+                break;
+            }
+        }
+
+        String tempHtml = list.elementAt(index).toHtml();
+        System.out.println(tempHtml);
+        String regEx = ".*url=(http.*?)%3F.*";
+        Pattern pattern = Pattern.compile(regEx);
+
+        Matcher matcher = pattern.matcher(tempHtml);
+        if (matcher.find()) {
+
+            String playLink = matcher.group(1);
+            playLink = playLink.replaceAll("%3A", ":");
+            playLink = playLink.replaceAll("%2F", "/");
+
+            return playLink;
+        }
+        return null;
+
+    }
+
     ///Users/chendianshu/learncode/素材/dianyings/
 
     //创建文件
@@ -102,13 +176,18 @@ public class MovieParser {
     }
 
     //写文件
-    private static boolean writeFile(File file, String url, String movieName, String initialReleaseDate) {
+    private static boolean writeFile(File file, String url, String movieName, String initialReleaseDate,
+            String playLink) {
         FileInputStream fis = null;
         try {
             FileWriter fw = new FileWriter(file);
             fw.write(url + "\n");
             fw.write(movieName + "\n");
             fw.write(initialReleaseDate + "\n");
+            fw.write("\n");
+            fw.write("\n");
+            fw.write("\n");
+            fw.write(playLink + "\n");
             fw.flush();
             fw.close();
             return true;

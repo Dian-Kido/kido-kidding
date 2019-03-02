@@ -28,7 +28,7 @@ public class UploadMovies {
     private static final String COVER_FILETYPE = ".jpg";
 
     public void uploadMoviesFile() {
-        String path = "/Users/chendianshu/learncode/素材/dianyings";        //要遍历的路径
+        String path = "/root/kido-datas/dianyings";        //要遍历的路径
         File file = new File(path);        //获取其file对象
         File[] fs = file.listFiles();    //遍历path下的文件和目录，放在File数组中
         for (File f : fs) {                    //遍历File[]数组
@@ -47,7 +47,7 @@ public class UploadMovies {
             reader = new BufferedReader(new FileReader(file));
             String tempString = null;
 
-            for (int line = 1; line <= 7; line++) {
+            for (int line = 1; line <= 8; line++) {
                 tempString = reader.readLine();
                 if (line == 1) {
                     movieVO.setDoubanLink(tempString.trim());
@@ -70,6 +70,9 @@ public class UploadMovies {
                     lines.add(tempString.trim());
                     movieVO.setLines(lines);
                 }
+                if (line == 7) {
+                    movieVO.setPlayLink(tempString.trim());
+                }
             }
 
         } catch (Exception e) {
@@ -85,4 +88,29 @@ public class UploadMovies {
         }
 
     }
+
+    //添加或者更新播放链接
+    public void addMoviesPlay(List<String> playsList) {
+
+        for (String strline : playsList) {
+
+            MovieVO movieVO = new MovieVO();
+            String str[] = strline.split("\t");
+
+            System.out.println(str[0] + "|" + str[1]);
+
+            movieVO.set_id(str[0]);
+            movieVO.setPlayLink(str[1]);
+
+            System.out.println("movie update result:" + movieService.update(movieVO, movieVO.get_id()));
+
+            try {
+                Thread.sleep(5);
+            } catch (Exception e) {
+
+            }
+
+        }
+    }
+
 }
