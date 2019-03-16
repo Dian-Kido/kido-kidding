@@ -114,9 +114,9 @@ function comingSoon() {
 
 function comingHeart() {
     swal({
-        title: "Just say it, Is that easy ?",
+        title: "祝你生日快乐~",
         //text: '2秒后自动关闭',
-        timer: 3000,
+        timer: 5000,
         confirmButtonColor: "#000000",
         customClass: 'swal-kido',
         confirmButtonClass: 'swal-kido'

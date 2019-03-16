@@ -26,7 +26,13 @@ public class MovieParser {
 
     public static void main(String[] args) {
 
-        String[] urls = { "https://movie.douban.com/subject/4179012/", "https://movie.douban.com/subject/25839052/" };
+        String[] urls = { "https://movie.douban.com/subject/3878007/", "https://movie.douban.com/subject/26683421/",
+                "https://movie.douban.com/subject/1298759/", "https://movie.douban.com/subject/24696982/",
+                "https://movie.douban.com/subject/20470074/", "https://movie.douban.com/subject/27113517/",
+                "https://movie.douban.com/subject/1302210/", "https://movie.douban.com/subject/5989818/",
+                "https://movie.douban.com/subject/1300613/", "https://movie.douban.com/subject/1296196/",
+                "https://movie.douban.com/subject/10571509/", "https://movie.douban.com/subject/1292329/",
+                "https://movie.douban.com/subject/26259677/", "https://movie.douban.com/subject/1463872/" };
 
         for (String url : urls) {
             String movieName = getMovieName(url);
