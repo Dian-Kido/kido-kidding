@@ -22,11 +22,10 @@
 
                 <#if movieVO.downloadLink != "">
                     <a class="down-link movie-downloadLink" href="javascript:void(0)"
-                       data-clipboard-text="${movieVO.downloadLink}" onclick="preCopyLink()">Download1</a>
+                       data-clipboard-text="${movieVO.downloadLink}" onclick="preCopyLink()">Download</a>
                 <#else>
                     <span class="down-link movie-no-downloadLink">暂无高清资源</>
                 </#if>
-
 
             </div>
             <p>

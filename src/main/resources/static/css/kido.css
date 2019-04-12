@@ -204,6 +204,7 @@ a:active {
     transform: translate(-50%, -50%);
     font-size: 18px;
     font-weight: 200;
+    color: white;
 }
 
 .no-play-container {
@@ -212,7 +213,7 @@ a:active {
 
 .no-play-img {
     background: #000;
-    opacity: 0.77;
+    opacity: 1;
 }
 
 .book-reading-font {
