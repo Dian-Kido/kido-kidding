@@ -114,9 +114,9 @@ function comingSoon() {
 
 function comingHeart() {
     swal({
-        title: "祝你生日快乐~",
+        title: "今夕何夕，见此良人~",
         //text: '2秒后自动关闭',
-        timer: 5000,
+        timer: 2777,
         confirmButtonColor: "#000000",
         customClass: 'swal-kido',
         confirmButtonClass: 'swal-kido'

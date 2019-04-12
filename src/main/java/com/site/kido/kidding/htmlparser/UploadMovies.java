@@ -28,6 +28,7 @@ public class UploadMovies {
     private static final String COVER_FILETYPE = ".jpg";
 
     public void uploadMoviesFile() {
+        //        String path = "/Users/chendianshu/learncode/素材/dianyings";        //要遍历的路径
         String path = "/root/kido-datas/dianyings";        //要遍历的路径
         File file = new File(path);        //获取其file对象
         File[] fs = file.listFiles();    //遍历path下的文件和目录，放在File数组中

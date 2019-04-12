@@ -158,6 +158,11 @@ a:active {
     color: #2aabd2;
 }
 
+.movie-no-downloadLink {
+    color: #6B6B6B;
+    font-weight: 7;
+}
+
 .movie-search-a {
     color: #b7c2c2;
     float: right;
@@ -190,6 +195,24 @@ a:active {
 
 .movie-img {
     cursor: inherit !important;
+}
+
+.no-play-word-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.no-play-container {
+    position: relative;
+}
+
+.no-play-img {
+    background: #000;
+    opacity: 0.77;
 }
 
 .book-reading-font {

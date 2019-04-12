@@ -4,17 +4,30 @@
 <div movieId="${movieVO._id}" class="col-md-4">
     <div class="team-item">
         <div class="team-image">
-            <a target="_blank" href="${movieVO.playLink}" title="优先支持正版渠道播放">
-                <img src="${movieVO.cover}" class="img-responsive movie-img"
-                     alt="cover">
-            </a>
+            <#if movieVO.playLink != "">
+                <a target="_blank" href="${movieVO.playLink}" title="优先支持正版渠道播放">
+                    <img src="${movieVO.cover}" class="img-responsive movie-img">
+                </a>
+            <#else>
+                <div class="no-play-container">
+                    <img src="${movieVO.cover}" class="img-responsive movie-img no-play-img">
+                    <div class="no-play-word-center">暂无高清播放源</div>
+                </div>
+            </#if>
         </div>
         <div class="team-text movie-list-height" movietype="${movieVO.type}"
              releaseDate="${movieVO.releaseDate?string('yyyy-MM-dd')}">
             <h3><a target="_blank" href="${movieVO.doubanLink}">${movieVO.cnName}</a></h3>
             <div class="team-position">
-                <a class="down-link movie-downloadLink" href="javascript:void(0)"
-                   data-clipboard-text="${movieVO.downloadLink}" onclick="preCopyLink()">Download</a>
+
+                <#if movieVO.downloadLink != "">
+                    <a class="down-link movie-downloadLink" href="javascript:void(0)"
+                       data-clipboard-text="${movieVO.downloadLink}" onclick="preCopyLink()">Download1</a>
+                <#else>
+                    <span class="down-link movie-no-downloadLink">暂无高清资源</>
+                </#if>
+
+
             </div>
             <p>
                 <span class="movie-lines-font">${movieVO.lines[0]}</span>
