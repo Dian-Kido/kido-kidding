@@ -8,14 +8,14 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <div class="section-title movie-title">
-                    <h2>电影推荐</h2>
+                    <h2>献给对电影有追求的你</h2>
                     <p>We never killed anyone, but we all know ... what it's like to kill</p>
                 </div>
             </div>
         </div>
 
         <div id="movie-list-items">
-        <#include "movie-list-items.ftl">
+            <#include "movie-list-items.ftl">
         </div>
 
     </div>
