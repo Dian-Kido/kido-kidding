@@ -1,6 +1,5 @@
 package com.site.kido.kidding.utils;
 
-import com.alibaba.fastjson.JSON;
 import com.site.kido.kidding.meta.consts.MovieTypeEnum;
 import com.site.kido.kidding.vo.ErpInfo;
 import com.site.kido.kidding.vo.MovieVO;
@@ -59,7 +58,7 @@ public class MovieCreateUtil {
         ErpInfo<MovieVO> erpInfo = new ErpInfo<>();
         erpInfo.setSecretCode("niZENmeKEnengCAIdao7");
         erpInfo.setData(movieVO);
-        System.out.println(JSON.toJSONString(erpInfo));
+        System.out.println(GSONUtil.toJson(erpInfo));
     }
 
 }

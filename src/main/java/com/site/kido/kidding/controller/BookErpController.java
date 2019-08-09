@@ -1,9 +1,9 @@
 package com.site.kido.kidding.controller;
 
-import com.alibaba.fastjson.JSON;
 import com.site.kido.kidding.htmlparser.UploadBooks;
 import com.site.kido.kidding.service.BookService;
 import com.site.kido.kidding.service.PermissionService;
+import com.site.kido.kidding.utils.GSONUtil;
 import com.site.kido.kidding.vo.BookVO;
 import com.site.kido.kidding.vo.ErpInfo;
 import com.site.kido.kidding.vo.QueryBookParam;
@@ -45,7 +45,7 @@ public class BookErpController {
     @RequestMapping(value = "/insert", method = RequestMethod.POST)
     @ResponseBody
     public String insert(@RequestBody ErpInfo<BookVO> erpInfo) {
-        logger.info(JSON.toJSONString(erpInfo));
+        logger.info(GSONUtil.toJson(erpInfo));
         if (!permissionService.checkAuth(erpInfo.getSecretCode())) {
             return ("无权限........");
         }
@@ -196,7 +196,7 @@ public class BookErpController {
         ErpInfo<QueryBookParam> erpInfo = new ErpInfo<>();
         erpInfo.setData(queryBookParam);
         erpInfo.setSecretCode("niZENmeKEnengCAIdao7");
-        System.out.println(JSON.toJSONString(erpInfo));
+        System.out.println(GSONUtil.toJson(erpInfo));
 
     }
 }

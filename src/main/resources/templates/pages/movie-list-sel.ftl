@@ -32,7 +32,8 @@
 
             <div class="movie-col-lg">
                 <a onclick="searchMovie()" class="movie-search-a"><i class='glyphicon glyphicon-search'></i></a>
-                <input id="movie-search-input" value="${searchText}" type=" text" class="movie-form-control"
+                <input id="movie-search-input" value="${searchText}" onkeydown="searchEnter(event)" type=" text"
+                       class="movie-form-control"
                        placeholder="${searchText!'Search ...'}">
             </div>
 

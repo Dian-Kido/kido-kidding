@@ -174,3 +174,10 @@ function preCopyLink() {
         );
     });
 }
+
+
+function searchEnter(e) {
+    if (e.keyCode == 13) {
+        searchMovie()
+    }
+}

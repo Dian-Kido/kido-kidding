@@ -1,9 +1,9 @@
 package com.site.kido.kidding.controller;
 
-import com.alibaba.fastjson.JSON;
 import com.site.kido.kidding.htmlparser.UploadMovies;
 import com.site.kido.kidding.service.MovieService;
 import com.site.kido.kidding.service.PermissionService;
+import com.site.kido.kidding.utils.GSONUtil;
 import com.site.kido.kidding.vo.ErpInfo;
 import com.site.kido.kidding.vo.MovieVO;
 import com.site.kido.kidding.vo.QueryMovieParam;
@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -61,7 +60,7 @@ public class MovieErpController {
     @RequestMapping(value = "/insert", method = RequestMethod.POST)
     @ResponseBody
     public String insert(@RequestBody ErpInfo<MovieVO> erpInfo) {
-        logger.info(JSON.toJSONString(erpInfo));
+        logger.info(GSONUtil.toJson(erpInfo));
         if (!permissionService.checkAuth(erpInfo.getSecretCode())) {
             return ("无权限........");
         }
@@ -227,19 +226,16 @@ public class MovieErpController {
 
     public static void main(String[] args) {
 
-      /*
         ErpInfo<MovieVO> erpInfo = new ErpInfo<>();
         MovieVO movieVO1 = new MovieVO();
-        movieVO1.setCnName("测试电影名100");
-        movieVO1.setType(1);
-        movieVO1.setHide(false);
-
-        erpInfo.setSecretCode("niZENmeKEnengCAIdao7");
-
+        movieVO1.set_id("5cc717d9f1857464420f75ff");
+        movieVO1.setPlayLink("https://www.tvdashi.com/play/25045-1-1.html");
+        movieVO1.setDownloadLink(
+                "magnet:?xt=urn:btih:21e003b070f43a135a4913d7158aea3befee9d82&tr=udp://9.rarbg.to:2710/announce&tr=udp://9.rarbg.me:2710/announce&tr=http://tr.cili001.com:8070/announce&tr=http://tracker.trackerfix.com:80/announce&tr=udp://open.demonii.com:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://p4p.arenabg.com:1337&tr=wss://tracker.openwebtorrent.com&tr=wss://tracker.btorrent.xyz&tr=wss://tracker.fastcast.nz");
+        erpInfo.setSecretCode("howdareyou777777");
         erpInfo.setData(movieVO1);
-        System.out.println(JSON.toJSONString(erpInfo));
 
-        */
+
 
 /*
         ErpInfo<String> erpInfo = new ErpInfo<>();
@@ -258,13 +254,18 @@ public class MovieErpController {
 
 */
 
+
+
+
+
+
+/*
         ErpInfo<List<String>> erpInfo = new ErpInfo();
         erpInfo.setSecretCode("howdareyou777777");
         List<String> strList = new ArrayList<>();
         strList.add("5bceab1cbefdd20c076011ed\thttps://v.youku.com/v_show/id_XMjczMTQxMDA2NA==.html");
-        strList.add("5bceab1cbefdd20c076011ed\thttps://v.youku.com/v_show/id_XMjczMTQxMDA2NA==.html");
         erpInfo.setData(strList);
-
-        System.out.println(JSON.toJSON(erpInfo));
+*/
+        System.out.println(GSONUtil.toJson(erpInfo));
     }
 }

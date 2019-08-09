@@ -3,6 +3,7 @@ package com.site.kido.kidding.controller;
 import com.site.kido.kidding.service.PermissionService;
 import com.site.kido.kidding.service.WebService;
 import com.site.kido.kidding.utils.DateTimeUtils;
+import com.site.kido.kidding.utils.GSONUtil;
 import com.site.kido.kidding.vo.ErpInfo;
 import com.site.kido.kidding.vo.QueryMsgParam;
 import com.site.kido.kidding.vo.QueryRecordParam;
@@ -49,7 +50,7 @@ public class WebErpController {
         QueryRecordParam queryRecordParam = erpInfo.getData();
         Integer pageNum = queryRecordParam.getPageNum();
         Integer pageSize = queryRecordParam.getPageSize();
-        return "record listPage reduslt:" + webService.listPageRecord(pageNum, pageSize);
+        return GSONUtil.toJson(webService.listPageRecord(pageNum, pageSize));
     }
 
     /**
@@ -70,7 +71,7 @@ public class WebErpController {
                 .stringToTimestamp(queryRecordParam.getStartDateStr(), DateTimeUtils.DATE_FORMAT_FULL);
         Date endDate = DateTimeUtils
                 .stringToTimestamp(queryRecordParam.getEndDateStr(), DateTimeUtils.DATE_FORMAT_FULL);
-        return "record listPage reduslt:" + webService.countRecord(startDate, endDate);
+        return GSONUtil.toJson(webService.countRecord(startDate, endDate));
     }
 
     /**
@@ -89,7 +90,7 @@ public class WebErpController {
         QueryMsgParam queryMsgParam = erpInfo.getData();
         Integer pageNum = queryMsgParam.getPageNum();
         Integer pageSize = queryMsgParam.getPageSize();
-        return "msg listPage reduslt:" + webService.listPageMsg(pageNum, pageSize);
+        return GSONUtil.toJson(webService.listPageMsg(pageNum, pageSize));
     }
 
     /**
@@ -109,7 +110,7 @@ public class WebErpController {
         Date startDate = DateTimeUtils
                 .stringToTimestamp(queryMsgParam.getStartDateStr(), DateTimeUtils.DATE_FORMAT_FULL);
         Date endDate = DateTimeUtils.stringToTimestamp(queryMsgParam.getEndDateStr(), DateTimeUtils.DATE_FORMAT_FULL);
-        return "msg listPage reduslt:" + webService.countMsg(startDate, endDate);
+        return GSONUtil.toJson(webService.countMsg(startDate, endDate));
     }
 
 }

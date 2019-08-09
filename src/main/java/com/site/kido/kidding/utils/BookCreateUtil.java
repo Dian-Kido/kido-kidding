@@ -1,6 +1,5 @@
 package com.site.kido.kidding.utils;
 
-import com.alibaba.fastjson.JSON;
 import com.site.kido.kidding.vo.BookVO;
 import com.site.kido.kidding.vo.ErpInfo;
 
@@ -62,6 +61,6 @@ public class BookCreateUtil {
         ErpInfo<BookVO> erpInfo = new ErpInfo<>();
         erpInfo.setSecretCode("niZENmeKEnengCAIdao7");
         erpInfo.setData(bookVO);
-        System.out.println(JSON.toJSONString(erpInfo));
+        System.out.println(GSONUtil.toJson(erpInfo));
     }
 }
