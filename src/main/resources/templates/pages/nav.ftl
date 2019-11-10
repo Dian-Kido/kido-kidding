@@ -18,19 +18,19 @@
 
 
                     <li>
-                        <a href="/movie/list/1/15">MOVIE</a>
+                        <a href="/movie/list/1/15">电影推荐</a>
                     </li>
 
                     <li>
-                        <a href="https://blog.kido.site/">BLOG</a>
+                        <a href="https://blog.kido.site/">技术博客</a>
                     </li>
 
                     <li>
-                        <a href="/tab/show">NAVIGATION</a>
+                        <a href="/tab/show">网站导航</a>
                     </li>
 
                     <li>
-                        <a href="/author/about">ABOUT ME</a>
+                        <a href="/author/about">Don't</a>
                     </li>
 
 
@@ -51,6 +51,7 @@
     var $collapse = document.querySelector('.navbar-collapse');
 
     $toggle.addEventListener('click', handleMagic)
+
     function handleMagic(e) {
         if ($navbar.className.indexOf('in') > 0) {
             // CLOSE

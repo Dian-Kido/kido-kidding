@@ -67,6 +67,7 @@
 
             <!-- start portfolio item -->
             <div class="col-md-6 col-0-gutter">
+                <input id="emotionClickTime" style="display:none;" value="0"><!-- 点击次数 -->
                 <div class="ot-portfolio-item">
                     <figure class="effect-bubba">
                         <img src="/images/author/emotion-cover800*533.jpg" alt="img02" class="img-responsive"/>

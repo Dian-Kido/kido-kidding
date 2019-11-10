@@ -1,9 +1,6 @@
 package com.site.kido.kidding.aop;
 
-import com.site.kido.kidding.dao.entity.WebRecordPO;
-import com.site.kido.kidding.meta.consts.RecordTypeEnum;
 import com.site.kido.kidding.service.WebService;
-import com.site.kido.kidding.utils.ConvertUtil;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
@@ -33,6 +30,8 @@ public class RecordAspect {
 
     @After("addRecord()")
     public Object Interceptor(JoinPoint point) {
+        //2019-11-10暂时关闭记录功能，看百度统计就可以了
+        /*
         try {
             WebRecordPO webRecordPO = ConvertUtil.createWebRecordPO(RecordTypeEnum.BROWSE.getTypeCode(), null);
             if (webRecordPO != null) {
@@ -41,6 +40,7 @@ public class RecordAspect {
         } catch (Throwable e) {
             logger.error("切面写浏览记录发生异常", e);
         }
+         */
         return null;
     }
 

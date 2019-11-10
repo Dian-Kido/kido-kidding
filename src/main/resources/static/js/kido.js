@@ -113,10 +113,41 @@ function comingSoon() {
 
 
 function comingHeart() {
+
+    time = 1777
+    title0 = "既见君子，云胡不喜"
+    title1 = "与君初相识，犹如故人归"
+    title2 = "如果你这么好奇，为什么不直接留言"
+    title3 = "别点了，后面没了~"
+    title4 = "我的微博：<a href='https://weibo.com/chendianshu' onclick=clickEmotion('点击微博') target='_blank'>@泡面大厨</a>"
+
+    var emotionClickTime = Number($("#emotionClickTime").val())
+    if (emotionClickTime == 0) {
+        title = title0
+        time = 777
+    }
+    if (emotionClickTime == 1) {
+        title = title1
+        time = 1777
+    }
+    if (emotionClickTime == 2) {
+        title = title2
+        time = 1777
+    }
+    if (emotionClickTime == 3) {
+        title = title3
+        time = 1777
+    }
+    if (emotionClickTime >= 4) {
+        title = title4
+        time = 9777
+    }
+    $("#emotionClickTime").val(emotionClickTime + 1)
+
     swal({
-        title: "今夕何夕，见此良人~",
+        title: title,
         //text: '2秒后自动关闭',
-        timer: 2777,
+        timer: time,
         confirmButtonColor: "#000000",
         customClass: 'swal-kido',
         confirmButtonClass: 'swal-kido'
@@ -127,6 +158,25 @@ function comingHeart() {
         function (dismiss) {
             if (dismiss === 'timer') {
                 console.log('I was closed by the timer')
+            }
+        }
+    );
+    // emotion click记录
+    clickEmotion(title)
+}
+
+// emotion click记录
+function clickEmotion(remark) {
+    jQuery.ajax({
+            type: "POST",
+            contentType: "application/x-www-form-urlencoded;charset=utf-8",
+            data: {
+                "remark": remark
+            },
+            url: "/msg/click/emotion",
+            dataType: "html",
+            success: function (_data) {
+                //do nothing
             }
         }
     );

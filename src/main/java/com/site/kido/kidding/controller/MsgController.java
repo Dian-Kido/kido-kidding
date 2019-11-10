@@ -1,6 +1,8 @@
 package com.site.kido.kidding.controller;
 
 import com.site.kido.kidding.dao.entity.MsgPO;
+import com.site.kido.kidding.dao.entity.WebRecordPO;
+import com.site.kido.kidding.meta.consts.RecordTypeEnum;
 import com.site.kido.kidding.service.WebService;
 import com.site.kido.kidding.utils.ConvertUtil;
 import com.site.kido.kidding.vo.MeassgeVO;
@@ -56,4 +58,23 @@ public class MsgController {
         return "Send Success";
     }
 
+    /**
+     * 点击emotion记录
+     *
+     * @param
+     * @return
+     */
+    @RequestMapping(value = "/click/emotion", method = RequestMethod.POST)
+    @ResponseBody
+    public String clickEmotion(@RequestParam(value = "remark") String remark) {
+        try {
+            WebRecordPO webRecordPO = ConvertUtil.createWebRecordPO(RecordTypeEnum.CLICKEMOTION.getTypeCode(), remark);
+            if (webRecordPO != null) {
+                webService.insertBrowseRecord(webRecordPO);
+            }
+        } catch (Throwable e) {
+            logger.error("点击emotion记录发生异常", e);
+        }
+        return "Record Success";
+    }
 }

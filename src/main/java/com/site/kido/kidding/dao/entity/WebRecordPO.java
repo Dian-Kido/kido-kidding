@@ -42,6 +42,11 @@ public class WebRecordPO implements Serializable {
      */
     private String browserMes;
 
+    /**
+     * 备注
+     */
+    private String remark;
+
     public String get_id() {
         return _id;
     }
@@ -90,6 +95,14 @@ public class WebRecordPO implements Serializable {
         this.browserMes = browserMes;
     }
 
+    public String getRemark() {
+        return remark;
+    }
+
+    public void setRemark(String remark) {
+        this.remark = remark;
+    }
+
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("WebRecordPO{");
@@ -99,6 +112,7 @@ public class WebRecordPO implements Serializable {
         sb.append(", url='").append(url).append('\'');
         sb.append(", remoteIp='").append(remoteIp).append('\'');
         sb.append(", browserMes='").append(browserMes).append('\'');
+        sb.append(", remark='").append(remark).append('\'');
         sb.append('}');
         return sb.toString();
     }

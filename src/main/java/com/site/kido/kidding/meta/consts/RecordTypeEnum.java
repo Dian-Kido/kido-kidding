@@ -10,8 +10,10 @@ public enum RecordTypeEnum {
     ALL(0, "ALL"),
     //浏览记录
     BROWSE(1, "BROWSE"),
-    //留言记录
-    MESSAGE(2, "MESSAGE");
+    //留言记录（已废弃）
+    MESSAGE(2, "MESSAGE"),
+    //EMOTION点击
+    CLICKEMOTION(3, "CLICKEMOTION");
 
     private Integer typeCode;
     private String typeName;

@@ -123,7 +123,7 @@ public class ConvertUtil {
         return bookPOList;
     }
 
-    public static WebRecordPO createWebRecordPO(Integer recordType, MeassgeVO meassgeVO) {
+    public static WebRecordPO createWebRecordPO(Integer recordType, String remark) {
 
         try {
             HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes())
@@ -154,9 +154,10 @@ public class ConvertUtil {
             webRecordPO.setUrl(url);
             webRecordPO.setRemoteIp(remoteIp);
             webRecordPO.setBrowserMes(browserMes);
+            webRecordPO.setRemark(remark);
             return webRecordPO;
         } catch (Exception e) {
-            logger.error("记录对象创建失败，recordType={}，meassgeVO={}", recordType, meassgeVO, e);
+            logger.error("记录对象创建失败，recordType={}，remark={}", recordType, remark, e);
             return null;
         }
 

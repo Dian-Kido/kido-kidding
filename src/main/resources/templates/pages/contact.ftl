@@ -3,8 +3,19 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <div class="section-title">
-                    <h2>Contact Me</h2>
-                    <p>If you have some Questions or need Help! Please Contact Me!<br></p>
+                    <#if springMacroRequestContext.requestUri?contains("/author/pipi")>
+                        <h2>一起喵喵喵~</h2>
+                        <p>皮皮这么可爱，我们一起来揉它呀~<br></p>
+                    <#elseif springMacroRequestContext.requestUri?contains("/author")>
+                        <h2>留言</h2>
+                        <p>谢谢你关注我微不足道的人生<br></p>
+                    <#elseif springMacroRequestContext.requestUri?contains("/book")>
+                        <h2>以书会友</h2>
+                        <p>如果你也喜欢阅读，一起交流吧<br></p>
+                    <#else>
+                        <h2>吐槽框</h2>
+                        <p>If you have some Questions or need Help! Please Contact Me!<br></p>
+                    </#if>
                 </div>
             </div>
         </div>
