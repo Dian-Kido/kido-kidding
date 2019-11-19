@@ -119,7 +119,7 @@ function comingHeart() {
     title1 = "与君初相识，犹如故人归"
     title2 = "如果你这么好奇，为什么不直接留言"
     title3 = "别点了，后面没了~"
-    title4 = "我的微博：<a href='https://weibo.com/chendianshu' onclick=clickEmotion('点击微博') target='_blank'>@泡面大厨</a>"
+    title4 = "你好，我叫<a href='https://weibo.com/chendianshu' onclick=clickEmotion('点击微博') target='_blank'>@泡面大厨</a>，请多指教~"
 
     var emotionClickTime = Number($("#emotionClickTime").val())
     if (emotionClickTime == 0) {

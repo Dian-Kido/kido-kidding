@@ -3,6 +3,7 @@ package com.site.kido.kidding.controller;
 import com.site.kido.kidding.htmlparser.UploadMovies;
 import com.site.kido.kidding.service.MovieService;
 import com.site.kido.kidding.service.PermissionService;
+import com.site.kido.kidding.utils.DateTimeUtils;
 import com.site.kido.kidding.utils.GSONUtil;
 import com.site.kido.kidding.vo.ErpInfo;
 import com.site.kido.kidding.vo.MovieVO;
@@ -228,13 +229,11 @@ public class MovieErpController {
 
         ErpInfo<MovieVO> erpInfo = new ErpInfo<>();
         MovieVO movieVO1 = new MovieVO();
-        movieVO1.set_id("5cc717d9f1857464420f75ff");
-        movieVO1.setPlayLink("https://www.tvdashi.com/play/25045-1-1.html");
-        movieVO1.setDownloadLink(
-                "magnet:?xt=urn:btih:21e003b070f43a135a4913d7158aea3befee9d82&tr=udp://9.rarbg.to:2710/announce&tr=udp://9.rarbg.me:2710/announce&tr=http://tr.cili001.com:8070/announce&tr=http://tracker.trackerfix.com:80/announce&tr=udp://open.demonii.com:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://p4p.arenabg.com:1337&tr=wss://tracker.openwebtorrent.com&tr=wss://tracker.btorrent.xyz&tr=wss://tracker.fastcast.nz");
+        movieVO1.set_id("5bcf2f0cf185740651188445");
+        movieVO1.setPlayLink("https://www.41ys.com/play/15537-1-1.html");
+        movieVO1.setReleaseDate(DateTimeUtils.stringToTimestamp("20191115"));
         erpInfo.setSecretCode("howdareyou777777");
         erpInfo.setData(movieVO1);
-
 
 
 /*
@@ -267,5 +266,6 @@ public class MovieErpController {
         erpInfo.setData(strList);
 */
         System.out.println(GSONUtil.toJson(erpInfo));
+        System.out.println(DateTimeUtils.stringToTimestamp("20191115").getTime());
     }
 }
