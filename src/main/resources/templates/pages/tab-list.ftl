@@ -22,9 +22,8 @@
                     <ul>
                         <li><a href="#" data-filter="*" class="current">All</a></li>
                         <li><a href="#" data-filter=".learn">学习</a></li>
-                        <li><a href="#" data-filter=".yingshi">影视</a></li>
-                        <li class="last"><a href="#" data-filter=".resource">资源</a></li>
-                        <li class="last"><a href="#" data-filter=".design">设计</a></li>
+                        <li><a href="#" data-filter=".resource">资源</a></li>
+                        <li><a href="#" data-filter=".design">设计</a></li>
                         <li class="last"><a href="#" data-filter=".gongju">工具</a></li>
                     </ul>
                 </div>
@@ -38,7 +37,7 @@
                                 src="/images/tabs/coursera.png" alt=""></a>
                     </li>
 
-                    <li class="current resource col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <li class="current design col-xs-6 col-sm-4 col-md-3 col-lg-3">
                         <a target="_blank" href="http://simpledesktops.com/" title="简约壁纸"><span class="hoverBox"> <span
                                         class="smallIcon"> <i
                                             class="fa fa-search fa-2x"></i></a>  </span> </span> <img
@@ -46,7 +45,7 @@
                     </li>
 
 
-                    <li class="current yingshi col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <li class="current resource col-xs-6 col-sm-4 col-md-3 col-lg-3">
                         <a target="_blank" href="http://cili001.com/" title="美剧下载"><span class="hoverBox"> <span
                                         class="smallIcon"> <i
                                             class="fa fa-search fa-2x"></i></a>  </span> </span> <img
@@ -54,15 +53,7 @@
                     </li>
 
 
-                    <li class="current design col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                        <a target="_blank" href="https://www.behance.net/" title="发现创意作品"><span class="hoverBox"> <span
-                                        class="smallIcon"> <i
-                                            class="fa fa-search fa-2x"></i></a>  </span> </span> <img
-                                src="/images/tabs/behance.png" alt=""></a>
-                    </li>
-
-
-                    <li class="current yingshi col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <li class="current resource col-xs-6 col-sm-4 col-md-3 col-lg-3">
                         <a target="_blank" href="https://www.icezmz.com/" title="英剧下载"><span class="hoverBox"> <span
                                         class="smallIcon"> <i
                                             class="fa fa-search fa-2x"></i></a>  </span> </span> <img
@@ -70,7 +61,7 @@
                     </li>
 
 
-                    <li class="current resource col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <li class="current design col-xs-6 col-sm-4 col-md-3 col-lg-3">
                         <a target="_blank" href="http://wallpaperswide.com/" title="高清壁纸"><span class="hoverBox"> <span
                                         class="smallIcon"> <i
                                             class="fa fa-search fa-2x"></i></a>  </span> </span> <img
@@ -92,12 +83,21 @@
                                 src="/images/tabs/123apps.png" alt=""></a>
                     </li>
 
-                    <li class="current yingshi col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <li class="current resource col-xs-6 col-sm-4 col-md-3 col-lg-3">
                         <a target="_blank" href="http://www.dygang.net/" title="电影下载"><span class="hoverBox"> <span
                                         class="smallIcon"> <i
                                             class="fa fa-search fa-2x"></i></a>  </span> </span> <img
                                 src="/images/tabs/dygang.png" alt=""></a>
                     </li>
+
+
+                    <li class="current design col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <a target="_blank" href="https://www.behance.net/" title="发现创意作品"><span class="hoverBox"> <span
+                                        class="smallIcon"> <i
+                                            class="fa fa-search fa-2x"></i></a>  </span> </span> <img
+                                src="/images/tabs/behance.png" alt=""></a>
+                    </li>
+
 
                     <li class="current learn col-xs-6 col-sm-4 col-md-3 col-lg-3">
                         <a target="_blank" href="https://study.163.com/" title="网易云课堂"><span class="hoverBox"> <span
@@ -107,14 +107,14 @@
                     </li>
 
 
-                    <li class="current resource design col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <li class="current design col-xs-6 col-sm-4 col-md-3 col-lg-3">
                         <a target="_blank" href="https://www.pinterest.com/" title="视觉探索"><span class="hoverBox"> <span
                                         class="smallIcon"> <i
                                             class="fa fa-search fa-2x"></i></a>  </span> </span> <img
                                 src="/images/tabs/pinterest.png" alt=""></a>
                     </li>
 
-                    <li class="current yingshi col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <li class="current resource col-xs-6 col-sm-4 col-md-3 col-lg-3">
                         <a target="_blank" href="http://ihd.me/" title="电影下载"><span class="hoverBox"> <span
                                         class="smallIcon"> <i
                                             class="fa fa-search fa-2x"></i></a>  </span> </span> <img
@@ -122,15 +122,7 @@
                     </li>
 
 
-                    <li class="current learn col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                        <a target="_blank" href="http://www.quora.com/" title="问答"><span class="hoverBox"> <span
-                                        class="smallIcon"> <i
-                                            class="fa fa-search fa-2x"></i></a>  </span> </span> <img
-                                src="/images/tabs/quora.png" alt=""></a>
-                    </li>
-
-
-                    <li class="current resource col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <li class="current design col-xs-6 col-sm-4 col-md-3 col-lg-3">
                         <a target="_blank" href="https://www.pexels.com/" title="高品质图片"><span class="hoverBox"> <span
                                         class="smallIcon"> <i
                                             class="fa fa-search fa-2x"></i></a>  </span> </span> <img
@@ -145,11 +137,19 @@
                     </li>
 
 
-                    <li class="current resource design col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <li class="current design col-xs-6 col-sm-4 col-md-3 col-lg-3">
                         <a target="_blank" href="https://www.seeseed.com/" title="设计灵感"><span class="hoverBox"> <span
                                         class="smallIcon"> <i
                                             class="fa fa-search fa-2x"></i></a>  </span> </span> <img
                                 src="/images/tabs/seeseed.png" alt=""></a>
+                    </li>
+
+
+                    <li class="current learn col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <a target="_blank" href="http://www.quora.com/" title="问答"><span class="hoverBox"> <span
+                                        class="smallIcon"> <i
+                                            class="fa fa-search fa-2x"></i></a>  </span> </span> <img
+                                src="/images/tabs/quora.png" alt=""></a>
                     </li>
 
 
@@ -206,7 +206,7 @@
                                 src="/images/tabs/github.png" alt=""></a>
                     </li>
 
-                    <li class="current yingshi col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <li class="current resource col-xs-6 col-sm-4 col-md-3 col-lg-3">
                         <a target="_blank" href="https://www.imdb.com/" title="imdb"><span class="hoverBox"> <span
                                         class="smallIcon"> <i
                                             class="fa fa-search fa-2x"></i></a>  </span> </span> <img
@@ -214,7 +214,7 @@
                     </li>
 
 
-                    <li class="current resource design col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <li class="current design col-xs-6 col-sm-4 col-md-3 col-lg-3">
                         <a target="_blank" href="https://vlad.studio/zh/home/" title="数字艺术"><span
                                     class="hoverBox"> <span
                                         class="smallIcon"> <i
@@ -230,14 +230,14 @@
                                 src="/images/tabs/mvyxws.png" alt=""></a>
                     </li>
 
-                    <li class="current yingshi col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <li class="current resource col-xs-6 col-sm-4 col-md-3 col-lg-3">
                         <a target="_blank" href="http://www.btbuluo.com/" title="电影下载"><span class="hoverBox"> <span
                                         class="smallIcon"> <i
                                             class="fa fa-search fa-2x"></i></a>  </span> </span> <img
                                 src="/images/tabs/btbuluo.png" alt=""></a>
                     </li>
 
-                    <li class="current yingshi col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <li class="current resource col-xs-6 col-sm-4 col-md-3 col-lg-3">
                         <a target="_blank" href="http://ifkdy.com/" title="影视搜索"><span class="hoverBox"> <span
                                         class="smallIcon"> <i
                                             class="fa fa-search fa-2x"></i></a>  </span> </span> <img
@@ -276,7 +276,7 @@
                                 src="/images/tabs/0daydown.png" alt=""></a>
                     </li>
 
-                    <li class="current yingshi col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <li class="current resource col-xs-6 col-sm-4 col-md-3 col-lg-3">
                         <a target="_blank" href="http://zhuixinfan.com/main.php" title="日剧下载"><span
                                     class="hoverBox"> <span
                                         class="smallIcon"> <i
