@@ -19,6 +19,21 @@
             <div class="col-md-6 col-0-gutter">
                 <div class="ot-portfolio-item">
                     <figure class="effect-bubba">
+                        <img src="/images/author/wish-cover800*533.jpg" alt="img02" class="img-responsive"/>
+                        <figcaption>
+                            <h2>Wish List</h2>
+                            <p>愿望清单</p>
+                            <a href="/author/wish">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <!-- end portfolio item -->
+
+            <!-- start portfolio item -->
+            <div class="col-md-6 col-0-gutter">
+                <div class="ot-portfolio-item">
+                    <figure class="effect-bubba">
                         <img src="/images/author/read-cover800*533.jpg" alt="img02" class="img-responsive"/>
                         <figcaption>
                             <h2>Reading List</h2>
@@ -31,6 +46,10 @@
             <!-- end portfolio item -->
 
 
+        </div>
+        <div class="row row-0-gutter">
+
+
             <!-- start portfolio item -->
             <div class="col-md-6 col-0-gutter">
                 <div class="ot-portfolio-item">
@@ -40,25 +59,6 @@
                             <h2>pipi</h2>
                             <p>我家皮皮的日常</p>
                             <a href="/author/pipi">View more</a>
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-            <!-- end portfolio item -->
-
-        </div>
-        <div class="row row-0-gutter">
-
-
-            <!-- start portfolio item -->
-            <div class="col-md-6 col-0-gutter">
-                <div class="ot-portfolio-item">
-                    <figure class="effect-bubba">
-                        <img src="/images/author/wish-cover800*533.jpg" alt="img02" class="img-responsive"/>
-                        <figcaption>
-                            <h2>Wish List</h2>
-                            <p>愿望清单</p>
-                            <a href="/author/wish">View more</a>
                         </figcaption>
                     </figure>
                 </div>

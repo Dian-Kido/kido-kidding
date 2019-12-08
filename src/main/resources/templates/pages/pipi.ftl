@@ -550,35 +550,6 @@
                     </section>
 
                 </li>
-                <li>
-
-                    <section class="blog-content pipi-list-section">
-
-                        <div>
-
-                            <figure>
-
-                                <div class="post-date">
-
-                                    <span>05</span> Aug 2018
-
-                                </div>
-
-                                <img src="/images/pipi/20180805-2.jpg" alt="" class="img-responsive"/>
-
-                            </figure>
-
-                        </div>
-
-                        <article>
-
-                            桌面撸猫
-
-                        </article>
-
-                    </section>
-
-                </li>
 
                 <li>
 

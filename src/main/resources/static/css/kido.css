@@ -361,6 +361,20 @@ a.read-check {
     color: #fff;
 }
 
-.weibo-link {
-    color: #8f93ff;
+a.read-uncheck {
+    padding: 0.5em 1.5em;
+    font-size: 1em;
+    border: 2px solid #646464;
+    text-decoration: none;
+    border-radius: 1.5em;
+    -webkit-border-radius: 1.5em;
+    -moz-border-radius: 1.5em;
+    -o-border-radius: 1.5em;
+    -ms-border-radius: 1.5em;
+    background: #646464;
+    color: #fff;
+}
+
+.internal-link {
+    color: #8f93ff !important;
 }
