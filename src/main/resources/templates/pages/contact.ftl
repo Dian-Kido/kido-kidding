@@ -8,7 +8,9 @@
                         <p>皮皮这么可爱，我们一起来揉它呀~<br></p>
                     <#elseif springMacroRequestContext.requestUri?contains("/author")>
                         <h2>留言</h2>
-                        <p>谢谢你关注我微不足道的人生<br></p>
+                        <p>谢谢你关注我微不足道的人生</br>你好，我叫<a class="weibo-link" href='https://weibo.com/chendianshu'
+                                                     onclick=clickRecord('点击微博')
+                                                     target='_blank'>@泡面大厨</a>，请多指教~</p>
                     <#elseif springMacroRequestContext.requestUri?contains("/book")>
                         <h2>以书会友</h2>
                         <p>如果你也喜欢阅读，一起交流吧<br></p>

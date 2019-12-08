@@ -30,7 +30,7 @@
                     </li>
 
                     <li>
-                        <a href="/author/about">Don't</a>
+                        <a href="/author/about">不要点开</a>
                     </li>
 
 

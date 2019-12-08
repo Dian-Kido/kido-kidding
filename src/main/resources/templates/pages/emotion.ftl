@@ -23,7 +23,7 @@
                         <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
                             <div class="slider-text-inner">
                                 <h2>若彼浮生</h2>
-                            <#--<p>Follow @gettemplatesco</p>-->
+                                <#--<p>Follow @gettemplatesco</p>-->
                             </div>
                         </div>
                     </div>
@@ -34,7 +34,7 @@
                         <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
                             <div class="slider-text-inner">
                                 <h2>或琴瑟在御之静好</h2>
-                            <#--<p>Follow @gettemplatesco</p>-->
+                                <#--<p>Follow @gettemplatesco</p>-->
                             </div>
                         </div>
                     </div>
@@ -45,7 +45,7 @@
                         <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
                             <div class="slider-text-inner">
                                 <h2>或金风玉露之相逢</h2>
-                            <#--<p>Follow @gettemplatesco</p>-->
+                                <#--<p>Follow @gettemplatesco</p>-->
                             </div>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
                         <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
                             <div class="slider-text-inner">
                                 <h2>皆聊复尔尔</h2>
-                            <#--<p>Follow @gettemplatesco</p>-->
+                                <#--<p>Follow @gettemplatesco</p>-->
                             </div>
                         </div>
                     </div>
@@ -68,39 +68,11 @@
                         <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
                             <div class="slider-text-inner">
                                 <h2>唯难得灵犀一点、与君相知</h2>
-                            <#--<p>Follow @gettemplatesco</p>-->
+                                <#--<p>Follow @gettemplatesco</p>-->
                             </div>
                         </div>
                     </div>
                 </li>
-
-
-
-
-
-
-            <#--<li style="background-image: url(/images/emotion/img_bg_2.jpg);">-->
-            <#--<div class="overlay"></div>-->
-            <#--<div class="container">-->
-            <#--<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">-->
-            <#--<div class="slider-text-inner">-->
-            <#--<h2>Creative. Innovative.Intuitive.</h2>-->
-            <#--<p><a href="#" class="btn btn-primary btn-lg">Get started</a></p>-->
-            <#--</div>-->
-            <#--</div>-->
-            <#--</div>-->
-            <#--</li>-->
-            <#--<li style="background-image: url(/images/emotion/img_bg_3.jpg);">-->
-            <#--<div class="overlay"></div>-->
-            <#--<div class="container">-->
-            <#--<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">-->
-            <#--<div class="slider-text-inner">-->
-            <#--<h2>A new experience.</h2>-->
-            <#--<p><a href="#" class="btn btn-primary btn-lg">Get started</a></p>-->
-            <#--</div>-->
-            <#--</div>-->
-            <#--</div>-->
-            <#--</li>-->
             </ul>
         </div>
     </div>

@@ -72,11 +72,9 @@
                     <figure class="effect-bubba">
                         <img src="/images/author/emotion-cover800*533.jpg" alt="img02" class="img-responsive"/>
                         <figcaption>
-                            <h2>Emotion</h2>
-                            <p>内心</p>
-                            <!-- If you want to know, why don't you just tell me ? -->
-                            <!--<a href="/author/emotion-close">Real Url</a>-->
-                            <a href="javascript:void(0)" onclick="comingHeart()">View more</a>
+                            <h2>Coming Soon...</h2>
+                            <p>待开发...</p>
+                            <a href="javascript:void(0)" onclick="comingSoon()">View more</a>
                         </figcaption>
                     </figure>
                 </div>

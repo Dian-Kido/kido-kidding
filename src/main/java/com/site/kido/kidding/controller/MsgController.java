@@ -59,21 +59,21 @@ public class MsgController {
     }
 
     /**
-     * 点击emotion记录
+     * 点击&记录
      *
      * @param
      * @return
      */
-    @RequestMapping(value = "/click/emotion", method = RequestMethod.POST)
+    @RequestMapping(value = "/click/record", method = RequestMethod.POST)
     @ResponseBody
-    public String clickEmotion(@RequestParam(value = "remark") String remark) {
+    public String clickRecord(@RequestParam(value = "remark") String remark) {
         try {
-            WebRecordPO webRecordPO = ConvertUtil.createWebRecordPO(RecordTypeEnum.CLICKEMOTION.getTypeCode(), remark);
+            WebRecordPO webRecordPO = ConvertUtil.createWebRecordPO(RecordTypeEnum.CLICKRECORD.getTypeCode(), remark);
             if (webRecordPO != null) {
                 webService.insertBrowseRecord(webRecordPO);
             }
         } catch (Throwable e) {
-            logger.error("点击emotion记录发生异常", e);
+            logger.error("点击、记录发生异常", e);
         }
         return "Record Success";
     }

@@ -32,7 +32,7 @@ public class AuthorController {
      * @return
      */
     @Record
-    @RequestMapping(value = "/emotion-close")
+    @RequestMapping(value = "/emotion")
     public String emotion() {
         return "emotion";
     }

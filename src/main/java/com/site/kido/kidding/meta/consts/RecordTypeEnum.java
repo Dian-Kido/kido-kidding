@@ -12,8 +12,8 @@ public enum RecordTypeEnum {
     BROWSE(1, "BROWSE"),
     //留言记录（已废弃）
     MESSAGE(2, "MESSAGE"),
-    //EMOTION点击
-    CLICKEMOTION(3, "CLICKEMOTION");
+    //点击&记录
+    CLICKRECORD(3, "CLICKRECORD");
 
     private Integer typeCode;
     private String typeName;
