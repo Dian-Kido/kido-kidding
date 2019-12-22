@@ -229,9 +229,10 @@ public class MovieErpController {
 
         ErpInfo<MovieVO> erpInfo = new ErpInfo<>();
         MovieVO movieVO1 = new MovieVO();
-        movieVO1.set_id("5bcf2f0cf185740651188445");
-        movieVO1.setPlayLink("https://www.41ys.com/play/15537-1-1.html");
-        movieVO1.setReleaseDate(DateTimeUtils.stringToTimestamp("20191115"));
+        movieVO1.set_id("5bcf2f0cf185740651188495");
+        //        movieVO1.setPlayLink("https://www.41ys.com/play/15537-1-1.html");
+        movieVO1.setReleaseDate(DateTimeUtils.stringToTimestamp("20191225"));
+        movieVO1.setCnName("真爱至上[圣诞推荐ღ]");
         erpInfo.setSecretCode("howdareyou777777");
         erpInfo.setData(movieVO1);
 
@@ -266,6 +267,6 @@ public class MovieErpController {
         erpInfo.setData(strList);
 */
         System.out.println(GSONUtil.toJson(erpInfo));
-        System.out.println(DateTimeUtils.stringToTimestamp("20191115").getTime());
+        System.out.println(DateTimeUtils.stringToTimestamp("20191225").getTime());
     }
 }

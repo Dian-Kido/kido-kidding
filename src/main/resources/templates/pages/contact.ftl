@@ -5,18 +5,21 @@
                 <div class="section-title">
                     <#if springMacroRequestContext.requestUri?contains("/author/pipi")>
                         <h2>一起喵喵喵~</h2>
-                        <p>皮皮这么可爱，我们一起来揉它呀~<br></p>
-                    <#elseif springMacroRequestContext.requestUri?contains("/author")>
+                        <p>皮皮这么可爱，我们一起来揉它呀~</p>
+                    <#elseif springMacroRequestContext.requestUri?contains("/author/about")>
                         <h2>留言</h2>
-                        <p>谢谢你关注我微不足道的人生</br>你好，我叫<a class="internal-link" href='https://weibo.com/chendianshu'
-                                                     onclick=clickRecord('点击微博')
-                                                     target='_blank'>@泡面大厨</a>，请多指教~</p>
+                        <p>谢谢你关注我微不足道的人生</p>
+                    <#elseif springMacroRequestContext.requestUri?contains("/author/wish")>
+                        <h2>留言</h2>
+                        <p>你好，我叫<a class="internal-link" href='https://weibo.com/chendianshu'
+                                   onclick=clickRecord('点击微博')
+                                   target='_blank'>@泡面大厨</a>，请多指教~</p>
                     <#elseif springMacroRequestContext.requestUri?contains("/book")>
                         <h2>以书会友</h2>
                         <p>如果你也喜欢阅读，一起交流吧<br></p>
                     <#else>
-                        <h2>吐槽框</h2>
-                        <p>If you have some Questions or need Help! Please Contact Me!<br></p>
+                        <h2>留言框</h2>
+                        <p>交流、分享、推荐电影请留言~ 这是一个个人网站，纯属爱好，不接广告!<br></p>
                     </#if>
                 </div>
             </div>
