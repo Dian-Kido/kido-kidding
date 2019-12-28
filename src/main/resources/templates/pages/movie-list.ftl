@@ -9,7 +9,7 @@
             <div class="col-lg-12 text-center">
                 <div class="section-title movie-title">
                     <h2>Top Movies</h2>
-                    <p>献给对电影有追求的你</p>
+                    <p>献给热爱电影的你</p>
                 </div>
             </div>
         </div>

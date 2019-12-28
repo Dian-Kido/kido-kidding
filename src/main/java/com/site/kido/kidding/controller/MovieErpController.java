@@ -3,7 +3,6 @@ package com.site.kido.kidding.controller;
 import com.site.kido.kidding.htmlparser.UploadMovies;
 import com.site.kido.kidding.service.MovieService;
 import com.site.kido.kidding.service.PermissionService;
-import com.site.kido.kidding.utils.DateTimeUtils;
 import com.site.kido.kidding.utils.GSONUtil;
 import com.site.kido.kidding.vo.ErpInfo;
 import com.site.kido.kidding.vo.MovieVO;
@@ -225,48 +224,4 @@ public class MovieErpController {
         return "addMoviesPlay";
     }
 
-    public static void main(String[] args) {
-
-        ErpInfo<MovieVO> erpInfo = new ErpInfo<>();
-        MovieVO movieVO1 = new MovieVO();
-        movieVO1.set_id("5bcf2f0cf185740651188495");
-        //        movieVO1.setPlayLink("https://www.41ys.com/play/15537-1-1.html");
-        movieVO1.setReleaseDate(DateTimeUtils.stringToTimestamp("20191225"));
-        movieVO1.setCnName("真爱至上[圣诞推荐ღ]");
-        erpInfo.setSecretCode("howdareyou777777");
-        erpInfo.setData(movieVO1);
-
-
-/*
-        ErpInfo<String> erpInfo = new ErpInfo<>();
-        erpInfo.setSecretCode("niZENmeKEnengCAIdao7");
-                erpInfo.setData("5ba3b70bcb2ce909b523bb11");
-        System.out.println(JSON.toJSONString(erpInfo));
-        */
-
-/*
-        ErpInfo<QueryMovieParam> erpInfo = new ErpInfo<>();
-        erpInfo.setSecretCode("niZENmeKEnengCAIdao7");
-        QueryMovieParam queryMovieParam = new QueryMovieParam();
-        queryMovieParam.setId("5ba48cff65322b1219f8dd12");
-        erpInfo.setData(queryMovieParam);
-        System.out.println(JSON.toJSONString(erpInfo));
-
-*/
-
-
-
-
-
-
-/*
-        ErpInfo<List<String>> erpInfo = new ErpInfo();
-        erpInfo.setSecretCode("howdareyou777777");
-        List<String> strList = new ArrayList<>();
-        strList.add("5bceab1cbefdd20c076011ed\thttps://v.youku.com/v_show/id_XMjczMTQxMDA2NA==.html");
-        erpInfo.setData(strList);
-*/
-        System.out.println(GSONUtil.toJson(erpInfo));
-        System.out.println(DateTimeUtils.stringToTimestamp("20191225").getTime());
-    }
 }
