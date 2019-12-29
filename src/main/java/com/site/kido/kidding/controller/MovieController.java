@@ -27,7 +27,8 @@ public class MovieController {
 
     private static final Logger logger = LoggerFactory.getLogger(MovieErpController.class);
 
-    public static String tcResource = "";
+    public static String tcResource = "";//枪版提示
+    public static String mvBozhujiyu = "献给热爱电影的你";//博主寄语
 
     @Autowired
     private MovieService movieService;
@@ -57,6 +58,7 @@ public class MovieController {
             model.addAttribute("pageInfo", pageInfo);
         }
 
+        model.addAttribute("mvBozhujiyu", mvBozhujiyu);//博主寄语
         return "movie-list";
     }
 
@@ -123,6 +125,7 @@ public class MovieController {
             model.addAttribute("pageInfo", pageInfo);
         }
 
+        model.addAttribute("mvBozhujiyu", mvBozhujiyu);//博主寄语
         return "movie-list";
     }
 
