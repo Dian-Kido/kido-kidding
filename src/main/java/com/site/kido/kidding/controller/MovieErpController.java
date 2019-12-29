@@ -222,6 +222,22 @@ public class MovieErpController {
     }
 
     /**
+     * 修改电影博主留言
+     *
+     * @param erpInfo
+     * @return
+     */
+    @RequestMapping(value = "/changeMvBozhuLiuyan", method = RequestMethod.POST)
+    @ResponseBody
+    public String changeMvBozhuLiuyan(@RequestBody ErpInfo<String> erpInfo) {
+        if (!permissionService.checkAuth(erpInfo.getSecretCode())) {
+            return ("无权限........");
+        }
+        MovieController.mvBozhuLiuyan = erpInfo.getData();
+        return "mvBozhuLiuyan更新成功";
+    }
+
+    /**
      * 增加或者修改直播地址
      *
      * @param erpInfo

@@ -19,7 +19,9 @@
                         <p>如果你也喜欢阅读，一起交流吧<br></p>
                     <#else>
                         <h2>留言框</h2>
-                        <p>交流、分享、推荐电影请留言~ 这是一个个人网站，纯属爱好，不接广告!<br></p>
+                        <#if mvBozhuLiuyan != "">
+                            <p>${mvBozhuLiuyan}</p>
+                        </#if>
                     </#if>
                 </div>
             </div>
