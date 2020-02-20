@@ -7,6 +7,7 @@
                 <#if movieVO.playLink != "">
                     <a target="_blank" href="${movieVO.playLink}" title="优先支持正版渠道播放">
                         <img src="${movieVO.cover}" class="img-responsive movie-img">
+                        <div class="overlay"></div>
                         <div class="play-word-center">▷</div>
                     </a>
                 <#else>
