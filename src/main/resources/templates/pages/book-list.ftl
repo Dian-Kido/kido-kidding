@@ -16,7 +16,7 @@
                 <div class="site-heading">
                     <div class="book-reading-font">
                         <h2>携书如历三千世,无书唯度一平生</h2>
-                        <p>Sometimes, Reading is the way to escape from reality</p>
+                        <p>A reader lives a thousand lives before he dies. The man who never reads lives only one.</p>
                     </div>
                 </div>
             </div>
@@ -30,46 +30,46 @@
         <div class="row">
 
 
-        <#list bookVOList as bookVO>
+            <#list bookVOList as bookVO>
 
-            <div class="book-grid w3l-agile">
-                <div class="col-md-4 news-img container-book-img">
-                    <img src="${bookVO.cover}" alt=" "
-                         class="img-responsive container-book-list-img">
+                <div class="book-grid w3l-agile">
+                    <div class="col-md-4 news-img container-book-img">
+                        <img src="${bookVO.cover}" alt=" "
+                             class="img-responsive container-book-list-img">
+                    </div>
+
+                    <div class="col-md-7 news-text container-book-text" title="爱心数量仅代表个人喜欢程度，无关书本价值">
+                        <h3>
+                            <div data-toggle="modal"
+                                 data-target="#myModal1">${bookVO.cnName}</div>
+                        </h3>
+                        <ul class="news">
+                            <li>
+                                <i class="glyphicon glyphicon-user book-author"></i>${bookVO.author}</li>
+                            </br>
+
+                            <#if bookVO.recommendIndex?exists>
+                                <#list 1..bookVO.recommendIndex as i>
+                                    <i class="glyphicon glyphicon-heart"></i>
+                                </#list>
+                            </#if>
+
+
+                            <#--<li><i class="glyphicon glyphicon-comment"></i> <a href="#">2 Comments</a></li>-->
+                            <#--<li><i class="glyphicon glyphicon-heart"></i> <a href="#">50 Likes</a></li>-->
+                            <#--<li><i class="glyphicon glyphicon-tags"></i> <a href="#">3 Tags</a></li>-->
+                        </ul>
+                        <p>${bookVO.lines[0]}</p>
+                        <a href="${bookVO.doubanLink}" target="_blank" title=""
+                           class="read hvr-shutter-in-horizontal">豆瓣</a>
+
+                    </div>
+
+                    <div class="clearfix"></div>
                 </div>
 
-                <div class="col-md-7 news-text container-book-text" title="爱心数量仅代表个人喜欢程度，无关书本价值">
-                    <h3>
-                        <div data-toggle="modal"
-                             data-target="#myModal1">${bookVO.cnName}</div>
-                    </h3>
-                    <ul class="news">
-                        <li>
-                            <i class="glyphicon glyphicon-user book-author"></i>${bookVO.author}</li>
-                        </br>
-
-                        <#if bookVO.recommendIndex?exists>
-                            <#list 1..bookVO.recommendIndex as i>
-                                <i class="glyphicon glyphicon-heart"></i>
-                            </#list>
-                        </#if>
-
-
-                    <#--<li><i class="glyphicon glyphicon-comment"></i> <a href="#">2 Comments</a></li>-->
-                    <#--<li><i class="glyphicon glyphicon-heart"></i> <a href="#">50 Likes</a></li>-->
-                    <#--<li><i class="glyphicon glyphicon-tags"></i> <a href="#">3 Tags</a></li>-->
-                    </ul>
-                    <p>${bookVO.lines[0]}</p>
-                    <a href="${bookVO.doubanLink}" target="_blank" title=""
-                       class="read hvr-shutter-in-horizontal">豆瓣</a>
-
-                </div>
-
-                <div class="clearfix"></div>
-            </div>
-
-        </#list>
-        <#include "book-list-page.ftl">
+            </#list>
+            <#include "book-list-page.ftl">
         </div>
     </div>
 </section>

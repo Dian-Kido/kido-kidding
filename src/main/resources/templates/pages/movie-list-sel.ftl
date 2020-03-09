@@ -2,31 +2,31 @@
     <span>
         <#if movieType == 0>
             <li class="movie-type-button"><a href="javascript:void(0);" onclick="typeMovie(0)"
-                                             class="movie-type-a-sel">ALL</a></li>
+                                             class="movie-type-a-sel">All</a></li>
         <#else>
             <li class="movie-type-button"><a href="javascript:void(0);" onclick="typeMovie(0)"
-                                             class="movie-type-a">ALL</a></li>
+                                             class="movie-type-a">All</a></li>
         </#if>
-        <#if movieType == 1>
-            <li class="movie-type-button"><a href="javascript:void(0);" onclick="typeMovie(1)"
-                                             class="movie-type-a-sel">电影</a></li>
-        <#else>
-            <li class="movie-type-button"><a href="javascript:void(0);" onclick="typeMovie(1)"
-                                             class="movie-type-a">电影</a></li>
-        </#if>
+        <#--        <#if movieType == 1>-->
+        <#--            <li class="movie-type-button"><a href="javascript:void(0);" onclick="typeMovie(1)"-->
+        <#--                                             class="movie-type-a-sel">电影</a></li>-->
+        <#--        <#else>-->
+        <#--            <li class="movie-type-button"><a href="javascript:void(0);" onclick="typeMovie(1)"-->
+        <#--                                             class="movie-type-a">电影</a></li>-->
+        <#--        </#if>-->
         <#if movieType == 2>
             <li class="movie-type-button"><a href="javascript:void(0);" onclick="typeMovie(2)"
-                                             class="movie-type-a-sel">动画</a></li>
+                                             class="movie-type-a-sel">Animation</a></li>
         <#else>
             <li class="movie-type-button"><a href="javascript:void(0);" onclick="typeMovie(2)"
-                                             class="movie-type-a">动画</a></li>
+                                             class="movie-type-a">Animation</a></li>
         </#if>
         <#if movieType == 3>
             <li class="movie-type-button"><a href="javascript:void(0);" onclick="typeMovie(3)"
-                                             class="movie-type-a-sel">惊悚</a></li>
+                                             class="movie-type-a-sel">Thriller</a></li>
         <#else>
             <li class="movie-type-button"><a href="javascript:void(0);" onclick="typeMovie(3)"
-                                             class="movie-type-a">惊悚</a></li>
+                                             class="movie-type-a">Thriller</a></li>
         </#if>
 
 

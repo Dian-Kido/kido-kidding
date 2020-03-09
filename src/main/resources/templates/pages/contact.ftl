@@ -7,18 +7,23 @@
                         <h2>一起喵喵喵~</h2>
                         <p>皮皮这么可爱，我们一起来揉它呀~</p>
                     <#elseif springMacroRequestContext.requestUri?contains("/author/about")>
-                        <h2>留言</h2>
-                        <p>谢谢你关注我微不足道的人生</p>
+                        <h2>知与谁同</h2>
+                        <p>叹烟波渺渺，知音何处</p>
+                    <#elseif springMacroRequestContext.requestUri?contains("/author/emotion")>
+                        <h2>如此良人何</h2>
+                        <p>既见君子，云胡不喜</p>
                     <#elseif springMacroRequestContext.requestUri?contains("/author/wish")>
-                        <h2>留言</h2>
+                        <h2>浮幻人间世</h2>
                         <p>你好，我叫<a class="internal-link" href='https://weibo.com/chendianshu'
                                    onclick=clickRecord('点击微博')
                                    target='_blank'>@泡面大厨</a>，请多指教~</p>
                     <#elseif springMacroRequestContext.requestUri?contains("/book")>
-                        <h2>以书会友</h2>
-                        <p>如果你也喜欢阅读，一起交流吧<br></p>
-                    <#else>
+                        <h2>淡墨留香</h2>
+                        <p>以书为伴，以文会友</p>
+                    <#elseif springMacroRequestContext.requestUri?contains("/tab/show")>
                         <h2>留言框</h2>
+                    <#else>
+                        <h2>淡墨留痕</h2>
                         <#if mvBozhuLiuyan != "">
                             <p>${mvBozhuLiuyan}</p>
                         </#if>

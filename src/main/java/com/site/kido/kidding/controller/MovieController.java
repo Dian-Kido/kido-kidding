@@ -28,8 +28,8 @@ public class MovieController {
     private static final Logger logger = LoggerFactory.getLogger(MovieErpController.class);
 
     public static String tcResource = "";//枪版提示
-    public static String mvBozhujiyu = "献给热爱电影的你";//博主寄语
-    public static String mvBozhuLiuyan = "本网站纯属个人爱好，不盈利，服务器好贵呀~";//博主寄语
+    public static String mvBozhujiyu = "只推荐高质量电影，献给热爱观影的你";//博主寄语
+    public static String mvBozhuLiuyan = "小众网站，纯爱好，不盈利";//博主寄语
 
     @Autowired
     private MovieService movieService;

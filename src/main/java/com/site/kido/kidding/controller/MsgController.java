@@ -40,7 +40,7 @@ public class MsgController {
     public String send(@RequestParam(value = "mesName") String mesName,
             @RequestParam(value = "mesEmail") String mesEmail, @RequestParam(value = "mesContent") String mesContent) {
         if (StringUtils.isBlank(mesName) && StringUtils.isBlank(mesEmail) && StringUtils.isBlank(mesContent)) {
-            return "啥也不写，不妥吧?";
+            return "咋啥也不写呢，调皮~";
         }
         MeassgeVO meassgeVO = new MeassgeVO();
         meassgeVO.setMesName(mesName);

@@ -114,14 +114,6 @@
                                 src="/images/tabs/pinterest.png" alt=""></a>
                     </li>
 
-                    <li class="current resource col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                        <a target="_blank" href="http://ihd.me/" title="电影下载"><span class="hoverBox"> <span
-                                        class="smallIcon"> <i
-                                            class="fa fa-search fa-2x"></i></a>  </span> </span> <img
-                                src="/images/tabs/ihd.png" alt=""></a>
-                    </li>
-
-
                     <li class="current design col-xs-6 col-sm-4 col-md-3 col-lg-3">
                         <a target="_blank" href="https://www.pexels.com/" title="高品质图片"><span class="hoverBox"> <span
                                         class="smallIcon"> <i
