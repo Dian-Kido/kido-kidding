@@ -23,7 +23,7 @@
                     <#elseif springMacroRequestContext.requestUri?contains("/tab/show")>
                         <h2>留言框</h2>
                     <#else>
-                        <h2>淡墨留痕</h2>
+                        <h2>留言框</h2>
                         <#if mvBozhuLiuyan != "">
                             <p>${mvBozhuLiuyan}</p>
                         </#if>

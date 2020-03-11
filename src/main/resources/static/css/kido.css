@@ -412,3 +412,7 @@ a.read-uncheck {
     display: block;
     background: rgba(0, 0, 0, .3);
 }
+
+.footer-font {
+    color: #B7B7B7;
+}

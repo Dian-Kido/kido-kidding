@@ -2,8 +2,10 @@
     <a href="#top"><i class="glyphicon glyphicon-menu-up"></i></a>
 </p>
 <footer>
-    <div class="container text-center">
-        <p>POWER BY KIDO</p>
+    <div class="container text-center ">
+        <p>POWER BY KIDO <a class="footer-font" target="_blank"
+                            href="http://www.beian.miit.gov.cn">闽ICP备18024128号-1</a>
+        </p>
     </div>
 </footer>
 
