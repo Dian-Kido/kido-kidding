@@ -55,7 +55,8 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
-                                <textarea class="form-control" placeholder="Your Message *" id="mesContent" required=""
+                                <textarea class="form-control" placeholder="Your Message * (如果您希望博主回复，请填写准确的联系方式哈)"
+                                          id="mesContent" required=""
                                           data-validation-required-message="Please enter a message."
                                           name="mesContent"></textarea>
                                 <p class="help-block text-danger"></p>
