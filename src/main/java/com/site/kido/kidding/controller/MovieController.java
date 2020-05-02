@@ -29,7 +29,7 @@ public class MovieController {
 
     public static String tcResource = "";//枪版提示
     public static String mvBozhujiyu = "只推荐高质量电影，献给热爱观影的你";//博主寄语
-    public static String mvBozhuLiuyan = "小众网站，纯爱好，不盈利";//博主寄语
+    public static String mvBozhuLiuyan = "非盈利网站，纯博主爱好";//博主寄语
 
     @Autowired
     private MovieService movieService;
