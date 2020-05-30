@@ -2,6 +2,7 @@ package com.site.kido.kidding.controller;
 
 import com.site.kido.kidding.service.PermissionService;
 import com.site.kido.kidding.service.WebService;
+import com.site.kido.kidding.utils.BizUtil;
 import com.site.kido.kidding.utils.DateTimeUtils;
 import com.site.kido.kidding.utils.GSONUtil;
 import com.site.kido.kidding.vo.ErpInfo;
@@ -111,6 +112,38 @@ public class WebErpController {
                 .stringToTimestamp(queryMsgParam.getStartDateStr(), DateTimeUtils.DATE_FORMAT_FULL);
         Date endDate = DateTimeUtils.stringToTimestamp(queryMsgParam.getEndDateStr(), DateTimeUtils.DATE_FORMAT_FULL);
         return GSONUtil.toJson(webService.countMsg(startDate, endDate));
+    }
+
+    /**
+     * 修改Topmovies微信群
+     *
+     * @param erpInfo
+     * @return
+     */
+    @RequestMapping(value = "/chgTopMoviesWxq", method = RequestMethod.POST)
+    @ResponseBody
+    public String chgTopMoviesWxq(@RequestBody ErpInfo<String> erpInfo) {
+        if (!permissionService.checkAuth(erpInfo.getSecretCode())) {
+            return ("无权限........");
+        }
+        BizUtil.top_movies_wxq = erpInfo.getData();
+        return "chgTopMoviesWxq更新成功";
+    }
+
+    /**
+     * 修改博主微信
+     *
+     * @param erpInfo
+     * @return
+     */
+    @RequestMapping(value = "/chgKidoWx", method = RequestMethod.POST)
+    @ResponseBody
+    public String chgKidoWx(@RequestBody ErpInfo<String> erpInfo) {
+        if (!permissionService.checkAuth(erpInfo.getSecretCode())) {
+            return ("无权限........");
+        }
+        BizUtil.kido_wx = erpInfo.getData();
+        return "chgKidoWx更新成功";
     }
 
 }

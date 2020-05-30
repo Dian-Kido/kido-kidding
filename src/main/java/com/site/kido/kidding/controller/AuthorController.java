@@ -1,7 +1,9 @@
 package com.site.kido.kidding.controller;
 
 import com.site.kido.kidding.aop.Record;
+import com.site.kido.kidding.utils.BizUtil;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -21,7 +23,8 @@ public class AuthorController {
      */
     @Record
     @RequestMapping(value = "/about")
-    public String aboout() {
+    public String aboout(Model model) {
+        model.addAttribute("kidoWx", BizUtil.kido_wx);//博主微信
         return "about-list";
     }
 
@@ -57,7 +60,8 @@ public class AuthorController {
      */
     @Record
     @RequestMapping(value = "/wish")
-    public String wish() {
+    public String wish(Model model) {
+        model.addAttribute("kidoWx", BizUtil.kido_wx);//博主微信
         return "wish-list";
     }
 

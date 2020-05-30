@@ -176,3 +176,46 @@ function searchEnter(e) {
         searchMovie()
     }
 }
+
+
+function showKidoWx(kidoWxUrl) {
+    swal({
+        title: "初次相识，请多指教~",
+        // text: '初次相识，请多指教~',
+        imageUrl: kidoWxUrl,
+        // timer: 2000,
+        confirmButtonColor: "#000000",
+        customClass: 'swal-kido',
+        confirmButtonClass: 'swal-kido'
+    }).then(
+        function () {
+        },
+        // handling the promise rejection
+        function (dismiss) {
+            if (dismiss === 'timer') {
+                console.log('I was closed by the timer')
+            }
+        }
+    );
+}
+
+function showTopMoivesWxq(topMoviesWxqUrl) {
+    swal({
+        title: "TOP MOVIES 微信群",
+        // text: '初次相识，请多指教~',
+        imageUrl: topMoviesWxqUrl,
+        // timer: 2000,
+        confirmButtonColor: "#000000",
+        customClass: 'swal-kido',
+        confirmButtonClass: 'swal-kido'
+    }).then(
+        function () {
+        },
+        // handling the promise rejection
+        function (dismiss) {
+            if (dismiss === 'timer') {
+                console.log('I was closed by the timer')
+            }
+        }
+    );
+}

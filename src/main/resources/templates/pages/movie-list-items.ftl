@@ -39,7 +39,8 @@
     <!-- end team member item -->
 </#list>
 <#if movieNotFound>
-    <h3 class="movie-not-found">您搜索的<b>"${beforeSearchText}"</b>资源尚未收录，如果您觉得值得推荐，欢迎在底下留言框留言~</h3>
+    <h4 class="movie-not-found">Sorry~您搜索的<b>"${beforeSearchText}"</b>未上榜哟</h4>
+    <h4 class="movie-not-found">但是，您还可以<a class="movie-TC-url" target="_blank" href="${toFindPlay}">点击搜索在线观看</a>哈</h4>
 
     ${tcResource}
 

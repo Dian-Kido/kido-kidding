@@ -14,6 +14,7 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpServletRequest;
+import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -54,6 +55,10 @@ public class ConvertUtil {
             if (moviePO != null) {
                 MovieVO movieVO = new MovieVO();
                 BeanUtils.copyProperties(moviePO, movieVO);
+                //电影播放Link转换，防止某网站关闭的情况
+                if (BizUtil.chgPlayLink(movieVO.getPlayLink())) {
+                    movieVO.setPlayLink(MessageFormat.format(BizUtil.toFindPlay, movieVO.getCnName()));
+                }
                 movieVOList.add(movieVO);
             }
         }

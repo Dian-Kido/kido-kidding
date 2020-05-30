@@ -4,6 +4,7 @@ import com.site.kido.kidding.aop.Record;
 import com.site.kido.kidding.meta.consts.Constants;
 import com.site.kido.kidding.meta.consts.MovieTypeEnum;
 import com.site.kido.kidding.service.MovieService;
+import com.site.kido.kidding.utils.BizUtil;
 import com.site.kido.kidding.vo.MovieVO;
 import com.site.kido.kidding.vo.PageInfo;
 import org.slf4j.Logger;
@@ -14,6 +15,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.text.MessageFormat;
 import java.util.List;
 
 /**
@@ -29,7 +31,7 @@ public class MovieController {
 
     public static String tcResource = "";//枪版提示
     public static String mvBozhujiyu = "只推荐高质量电影，献给热爱观影的你";//博主寄语
-    public static String mvBozhuLiuyan = "非盈利网站，纯博主爱好";//博主寄语
+    public static String mvBozhuLiuyan = "你喜欢电影吗，<a class=\"internal-link\" href=\"javascript:void(0)\" onclick=\"showTopMoivesWxq('https://kido-1257686190.cos.ap-beijing.myqcloud.com/wx_erweima/top_movies_wxq/top_movies_wxq-20200530-2.png')\">加入爱电影的小伙伴呀~</a>";//博主寄语
 
     @Autowired
     private MovieService movieService;
@@ -61,6 +63,9 @@ public class MovieController {
 
         model.addAttribute("mvBozhujiyu", mvBozhujiyu);//博主寄语
         model.addAttribute("mvBozhuLiuyan", mvBozhuLiuyan);//博主留言
+
+        model.addAttribute("topMoviesWxq", BizUtil.top_movies_wxq);//Topmovies微信群
+
         return "movie-list";
     }
 
@@ -129,6 +134,7 @@ public class MovieController {
 
         model.addAttribute("mvBozhujiyu", mvBozhujiyu);//博主寄语
         model.addAttribute("mvBozhuLiuyan", mvBozhuLiuyan);//博主留言
+        model.addAttribute("topMoviesWxq", BizUtil.top_movies_wxq);//Topmovies微信群
         return "movie-list";
     }
 
@@ -145,6 +151,7 @@ public class MovieController {
         model.addAttribute("movieVOList", movieVOList);
         model.addAttribute("beforeSearchText", searchText);
         model.addAttribute("tcResource", tcResource);
+        model.addAttribute("toFindPlay", MessageFormat.format(BizUtil.toFindPlay, searchText));
         if (movieVOList == null || movieVOList.size() < 1) {
             model.addAttribute("movieNotFound", true);
         }

@@ -8,15 +8,15 @@
                         <p>皮皮这么可爱，我们一起来揉它呀~</p>
                     <#elseif springMacroRequestContext.requestUri?contains("/author/about")>
                         <h2>知与谁同</h2>
-                        <p>叹烟波渺渺，知音何处</p>
+                        <p>叹烟波渺渺，<a class="internal-link" href="javascript:void(0)"
+                                    onclick=showKidoWx('${kidoWx}')>知音何处</a></p>
                     <#elseif springMacroRequestContext.requestUri?contains("/author/emotion")>
                         <h2>如此良人何</h2>
                         <p>既见君子，云胡不喜</p>
                     <#elseif springMacroRequestContext.requestUri?contains("/author/wish")>
                         <h2>浮幻人间世</h2>
-                        <p>你好，我叫<a class="internal-link" href='https://weibo.com/chendianshu'
-                                   onclick=clickRecord('点击微博')
-                                   target='_blank'>@泡面大厨</a>，请多指教~</p>
+                        <p>你好，我叫<a class="internal-link" href="javascript:void(0)"
+                                   onclick=showKidoWx('${kidoWx}')>泡面大厨</a>，请多指教~</p>
                     <#elseif springMacroRequestContext.requestUri?contains("/book")>
                         <h2>淡墨留香</h2>
                         <p>以书为伴，以文会友</p>
@@ -26,6 +26,9 @@
                         <h2>留言框</h2>
                         <#if mvBozhuLiuyan != "">
                             <p>${mvBozhuLiuyan}</p>
+                        <#--                            <p>你喜欢电影吗，<a class="internal-link" href="javascript:void(0)" onclick="showTopMoivesWxq('https://kido-1257686190.cos.ap-beijing.myqcloud.com/wx_erweima/top_movies_wxq/top_movies_wxq-20200530-2.png')">加入爱电影的小伙伴呀~</a></p>-->
+                        <#else>
+                            <p>你喜欢电影吗？那我也喜欢~</p>
                         </#if>
                     </#if>
                 </div>
