@@ -294,7 +294,7 @@
                         <i class="glyphicon glyphicon-star-empty"></i>
                     </li>
                 </ul>
-                <p></p>
+                <p>-------------------------------------------------------------</p>
                 <a href="javascript:void(0);" class="read-uncheck hvr-shutter-in-horizontal">uncheck</a>
             </div>
             <div class="clearfix"></div>
@@ -332,7 +332,7 @@
                         <i class="glyphicon glyphicon-star"></i>
                     </li>
                 </ul>
-                <p></p>
+                <p>-------------------------------------------------------------</p>
                 <a href="javascript:void(0);" class="read-uncheck hvr-shutter-in-horizontal">uncheck</a>
             </div>
             <div class="clearfix"></div>
@@ -371,7 +371,7 @@
                         <i class="glyphicon glyphicon-star-empty"></i>
                     </li>
                 </ul>
-                <p></p>
+                <p>-------------------------------------------------------------</p>
                 <a href="javascript:void(0);" class="read-uncheck hvr-shutter-in-horizontal">uncheck</a>
             </div>
             <div class="clearfix"></div>
@@ -408,7 +408,7 @@
                         <i class="glyphicon glyphicon-star"></i>
                     </li>
                 </ul>
-                <p></p>
+                <p>-------------------------------------------------------------</p>
                 <a href="javascript:void(0);" class="read-uncheck hvr-shutter-in-horizontal">uncheck</a>
             </div>
             <div class="clearfix"></div>
@@ -446,7 +446,7 @@
                         <i class="glyphicon glyphicon-star-empty"></i>
                     </li>
                 </ul>
-                <p></p>
+                <p>-------------------------------------------------------------</p>
                 <a href="javascript:void(0);" class="read-uncheck hvr-shutter-in-horizontal">uncheck</a>
             </div>
             <div class="clearfix"></div>
@@ -488,7 +488,7 @@
                         <i class="glyphicon glyphicon-star-empty"></i>
                     </li>
                 </ul>
-                <p></p>
+                <p>-------------------------------------------------------------</p>
                 <a href="javascript:void(0);" class="read-uncheck hvr-shutter-in-horizontal">uncheck</a>
             </div>
             <div class="clearfix"></div>
@@ -522,7 +522,7 @@
                         <i class="glyphicon glyphicon-star"></i>
                     </li>
                 </ul>
-                <p></p>
+                <p>-------------------------------------------------------------</p>
                 <a href="javascript:void(0);" class="read-uncheck hvr-shutter-in-horizontal">uncheck</a>
             </div>
             <div class="clearfix"></div>
