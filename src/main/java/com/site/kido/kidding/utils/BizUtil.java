@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class BizUtil {
 
-    public static String toFindPlay = "https://www.pianku.tv/s/go.php?q={0}";//博主寄语
+    public static String toFindPlay = "https://www.pianku.me/s/go.php?q={0}";//博主寄语
 
     public static String top_movies_wxq = "https://kido-1257686190.cos.ap-beijing.myqcloud.com/wx_erweima/top_movies_wxq/top_movies_wxq-20200530.png";//Topmovies微信群
     public static String kido_wx = "https://kido-1257686190.cos.ap-beijing.myqcloud.com/wx_erweima/kido_wx/kido_wx-20200530.jpeg";//博主微信
@@ -35,4 +35,8 @@ public class BizUtil {
         return false;
     }
 
+    public static void main(String[] args) {
+        Long aa = DateTimeUtils.stringToTimestamp("2019-11-29", DateTimeUtils.DEFAULT_DATE_FORMAT_WITH_BAR).getTime();
+        System.out.println(aa);
+    }
 }

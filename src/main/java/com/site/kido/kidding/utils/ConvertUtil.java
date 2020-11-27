@@ -59,6 +59,10 @@ public class ConvertUtil {
                 if (BizUtil.chgPlayLink(movieVO.getPlayLink())) {
                     movieVO.setPlayLink(MessageFormat.format(BizUtil.toFindPlay, movieVO.getCnName()));
                 }
+                if (movieVO.getPlayLink().contains("www.pianku.tv")) {
+                    String playLink = movieVO.getPlayLink().replaceAll("www\\.pianku\\.tv", "www.pianku.me");
+                    movieVO.setPlayLink(playLink);
+                }
                 movieVOList.add(movieVO);
             }
         }
