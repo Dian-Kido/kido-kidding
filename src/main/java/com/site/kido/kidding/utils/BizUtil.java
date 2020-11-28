@@ -23,7 +23,7 @@ public class BizUtil {
      */
     public static boolean chgPlayLink(String playLink) {
         if (StringUtils.isBlank(playLink)) {
-            return true;
+            return false;
         }
         if (closeWebs != null && !closeWebs.isEmpty()) {
             for (String closeWeb : closeWebs) {
